@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %></title>
+
+    <%= stylesheet_link_tag "application" %>
+
+    <!-- Uncomment this when you actually have a favicon.png in /images -->
+    <%#= favicon_tag 'images/favicon.png' %>
+  </head>
+  <body>
+
+
+    <%= yield %>
+
+    <!-- We put the JS include tag after the yeild to prevent errors (when you try to select an element that is not already loaded on the page) -->
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
