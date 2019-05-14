@@ -1,8 +1,24 @@
+# Load Sass from node_modules
+config[:sass_assets_paths] << File.join(root, 'node_modules')
+
+set :css_dir,    'assets/stylesheets'
+set :fonts_dir,  'assets/fonts'
+set :images_dir, 'assets/images'
+set :js_dir,     'assets/javascripts'
+
+
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :sprockets
+# activate :sprockets
+
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ? 'yarn run build' : 'yarn run start',
+         source: 'dist',
+         latency: 1
 
 # ------ Uncomment and adapt if you want to use i18n ------
 # activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
@@ -10,6 +26,12 @@ activate :sprockets
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+configure :development do
+  set      :debug_assets, true
+  activate :livereload
+  activate :pry
+end
 
 configure :build do
   activate :minify_css
