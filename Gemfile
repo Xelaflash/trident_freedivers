@@ -9,8 +9,6 @@ gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-pry'
 
-# Development
-gem 'pry-byebug'
 
 # Design
 gem 'font-awesome-middleman'
