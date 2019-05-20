@@ -12,6 +12,7 @@
     <%#= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
+    <%= partial "layouts/shared/navbar" %>
     <%= yield %>
     <%= javascript_include_tag "bundle" %>
   </body>
