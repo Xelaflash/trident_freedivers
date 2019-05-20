@@ -1,11 +1,11 @@
 .home-page {
-  // padding-top: -80px;
+  margin-top: -80px;
 }
 
 .banner {
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 
 .banner h1 {
@@ -15,7 +15,7 @@
 
 .home-container {
   text-align: center;
-  padding: 420px 0 0;
+  padding: 450px 0 0;
 }
 
 .btn-book {
