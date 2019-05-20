@@ -2,7 +2,9 @@
     width: 100%;
     // background-color: transparent;
     background-color: $dark-blue;
-
+    position: relative;
+    z-index: 10;
+    box-shadow:0 4px 20px 0 rgba(255, 255, 255, 0.9);
 }
 
 .navbar-top {
@@ -11,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-    box-shadow:0 1px 1px rgba(255, 255, 255, 0.9);
 }
 
 .logo-pic {
