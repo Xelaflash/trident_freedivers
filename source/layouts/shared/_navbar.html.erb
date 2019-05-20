@@ -6,13 +6,16 @@
       </a>
     </div>
     <!-- Right Navigation -->
-    <div class="navbar-right hidden-xs hidden-sm">
-      <ul class="nav-links">
-        <li><%= link_to "About", "#about", class:"navbar-item navbar-link" %></li>
-        <li><%= link_to "Projects", "#projects", class:"navbar-item navbar-link" %></li>
-        <li><%= link_to "Contact", "#contact", class:"navbar-item navbar-link" %></li>
-        <li><%= link_to "Playground", "#playground", class:"navbar-item navbar-link" %></li>
+    <div class="navbar-middle hidden-xs hidden-sm">
+      <ul class="nav-list">
+        <li class="navbar-item"><%= link_to "Freediving", "#about", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Spearfishing", "#projects", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Underwater Photography", "#contact", class:"navbar-link" %></li>
       </ul>
     </div>
+    <div class="navbar-right">
+      <%= link_to "Contact Us", "#", class:"btn-round btn-contact" %>
+    </div>
   </div>
+
 </nav>

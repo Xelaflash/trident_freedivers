@@ -1,11 +1,11 @@
 .home-page {
-  padding-top: -80px;
+  // padding-top: -80px;
 }
 
 .banner {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 .banner h1 {
@@ -21,6 +21,8 @@
 .btn-book {
   background: $red;
   color: $white;
+  padding: 15px 50px;
+  font-size: 18px;
 }
 
 .btn-book:hover {
