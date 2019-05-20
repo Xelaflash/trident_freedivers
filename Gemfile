@@ -9,7 +9,7 @@ gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-pry'
 gem 'dotenv-rails', groups: [:development, :test]
-
+gem 'cloudinary'
 
 # Design
 gem 'font-awesome-middleman'
