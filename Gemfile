@@ -8,6 +8,7 @@ gem 'sass'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-pry'
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 # Design

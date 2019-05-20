@@ -48,6 +48,9 @@ GEM
     contracts (0.13.0)
     crass (1.0.4)
     dotenv (2.7.2)
+    dotenv-rails (2.7.2)
+      dotenv (= 2.7.2)
+      railties (>= 3.2, < 6.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -204,6 +207,7 @@ PLATFORMS
 DEPENDENCIES
   actionview (>= 5.0.7.2)
   bootstrap (~> 4.3.1)
+  dotenv-rails
   font-awesome-middleman
   jquery-middleman
   middleman (~> 4.3)
