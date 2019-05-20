@@ -6,12 +6,28 @@
 
 // External libraries
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 
 
-h1 {
+// Main utlitities
+body {
+  font-family: $body-font;
+}
+
+.main-title {
+  color: $white;
   font-family: $main-headers-font;
-  }
+  font-size: 72px;
+}
+
+.btn-round {
+  padding: 15px 50px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-family: $body-font;
+}
