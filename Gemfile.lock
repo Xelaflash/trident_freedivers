@@ -109,7 +109,7 @@ GEM
       memoist (~> 0.14)
       padrino-helpers (~> 0.13.0)
       parallel
-      rack (>= 1.4.5, < 3)
+      rack (~> 2.0.7)
       sassc (~> 2.0)
       servolux
       tilt (~> 2.0.9)
