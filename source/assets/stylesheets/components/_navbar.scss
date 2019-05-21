@@ -29,7 +29,7 @@
 
 /* Navbar link */
 .navbar-item {
-  padding: 0 40px;
+  padding: 0 25px;
 }
 
 .navbar-link {
@@ -56,10 +56,44 @@
   background: $yellow;
   color: $white;
   padding: 12px 38px;
-  font-size: 17px;
 }
 
 .btn-contact:hover {
   color: $white;
   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
+}
+
+// responsive styling ALL IPHONES
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 767px) {
+  .logo-pic {
+    height: 85px;
+    margin:0;
+  }
+}
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1057px) {
+  .navbar-top {
+    padding: 0px 20px;
+  }
+  .logo-pic {
+    height: 45px;
+  }
+  .navbar-item {
+    padding: 0 22px;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+  }
+
+  .btn-contact {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
 }
