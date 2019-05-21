@@ -11,10 +11,6 @@ gem 'middleman-pry'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
 
-# Design
-# gem 'font-awesome-middleman'
-# gem 'font-awesome-sass', '~> 5.8.1'
-
 # Fix critical github warning
 gem 'actionview', '>= 5.0.7.2'
 

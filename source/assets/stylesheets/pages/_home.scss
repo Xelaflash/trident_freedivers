@@ -13,7 +13,8 @@
   overflow: hidden;
   position: absolute;
   // changer de pic après 12s
-  animation: kenburns 12s linear infinite;
+  // TODO: remettre anim pour prod
+  // animation: kenburns 12s linear infinite;
 }
 
 @keyframes kenburns {
