@@ -63,86 +63,88 @@
   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
 }
 
-// burger nav
-// .sidenav {
-//   height: 100%;
-//   width: 0;
-//   position: fixed;
-//   z-index: 1;
-//   top: 0;
-//   right: 0;
-//   background-color: $primary;
-//   overflow-x: hidden;
-//   transition: 0.75s;
-//   padding-top: 60px;
-//   text-align: center;
-//   white-space: nowrap;
 
-//   ul {
-//     list-style: none;
-//     padding-left: 0;
-//   }
+// start sidenav
 
-//   li {
-//     margin: 20px
-//   }
-// }
+.burger {
+  font-size:40px;
+  cursor:pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $primary;
+  overflow-x: hidden;
+  transition: 0.75s;
+  padding-top: 60px;
+  text-align: center;
+  white-space: nowrap;
 
-// .sidenav a {
-//   padding: 8px 8px 8px 32px;
-//   text-decoration: none;
-//   font-size: 26px;
-//   display: block;
-//   transition: 0.3s;
-//   font-family: $headers-font;
-//   color: $secondary;
-// }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-// .sidenav a:hover {
-//   color: #f1f1f1;
-// }
-
-// .sidenav .closebtn {
-//   position: absolute;
-//   color: $secondary;
-//   top: 20px;
-//   right: 30px;
-//   font-size: 36px;
-//   margin-left: 50px;
-// }
-
-// .divider {
-//   background: $secondary;
-//   height: 1px;
-// }
-
-#nav-icon {
-  margin: 1em;
-  width: 30px;
+  li {
+    margin: 20px
+  }
 }
 
-#nav-icon:after,
-#nav-icon:before,
-#nav-icon div {
-  background-color: #fff;
-  border-radius: 3px;
-  content: '';
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 26px;
   display: block;
-  height: 4px;
-  margin: 7px 0;
-  transition: all .2s ease-in-out;
-}
-#nav-icon.open:before {
-  transform: translateY(11px) rotate(135deg);
+  transition: 0.3s;
+  font-family: $headers-font;
+  color: $secondary;
 }
 
-#nav-icon.open:after {
-  transform: translateY(-11px) rotate(-135deg);
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-#nav-icon.open div {
-  transform: scale(0);
+.sidenav .closebtn {
+  position: absolute;
+  color: $secondary;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
 }
+
+
+// #nav-icon {
+//   margin: 1em;
+//   width: 30px;
+// }
+
+// #nav-icon:after,
+// #nav-icon:before,
+// #nav-icon div {
+//   background-color: #fff;
+//   border-radius: 3px;
+//   content: '';
+//   display: block;
+//   height: 4px;
+//   margin: 7px 0;
+//   transition: all .2s ease-in-out;
+// }
+// #nav-icon.open:before {
+//   transform: translateY(11px) rotate(135deg);
+// }
+
+// #nav-icon.open:after {
+//   transform: translateY(-11px) rotate(-135deg);
+// }
+
+// #nav-icon.open div {
+//   transform: scale(0);
+// }
 
 
 // responsive styling SMALL SCREENS
