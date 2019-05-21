@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'middleman', '~> 4.3'
-gem 'middleman-sprockets'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-deploy', git: 'https://github.com/lewagon/middleman-deploy.git'
 gem 'pry-byebug', require: true
@@ -14,7 +13,7 @@ gem 'cloudinary'
 
 # Design
 # gem 'font-awesome-middleman'
-gem 'font-awesome-sass', '~> 5.8.1'
+# gem 'font-awesome-sass', '~> 5.8.1'
 
 # Fix critical github warning
 gem 'actionview', '>= 5.0.7.2'
