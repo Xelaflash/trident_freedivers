@@ -1,21 +1,40 @@
 <nav class="" id="navbar">
   <div class="navbar-top">
     <div class="logo">
-      <a href="#home">
+      <!-- logo for big screens -->
+      <a  class="d-none d-md-block d-xl-block" href="/">
         <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355404/logo_opkzrl.png", alt: "Trident Freedivers - Logo", class:"logo-pic img-responsive" %>
+      </a>
+      <!-- logo for small screens -->
+      <a class="d-block d-sm-block d-md-none" href="/">
+        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355463/TF_FINAL_LOGOS-07_wha5z9.png", alt: "Trident Freedivers - Logo", class:"logo-pic img-responsive" %>
       </a>
     </div>
     <!-- Right Navigation -->
-    <div class="navbar-middle hidden-xs hidden-sm">
+    <div class="navbar-middle d-none d-md-block d-xl-block">
       <ul class="nav-list">
-        <li class="navbar-item"><%= link_to "Freediving", "#about", class:"navbar-link" %></li>
-        <li class="navbar-item"><%= link_to "Spearfishing", "#projects", class:"navbar-link" %></li>
-        <li class="navbar-item"><%= link_to "Underwater Photography", "#contact", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Freediving", "freediving.html", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Spearfishing", "spearfishing.html", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Underwater Photography", "underwater_photo.html", class:"navbar-link" %></li>
       </ul>
     </div>
-    <div class="navbar-right">
-      <%= link_to "Contact Us", "#", class:"btn-round btn-contact" %>
+    <div class="navbar-right d-none d-md-block d-xl-block">
+      <%= link_to "Contact Us", "contact.html", class:"btn-round btn-contact" %>
+    </div>
+    <!-- Burger menu for small screens -->
+    <div class="mobile_nav d-md-none">
+      <i class="fas fa-bars burger"></i>
+      <div class="sidenav">
+        <i class="far fa-times-circle closebtn"></i>
+        <ul>
+          <li class="navbar-item"><%= link_to "Freediving", "freediving.html", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Spearfishing", "spearfishing.html", class:"navbar-link" %></li>
+          <li class="navbar-item"><%= link_to "Underwater Photography", "underwater_photo.html", class:"navbar-link" %>
+          </li>
+          <li class="navbar-item"><%= link_to "Contact", "contact.html", class:"navbar-link" %>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-
 </nav>

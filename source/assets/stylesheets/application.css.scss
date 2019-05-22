@@ -6,8 +6,6 @@
 
 // External libraries
 @import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
@@ -18,6 +16,7 @@
 body {
   font-family: $body-font;
   color: $white;
+  overflow: hidden;
 }
 
 .main-title {
@@ -28,4 +27,13 @@ body {
 .btn-round {
   border-radius: 40px;
   font-family: $body-font;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .main-title {
+    font-size: 55px;
+  }
 }

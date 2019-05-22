@@ -29,7 +29,7 @@
 
 /* Navbar link */
 .navbar-item {
-  padding: 0 40px;
+  padding: 0 25px;
 }
 
 .navbar-link {
@@ -56,10 +56,105 @@
   background: $yellow;
   color: $white;
   padding: 12px 38px;
-  font-size: 17px;
 }
 
 .btn-contact:hover {
   color: $white;
   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
 }
+
+
+// start sidenav
+.burger {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $primary;
+  overflow-x: hidden;
+  transition: 0.75s;
+  padding-top: 100px;
+  white-space: nowrap;
+
+  li {
+    margin-left: 10px;
+    width: fit-content;
+    padding: 20px 30px;
+  }
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 26px;
+  display: block;
+  transition: 0.3s;
+  font-family: $headers-font;
+  color: $white;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  cursor:pointer;
+  position: absolute;
+  color: $white;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+// responsive styling SMALL SCREENS
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 767px) {
+  .logo-pic {
+    height: 85px;
+    margin:0;
+  }
+}
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1057px) {
+  .navbar-top {
+    padding: 0px 20px;
+  }
+  .logo-pic {
+    height: 45px;
+  }
+  .navbar-item {
+    padding: 0 22px;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+  }
+
+  .btn-contact {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+}
+
+// iphones all
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .logo-pic {
+      margin-left: -20px;
+    }
+  }
