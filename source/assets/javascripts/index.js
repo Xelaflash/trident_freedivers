@@ -1,8 +1,6 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
-import '@fortawesome/fontawesome-free/js/all.min';
-
 // components JS files
 import './components/mobile_nav';
 
@@ -17,7 +15,7 @@ function openNav() {
 }
 
 function closeNav() {
-    console.log("clicked");
+  console.log("clicked");
   document.querySelector(".sidenav").style.width = "0";
 }
 
