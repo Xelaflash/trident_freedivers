@@ -2,15 +2,75 @@
   background: $dark-blue;
 }
 
+// section logo
 #footer-top {
-  padding: 40px 0;
+  padding: 40px 0 20px;
 }
 
 #footer-logo {
-  height: 180px;
+  height: 160px;
   margin: 0 auto;
 }
 
+// section social
+#social {
+  margin: 10px auto 20px auto;
+}
+
+ul.social-buttons {
+  text-align: center;
+  padding-left: 35px;
+}
+
+/* Float Shadow effect */
+ul.social-buttons li {
+  display: inline-block;
+  margin: 0 10px;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+ul.social-buttons li:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+ul.social-buttons li:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+
+ul.social-buttons li:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+ul.social-buttons li a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 60px;
+  background: $yellow;
+}
+
+// section bottom
 #flex-container {
   display: flex;
   align-items: center;
