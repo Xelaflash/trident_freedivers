@@ -1,0 +1,48 @@
+.footer {
+  background: $dark-blue;
+}
+
+#flex-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.footer .fa-heart {
+  // color: #D23333;
+  color: $red;
+}
+
+.logo-alex {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.logo-alex:hover {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, .9) translateY(0);
+  }
+  30% {
+    transform: scale(.9, 1.1) translateY(-15px);
+  }
+  50% {
+    transform: scale(1.05, .95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(-15px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
