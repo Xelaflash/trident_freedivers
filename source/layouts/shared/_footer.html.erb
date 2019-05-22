@@ -1,23 +1,25 @@
 <footer class="footer">
 
+<section id="footer-top">
+  <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355403/logo_fish_diver.png", alt: "Trident Freedivers - Logo Fish_Diver", id:"footer-logo", class: "img-responsive" %>
+</section>
 
 
-
-    <section class="footer-bottom">
-      <div id="flex-container">
-        <div id="copyright">
-          <p>© 2019 Trident Freedivers.All Rights Reserved</p>
-        </div>
-        <div id="legals">
-          <%= link_to "Terms of Use", "terms_of_use.html", class:"" %>
-          <%= link_to "Privacy Policy", "privacy_policy.html", class:"" %>
-        </div>
-        <div id="alex-credit">
-          <p>Website made with <i class="fas fa-heart"></i> <a href="https://www.alexgwebdev.com/" target="_blank" rel="noopener noreferrer"><%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558540259/logo_alex.png", class: "logo-alex", alt: "Alex G - Web developer"%></a>
-          </p>
-        </div>
-
-      </div>
-    </section>
+<section class="footer-bottom">
+  <div id="flex-container">
+    <div id="copyright">
+      <p>© 2019 Trident Freedivers. All Rights Reserved</p>
+    </div>
+    <div id="legals">
+      <p>
+        <%= link_to "Terms of Use", "terms_of_use.html", class:"" %> and
+        <%= link_to "Privacy Policy", "privacy_policy.html", class:"" %>
+      </p>
+    </div>
+    <div id="alex-credit">
+      <p>Website made with <i class="fas fa-heart"></i> by <a href="https://www.alexgwebdev.com/" target="_blank" rel="noopener noreferrer"><%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558540259/logo_alex.png", class: "logo-alex", alt: "Alex G - Web developer"%></a></p>
+    </div>
+  </div>
+</section>
 
 </footer>

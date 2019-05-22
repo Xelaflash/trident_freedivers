@@ -2,16 +2,35 @@
   background: $dark-blue;
 }
 
+#footer-top {
+  padding: 40px 0;
+}
+
+#footer-logo {
+  height: 180px;
+  margin: 0 auto;
+}
+
 #flex-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 50px;
+}
+
+#legals a {
+  color: $white;
+  padding: 0px 5px;
+  text-decoration: underline;
+}
+
+#alex-credit img {
+  display: inline-block;
 }
 
 .footer .fa-heart {
-  // color: #D23333;
   color: $red;
+  padding: 0 3px;
 }
 
 .logo-alex {
