@@ -127,10 +127,13 @@ ul.social-buttons li a {
   font-size:14px;
 }
 
-#legals a {
-  color: $white;
-  padding: 0px 5px;
-  text-decoration: underline;
+#legals {
+  margin-left: -50px;
+  a {
+    color: $white;
+    padding: 0px 5px;
+    text-decoration: underline;
+  }
 }
 
 #alex-credit img {
@@ -172,5 +175,42 @@ ul.social-buttons li a {
   }
   100% {
     transform: scale(1, 1) translateY(0);
+  }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 920px) {
+  #footer-logo {
+    height: 120px;
+  }
+
+  #certification {
+    font-size: 14px;
+  }
+
+  .certif-logos {
+    height: 65px;
+    margin: 0 30px;
+  }
+
+  ul.social-buttons li {
+    margin: 0 10px;
+  }
+
+  #flex-container {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #legals {
+    margin-left: 0;
+  }
+  #alex-credit {
+    padding-bottom: 20px;
+    font-size: 14px;
+    p {
+      margin-bottom: 0;
+    }
   }
 }
