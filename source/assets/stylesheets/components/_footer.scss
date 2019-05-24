@@ -4,11 +4,11 @@
 
 // section logo
 #footer-top {
-  padding: 40px 0 20px;
+  padding: 40px 0 10px 0;
 }
 
 #footer-logo {
-  height: 160px;
+  height: 150px;
   margin: 0 auto;
 }
 
@@ -19,13 +19,12 @@
 
 ul.social-buttons {
   text-align: center;
-  padding-left: 35px;
 }
 
 /* Float Shadow effect */
 ul.social-buttons li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 15px;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
@@ -60,22 +59,54 @@ ul.social-buttons li:hover:before {
 }
 
 ul.social-buttons li a {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: block;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 50px;
   background: $yellow;
 }
 
+// section contact infos
+#contact-infos {
+  margin-bottom: 25px;
+  text-align: center;
+
+}
+
+.infos-wrapper {
+  margin: 10px 0;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $white;
+  display: inline-block;
+}
+
+#certification {
+  letter-spacing: 1px;
+}
+
 // section bottom
+.footer-bottom {
+  margin-top:40px;
+}
+
 #flex-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
+}
+
+#copyright {
+  font-size:14px;
 }
 
 #legals a {
