@@ -1,0 +1,56 @@
+<footer class="footer">
+
+  <section id="footer-top">
+    <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355403/logo_fish_diver.png", alt: "Trident Freedivers - Logo Fish_Diver", id:"footer-logo", class: "img-responsive" %>
+  </section>
+
+
+  <section id="contact-infos">
+    <p id="name">Hanna Allen</p>
+    <div class="infos-wrapper">
+      <div class="infos">
+        <p id="certification">
+          Certified PADI Freediving instructor <br>
+          Certified Emergency First Response instructor
+        </p>
+        <div class="certif-logos-wrapper">
+          <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355404/logo2-300x225_ccdoa9.jpg", alt: "Trident Freedivers - EMFR certification", class: "certif-logos img-responsive" %>
+          <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558705419/PADI-Logo_ie3vfw.jpg", alt: "Trident Freedivers - PADI", class: "certif-logos img-responsive", id: "padi-logo" %>
+        </div>
+      </div>
+      <!-- <div class="infos-right">
+        <p>
+          <a href="tel:+12462347778">+ 1 (246) 234-7778</a> <br>
+          <a href="mailto:trident.freedivers@gmail.com">trident.freedivers@gmail.com</a>
+        </p>
+      </div> -->
+    </div>
+
+  </section>
+      <section id="social">
+        <ul class="social-buttons">
+          <li><a href="https://www.facebook.com/tridentfreedivers/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+          <li> <a href="https://www.instagram.com/tridentfreedivers/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="tel:+12462347778"> <i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="mailto:trident.freedivers@gmail.com"><i class="far fa-envelope"></i></a></li>
+        </ul>
+      </section>
+
+  <section class="footer-bottom">
+    <div id="flex-container">
+      <div id="copyright">
+        <p>© 2019 Trident Freedivers. All Rights Reserved</p>
+      </div>
+      <div id="legals">
+        <p>
+          <%= link_to "Terms of Use", "terms_of_use.html", class:"" %> and
+          <%= link_to "Privacy Policy", "privacy_policy.html", class:"" %>
+        </p>
+      </div>
+      <div id="alex-credit">
+        <p>Website made with <i class="fas fa-heart"></i> by <a href="https://www.alexgwebdev.com/" target="_blank" rel="noopener noreferrer"><%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558540259/logo_alex.png", class: "logo-alex", alt: "Alex G - Web developer"%></a></p>
+      </div>
+    </div>
+  </section>
+
+</footer>

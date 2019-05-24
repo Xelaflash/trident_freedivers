@@ -1,0 +1,216 @@
+.footer {
+  background: $dark-blue;
+}
+
+// section logo
+#footer-top {
+  padding-top: 40px;
+}
+
+#footer-logo {
+  height: 150px;
+  margin: 0 auto;
+}
+
+// section social
+#social {
+  margin: 10px auto 20px auto;
+}
+
+ul.social-buttons {
+  text-align: center;
+}
+
+/* Float Shadow effect */
+ul.social-buttons li {
+  display: inline-block;
+  margin: 0 15px;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+ul.social-buttons li:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+ul.social-buttons li:hover {
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+
+ul.social-buttons li:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+ul.social-buttons li a {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 50px;
+  background: $yellow;
+}
+
+// section contact infos
+#contact-infos {
+  margin: 50px 0;
+  text-align: center;
+
+}
+
+.infos-wrapper {
+  margin: 10px 0;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $white;
+  display: inline-block;
+}
+
+#certification {
+  letter-spacing: 1px;
+}
+
+.certif-logos-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.certif-logos {
+  height: 80px;
+  margin: 0 50px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 7px 0px rgba(255, 255, 255, 0.8);
+}
+
+#padi-logo {
+  width: 70px;
+}
+
+
+// section bottom
+.footer-bottom {
+  margin-top:40px;
+}
+
+#flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+#copyright {
+  font-size:14px;
+}
+
+#legals {
+  margin-left: -50px;
+  a {
+    color: $white;
+    padding: 0px 5px;
+    text-decoration: underline;
+  }
+}
+
+#alex-credit img {
+  display: inline-block;
+}
+
+.footer .fa-heart {
+  color: $red;
+  padding: 0 3px;
+}
+
+.logo-alex {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.logo-alex:hover {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, .9) translateY(0);
+  }
+  30% {
+    transform: scale(.9, 1.1) translateY(-15px);
+  }
+  50% {
+    transform: scale(1.05, .95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(-15px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 920px) {
+  #footer-logo {
+    height: 120px;
+  }
+
+  #certification {
+    font-size: 14px;
+  }
+
+  .certif-logos {
+    height: 65px;
+    margin: 0 30px;
+  }
+
+  ul.social-buttons li {
+    margin: 0 10px;
+  }
+
+  #flex-container {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #legals {
+    margin-left: 0;
+  }
+  #alex-credit {
+    padding-bottom: 20px;
+    font-size: 14px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
