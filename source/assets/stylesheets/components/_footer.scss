@@ -4,7 +4,7 @@
 
 // section logo
 #footer-top {
-  padding: 40px 0 10px 0;
+  padding-top: 40px;
 }
 
 #footer-logo {
@@ -71,7 +71,7 @@ ul.social-buttons li a {
 
 // section contact infos
 #contact-infos {
-  margin-bottom: 25px;
+  margin: 50px 0;
   text-align: center;
 
 }
@@ -92,6 +92,24 @@ ul.social-buttons li a {
 #certification {
   letter-spacing: 1px;
 }
+
+.certif-logos-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.certif-logos {
+  height: 80px;
+  margin: 0 50px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 7px 0px rgba(255, 255, 255, 0.8);
+}
+
+#padi-logo {
+  width: 70px;
+}
+
 
 // section bottom
 .footer-bottom {
