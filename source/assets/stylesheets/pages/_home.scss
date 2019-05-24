@@ -78,6 +78,124 @@
   }
 }
 
+// section TOURS
+.tours {
+  background-color: $light-blue;
+  padding: 20px 0 50px;
+  h1 {
+    text-align: center;
+    margin: 20px 0 50px;
+  }
+}
+
+.cards-tours {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card  {
+  height: 420px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: .5s;
+  &:hover .card-front {
+    transform: rotateX(-180deg);
+  }
+  &:hover .card-back {
+    transform: rotateX(0deg);
+  }
+}
+
+.card-front {
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: .5s;
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-back{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: .5s;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-tours {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards-tours {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards-tours {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards-tours {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards-tours {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+
+
 // responsive styling SMALL Screens
 @media only screen
   and (min-width: 320px)
