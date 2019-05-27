@@ -125,15 +125,13 @@
 .back {
   background-size: cover;
   background-position: center;
-  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  // transition: transform .9s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
   backface-visibility: hidden;
   text-align: center;
   min-height: 420px;
   border-radius: 5px;
   color: $white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .back {
@@ -154,7 +152,8 @@
 
 .card-inner:hover .front,
 .card-inner:hover .back {
-  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  // transition: transform .9s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
 }
 
 .back {
@@ -172,7 +171,6 @@
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  outline: 1px solid transparent;
   perspective: inherit;
   z-index: 2;
 }
@@ -198,11 +196,22 @@
 }
 
 .front .inner p {
-  color: white;
+  color: $white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   position: relative;
+}
+
+.course-title {
+  color: $white;
+  font-size: 20px;
+}
+
+.price-tag {
+  font-family: $main-headers-font;
+  color: $white;
+  font-size: 22px;
 }
 
 .front .inner p:after {
@@ -218,23 +227,11 @@
   bottom: -.75rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.separator {
+  margin: 20px auto;
+  width: 50%;
+  border-top: 2px solid $yellow;
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
