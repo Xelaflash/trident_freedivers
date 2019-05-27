@@ -1,7 +1,7 @@
 ---
 title: Trident Freedivers -  Diving adventures in barbados on one breath
 ---
-<div class="home-page">
+<section class="home-page">
   <div class="banner" style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355683/HomePage_egylnm.jpg);"></div>
   <div class="home-container">
     <h1 class="main-title">Let's go diving</h1>
@@ -12,4 +12,107 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
     <a href="https://www.facebook.com/tridentfreedivers/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/tridentfreedivers/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
   </div>
-</div>
+</section>
+
+<section class="tours">
+  <div class="container">
+    <h1 class="main-title">Our Tours</h1>
+    <div class="cards-tours">
+		  <div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+        <% link_to "freediving.html", class:"card-link" do %>
+			  <div class="card-inner">
+			    <div class="front"
+			      style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355455/pic1_yqbmsu.jpg)">
+			      <div class="inner">
+			        <p>Freediving</p>
+            </div>
+			    </div>
+			    <div class="back">
+			      <div class="inner">
+              <p class="course-title">One Day Course</pc>
+              <p class="price-tag">$ 150</p>
+              <hr class="separator">
+              <p class="course-title">Two Days Course (PADI certification)</p>
+              <p class="price-tag">$ 250</p>
+              <hr class="separator">
+              <p class="course-title">Fun Dives (Ship wreks, Marine life, Night dive)</p>
+              <p class="price-tag">$ 35 - 50 /person</p>
+			      </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+        <% link_to "spearfishing.html", class:"card-link" do %>
+			  <div class="card-inner">
+			    <div class="front"
+			      style="background-image:
+			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355457/Page5wahoo_qi7fef.jpg)">
+			      <div class="inner">
+			        <p>Spearfishing</p>
+			      </div>
+			    </div>
+			    <div class="back">
+			      <div class="inner">
+              <p class="course-title">Coastal Spearfishing Tour</pc>
+              <p class="price-tag">$ 110 /person</p>
+              <hr class="separator">
+              <p class="course-title">Blue Water Spearfishing Tour</p>
+              <p class="price-tag">$ 250 /person</p>
+              <hr class="separator">
+              <p class="course-title">Spearfishing @ Night</p>
+              <p class="price-tag">$ 150 /person</p>
+			      </div>
+			    </div>
+        </div>
+        <% end %>
+      </div>
+			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+        <% link_to "underwater_photo.html", class:"card-link" do %>
+			  <div class="card-inner">
+			    <div class="front"
+			      style="background-image:
+			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558356627/Page4_aelrnn.jpg)">
+			      <div class="inner">
+			        <p>Underwater Photography</p>
+			      </div>
+			    </div>
+			    <div class="back">
+			      <div class="inner">
+              <p class="course-title">Underwater Photography Tour</pc>
+              <p class="price-tag">$ 150 /person</p>
+			      </div>
+			    </div>
+			  </div>
+        <% end %>
+			</div>
+    </div>
+  </div>
+</section>
+
+<section class="reinsurance">
+  <div class="container" id="reinsurance-grid">
+    <div class="reinsurance-item">
+      <div class="learning">
+        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558973805/anchor.png", alt: "Trident Freedivers - Learn to freedive", id:"", class: "icon-reinsurance img-responsive" %>
+        <h3>Learn to freedive</h3>
+        <p>Learn freediving with a PADI certified instructor with training experience to let you enjoy the freediving joy and spirit.</p>
+      </div>
+    </div>
+    <div class="reinsurance-item">
+      <div class="certification">
+        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558975001/certif.png", alt: "Trident Freedivers - certification", id:"", class: "icon-reinsurance img-responsive" %>
+        <h3>Certification</h3>
+        <p>With our 2 days course, we help all applicants to achieve the PADI freediving certification recognized worldwide.</p>
+      </div>
+    </div>
+    <div class="reinsurance-item">
+      <div class="rental">
+        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558977358/snorkel.png", alt: "Trident Freedivers - Gears rental", id:"", class: "icon-reinsurance img-responsive" %>
+        <h3>Rental</h3>
+        <p>Don't have diving gear? Not a problem, we provide best rental services incuding modern and secure diving gears.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
