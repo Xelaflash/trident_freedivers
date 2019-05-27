@@ -122,7 +122,8 @@
 }
 
 .back {
-  background: linear-gradient(to right top, #b2d5f4, #7da9da, #4f7cbe, #2851a0, #00267f, #050F36);
+  // background: linear-gradient(to right top, #b2d5f4, #7da9da, #4f7cbe, #2851a0, #00267f, #050F36);
+  background: $white;
 }
 
 .front:after {
@@ -190,14 +191,16 @@
 }
 
 .course-title {
-  color: $white;
+  // color: $white;
+  color: $dark-blue;
   font-size: 20px;
 }
 
 .price-tag {
   font-family: $main-headers-font;
-  color: $yellow;
-  font-size: 22px;
+  // color: $white;
+  color: $dark-blue;
+  font-size: 20px;
 }
 
 .front .inner p:after {
@@ -216,7 +219,7 @@
 .separator {
   margin: 20px auto;
   width: 50%;
-  border-top: 2px solid $white;
+  border-top: 1px solid $red;
 }
 
 // responsive styling SMALL Screens
