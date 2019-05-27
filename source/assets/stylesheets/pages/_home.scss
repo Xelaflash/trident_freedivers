@@ -46,11 +46,7 @@
 .btn-book:hover {
   color: $white;
   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
-  // box-shadow: 0 5px 15px rgba(188, 23, 52, 0.9);
-  // background: $white;
-  // border: 1px solid $red;
   opacity: 0.9;
-  transition: all 0.3s linear;
 }
 
 .social-links {
@@ -63,7 +59,6 @@
   p {
     font-size: 18px;
     margin: 0 20px;
-
   }
 }
 
@@ -80,8 +75,6 @@
 
 // section TOURS
 .tours {
-  // background-color: $light-blue;
-  // background: linear-gradient(to right bottom, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
   background: linear-gradient(to top, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
   padding: 20px 0 50px;
   h1 {
@@ -99,7 +92,6 @@
 // flipping card
 .flip-card {
   height: 420px;
-  // cursor: pointer;
 }
 
 .card-inner {
@@ -111,7 +103,6 @@
 .back {
   background-size: cover;
   background-position: center;
-  // transition: transform .9s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
   backface-visibility: hidden;
   text-align: center;
@@ -138,7 +129,6 @@
 
 .card-inner:hover .front,
 .card-inner:hover .back {
-  // transition: transform .9s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
 }
 
@@ -219,41 +209,6 @@
   border-top: 2px solid $white;
 }
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards-tours {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards-tours {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards-tours {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards-tours {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards-tours {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 // responsive styling SMALL Screens
 @media only screen
   and (min-width: 320px)
@@ -294,14 +249,40 @@
 
 .reinsurance-item {
   text-align: center;
-  border-left: 1px solid $yellow;
-  &:nth-child(-n+1) {
-    border-left: none;
-  }
+  padding-top:20px;
 }
 
 .icon-reinsurance {
   height: 80px;
   padding-top: 12px;
   margin: 0 auto;
+}
+
+// grids responsive
+@media (min-width: 100px)
+  and (max-width: 991px) {
+  .cards-tours,
+  #reinsurance-grid {
+    grid-template-columns: 1fr;
+  }
+  .reinsurance-item {
+    border-top: 1px solid $yellow;
+    &:nth-child(-n+1) {
+      border-top: none;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards-tours,
+  #reinsurance-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .reinsurance-item {
+    border-left: 1px solid $yellow;
+    &:nth-child(-n+1) {
+      border-left: none;
+    }
+  }
 }
