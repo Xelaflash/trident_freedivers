@@ -12,5 +12,5 @@ navBtn.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
 
 $('.carousel').carousel({
-  interval: 9000
+  interval: 11000
 });
