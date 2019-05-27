@@ -80,7 +80,9 @@
 
 // section TOURS
 .tours {
-  background-color: $light-blue;
+  // background-color: $light-blue;
+  // background: linear-gradient(to right bottom, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
+  background: linear-gradient(to top, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
   padding: 20px 0 50px;
   h1 {
     text-align: center;
@@ -94,26 +96,10 @@
   grid-gap: 16px;
 }
 
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-
 // flipping card
 .flip-card {
   height: 420px;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .card-inner {
@@ -210,7 +196,7 @@
 
 .price-tag {
   font-family: $main-headers-font;
-  color: $white;
+  color: $yellow;
   font-size: 22px;
 }
 
@@ -230,7 +216,7 @@
 .separator {
   margin: 20px auto;
   width: 50%;
-  border-top: 2px solid $yellow;
+  border-top: 2px solid $white;
 }
 
 // Smallest device
@@ -267,11 +253,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-
-
-
-
 
 // responsive styling SMALL Screens
 @media only screen

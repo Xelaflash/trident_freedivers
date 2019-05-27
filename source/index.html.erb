@@ -18,50 +18,75 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
   <div class="container">
     <h1 class="main-title">Our Tours</h1>
     <div class="cards-tours">
-
-
-      <div class="card-category"
-        style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355455/pic1_yqbmsu.jpg)">
-        Freediving
-      </div>
-      <div class="card-category"
-        style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355457/Page5wahoo_qi7fef.jpg)">
-        Spearfishing
-      </div>
-
-      <div class="card-category"
-        style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558356627/Page4_aelrnn.jpg)">
-        Underwater Photography
-      </div>
-
-
-			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+		  <div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+        <% link_to "freediving.html", class:"card-link" do %>
 			  <div class="card-inner">
 			    <div class="front"
 			      style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355455/pic1_yqbmsu.jpg)">
 			      <div class="inner">
 			        <p>Freediving</p>
-			      </div>
+            </div>
 			    </div>
 			    <div class="back">
 			      <div class="inner">
-              <p class="course-title">One day course</pc>
+              <p class="course-title">One Day Course</pc>
               <p class="price-tag">$ 150</p>
               <hr class="separator">
-              <p class="course-title">Two days course (PADI certification)</p>
+              <p class="course-title">Two Days Course (PADI certification)</p>
               <p class="price-tag">$ 250</p>
               <hr class="separator">
               <p class="course-title">Fun Dives (Ship wreks, Marine life, Night dive)</p>
               <p class="price-tag">$ 35 - 50 /person</p>
 			      </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+        <% link_to "spearfishing.html", class:"card-link" do %>
+			  <div class="card-inner">
+			    <div class="front"
+			      style="background-image:
+			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355457/Page5wahoo_qi7fef.jpg)">
+			      <div class="inner">
+			        <p>Spearfishing</p>
+			      </div>
+			    </div>
+			    <div class="back">
+			      <div class="inner">
+              <p class="course-title">Coastal Spearfishing Tour</pc>
+              <p class="price-tag">$ 110 /person</p>
+              <hr class="separator">
+              <p class="course-title">Blue Water Spearfishing Tour</p>
+              <p class="price-tag">$ 250 /person</p>
+              <hr class="separator">
+              <p class="course-title">Spearfishing @ Night</p>
+              <p class="price-tag">$ 150 /person</p>
+			      </div>
+			    </div>
+        </div>
+        <% end %>
+      </div>
+			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
+        <% link_to "underwater_photo.html", class:"card-link" do %>
+			  <div class="card-inner">
+			    <div class="front"
+			      style="background-image:
+			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558356627/Page4_aelrnn.jpg)">
+			      <div class="inner">
+			        <p>Underwater Photography</p>
+			      </div>
+			    </div>
+			    <div class="back">
+			      <div class="inner">
+              <p class="course-title">Underwater Photography Tour</pc>
+              <p class="price-tag">$ 150 /person</p>
+              <hr class="separator">
+			      </div>
 			    </div>
 			  </div>
+        <% end %>
 			</div>
-
-
-
-
-
-
+    </div>
   </div>
 </section>
