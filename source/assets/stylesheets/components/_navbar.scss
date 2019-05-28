@@ -122,12 +122,14 @@
   margin-left: 50px;
 }
 
+.social-wrapper {
+  text-align: center;
+}
+
 .social-links-sidenav {
   display: inline-flex;
   align-items: center;
-  position: absolute;
-  bottom: 30px;
-  left: 35%;
+  justify-content:  space-around;
 }
 
 .social-links-sidenav a {
@@ -187,7 +189,18 @@
   and (min-device-width: 320px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .logo-pic {
-      margin-left: -20px;
-    }
+  .logo-pic {
+    margin-left: -20px;
   }
+  #logo2 {
+    height: 75px;
+    margin: 5px 0px 0 -15px;
+  }
+  #logo-sideNav {
+    height: 70px;
+    margin: 0 auto;
+  }
+  .sidenav ul {
+  margin: 10px 0 0 10px;
+  }
+}
