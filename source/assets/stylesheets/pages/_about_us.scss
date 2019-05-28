@@ -7,6 +7,8 @@
 .about-container {
   padding: 130px 0 50px 0;
   margin: 0 auto;
+  // for v2
+  text-align: center;
   h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -43,21 +45,36 @@
               0px 3px 10px 0px rgba(255, 255, 255, 0.5);
 }
 
-#prez-img1 {
-  height: 250px;
-  margin-bottom: 5px;
-}
+// kill for V2
+// #prez-img1 {
+//   height: 250px;
+//   margin-bottom: 5px;
+// }
 
 #prez-img2 {
-  height: 350px;
-  margin-top: -15px;
+  // height: 350px;
+  // margin-top: -15px;
+  // V2
+  height:430px
 }
 
 #prez-img3 {
-  height: 400px;
+  // height: 400px;
+  // V2
+  height: 500px;
 }
+
 #prez-img4 {
   height: 320px;
-  margin: 40px 50px 15px 0;
-  float: right;
+  // remove for V2
+  // margin: 40px 50px 15px 0;
+  // float: right;
+}
+
+// wrapper for V2
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
