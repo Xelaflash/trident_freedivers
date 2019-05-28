@@ -79,14 +79,39 @@
 //   justify-content: space-around;
 // }
 
+// responsive styling SMALL Screens
+@media only screen
+and (min-width: 320px)
+and (max-width: 1200px) {
+  .about-container {
+    padding: 120px 15px 0 15px;
+  }
+// V1
+  #prez-img2 {
+    margin-top: 10px;
+  }
+  .certif-wrapper {
+    text-align: center;
+  }
+  .float-right {
+    float: none !important;
+    margin: 15px auto;
+  }
+  .float-left {
+    float: none !important;
+    margin: 15px auto;
+  }
+  #prez-img4 {
+    margin: 15px auto;
+    float: none !important;
+  }
+}
+
 // iphones all
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 2) {
-  .about-container {
-    padding: 120px 15px 0 15px;
-  }
   // V1
   #prez-img1,
   #prez-img2,
@@ -97,22 +122,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
   #prez-img2 {
     margin-top: 10px;
   }
-
-  .float-right {
-    float: none !important;
-    margin: 15px auto;
-  }
-
-  .float-left {
-    float: none !important;
-    margin: 15px auto;
-  }
-
-  #prez-img4 {
-    margin: 15px auto;
-    float: none !important;
-  }
-
   // V2
   // .prez-img {
   //   margin: 20px auto;
