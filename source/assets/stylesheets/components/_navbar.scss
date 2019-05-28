@@ -72,6 +72,11 @@
   cursor: pointer;
 }
 
+#logo-sideNav {
+  height: 90px;
+  margin: 10px auto;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -84,6 +89,9 @@
   transition: 0.75s;
   padding-top: 100px;
   white-space: nowrap;
+  ul {
+    margin: 40px 0 0 10px;
+  }
   li {
     margin-left: 10px;
     width: fit-content;
@@ -93,7 +101,7 @@
 
 .sidenav a {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
   display: block;
   transition: 0.3s;
   font-family: $headers-font;
@@ -112,6 +120,24 @@
   right: 30px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.social-links-sidenav {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+}
+
+.social-links-sidenav a {
+  color: $white;
+  cursor: pointer;
+  font-size: 36px;
+  padding: 0px 20px;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 // responsive styling SMALL SCREENS
