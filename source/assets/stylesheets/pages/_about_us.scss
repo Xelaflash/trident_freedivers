@@ -8,7 +8,7 @@
   padding: 130px 0 50px 0;
   margin: 0 auto;
   // for v2
-  text-align: center;
+  // text-align: center;
   h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -46,52 +46,78 @@
 }
 
 // kill for V2
-// #prez-img1 {
-//   height: 250px;
-//   margin-bottom: 5px;
-// }
+#prez-img1 {
+  height: 250px;
+  margin-bottom: 5px;
+}
 
 #prez-img2 {
-  // height: 350px;
-  // margin-top: -15px;
+  height: 350px;
+  margin-top: -15px;
   // V2
-  height:430px
+  // height:430px;
 }
 
 #prez-img3 {
-  // height: 400px;
+  height: 400px;
   // V2
-  height: 500px;
+  // height: 500px;
 }
 
 #prez-img4 {
   height: 320px;
   // remove for V2
-  // margin: 40px 50px 15px 0;
-  // float: right;
+  margin: 40px 50px 15px 0;
+  float: right;
 }
 
 // wrapper for V2
-.image-wrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+// .image-wrapper {
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+// }
 
 // iphones all
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 2) {
-  // V2
   .about-container {
     padding: 120px 15px 0 15px;
   }
-  .prez-img {
-    margin: 20px auto;
-  }
+  // V1
+  #prez-img1,
+  #prez-img2,
+  #prez-img3,
   #prez-img4 {
-    height: 200px;
+    height: auto;
   }
+  #prez-img2 {
+    margin-top: 10px;
+  }
+
+  .float-right {
+    float: none !important;
+    margin: 15px auto;
+  }
+
+  .float-left {
+    float: none !important;
+    margin: 15px auto;
+  }
+
+  #prez-img4 {
+    margin: 15px auto;
+    float: none !important;
+  }
+
+  // V2
+  // .prez-img {
+  //   margin: 20px auto;
+  // }
+  // #prez-img4 {
+  //   height: 200px;
+  // }
 }
