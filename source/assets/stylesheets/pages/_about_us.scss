@@ -78,3 +78,20 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+// iphones all
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  // V2
+  .about-container {
+    padding: 120px 15px 0 15px;
+  }
+  .prez-img {
+    margin: 20px auto;
+  }
+  #prez-img4 {
+    height: 200px;
+  }
+}
