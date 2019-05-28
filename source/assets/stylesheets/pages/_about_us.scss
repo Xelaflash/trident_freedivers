@@ -5,7 +5,7 @@
 }
 
 .about-container {
-  padding: 110px 0 0 0;
+  padding: 130px 0 50px 0;
   margin: 0 auto;
   h1 {
     text-align: center;
@@ -14,41 +14,38 @@
 }
 
 .about-text {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
-  margin-bottom: 0;
-}
-
-.line-separator {
-  height: 8px;
-  width: 100px;
-  margin: 0 auto 40px;
+  margin-bottom: 10px;
 }
 
 .float-left {
   float: left;
-  margin: 15px 15px 15px 0;
+  margin: 15px 15px 15px 10px;
 }
 
 .float-right {
   float: right;
-  margin: 15px 0 15px 15px;
+  margin: 15px 10px 15px 15px;
 }
 
 .clearfix {
   overflow: auto;
 }
 
+#certif-logos-about {
+  margin: 20px 55px;
+}
+
 .prez-img {
-  // height: 250px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6),
-    0 6px 20px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 0px 10px 0 rgba(255, 255, 255, 0.5),
+              0px 3px 10px 0px rgba(255, 255, 255, 0.5);
 }
 
 #prez-img1 {
   height: 250px;
-  margin-bottom:0;
+  margin-bottom: 5px;
 }
 
 #prez-img2 {
@@ -57,5 +54,10 @@
 }
 
 #prez-img3 {
-  height: 300px;
+  height: 400px;
+}
+#prez-img4 {
+  height: 320px;
+  margin: 40px 50px 15px 0;
+  float: right;
 }
