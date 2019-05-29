@@ -21,11 +21,22 @@ body {
 .main-title {
   font-family: $main-headers-font;
   font-size: 72px;
+  margin-bottom: 20px;
 }
 
 .btn-round {
   border-radius: 40px;
   font-family: $body-font;
+}
+
+.line-separator {
+  height: 8px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 50px;
 }
 
 @media only screen

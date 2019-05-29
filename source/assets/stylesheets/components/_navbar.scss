@@ -1,9 +1,10 @@
 #navbar {
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-    z-index: 10;
-    box-shadow:0 4px 20px 0 rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top:0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  box-shadow:0 4px 20px 0 rgba(255, 255, 255, 0.6);
 }
 
 .navbar-top {
@@ -15,8 +16,12 @@
 }
 
 .logo-pic {
-  height: 60px;
+  height: 55px;
   margin-top: 5px;
+}
+
+#logo2 {
+  height: 85px;
 }
 
 /* Middle section */
@@ -33,7 +38,7 @@
 
 .navbar-link {
   color: white;
-  font-size: 21px;
+  font-size: 19px;
   font-family: $headers-font;
   letter-spacing: 2px;
   cursor: pointer;
@@ -68,6 +73,11 @@
   cursor: pointer;
 }
 
+#logo-sideNav {
+  height: 90px;
+  margin: 10px auto;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -80,6 +90,9 @@
   transition: 0.75s;
   padding-top: 100px;
   white-space: nowrap;
+  ul {
+    margin: 40px 0 0 10px;
+  }
   li {
     margin-left: 10px;
     width: fit-content;
@@ -89,7 +102,7 @@
 
 .sidenav a {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
   display: block;
   transition: 0.3s;
   font-family: $headers-font;
@@ -110,6 +123,26 @@
   margin-left: 50px;
 }
 
+.social-wrapper {
+  text-align: center;
+}
+
+.social-links-sidenav {
+  display: inline-flex;
+  align-items: center;
+  justify-content:  space-around;
+}
+
+.social-links-sidenav a {
+  color: $white;
+  cursor: pointer;
+  font-size: 36px;
+  padding: 0px 20px;
+  &:hover {
+    color: $yellow;
+  }
+}
+
 // responsive styling SMALL SCREENS
 @media only screen
   and (min-width: 320px)
@@ -122,19 +155,26 @@
 
 @media only screen
   and (min-width: 768px)
-  and (max-width: 1057px) {
+  and (max-width: 1100px) {
   .navbar-top {
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
   .logo-pic {
-    height: 45px;
+    height: 60px;
+    margin-top: 0;
   }
+
+  #logo2 {
+    height: 85px;
+  }
+
   .navbar-item {
-    padding: 0 22px;
+    padding: 0 15px;
+    text-align: center;
   }
 
   .navbar-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .btn-contact {
@@ -150,7 +190,18 @@
   and (min-device-width: 320px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .logo-pic {
-      margin-left: -20px;
-    }
+  .logo-pic {
+    margin-left: -20px;
   }
+  #logo2 {
+    height: 75px;
+    margin: 5px 0px 0 -15px;
+  }
+  #logo-sideNav {
+    height: 70px;
+    margin: 0 auto;
+  }
+  .sidenav ul {
+  margin: 10px 0 0 10px;
+  }
+}

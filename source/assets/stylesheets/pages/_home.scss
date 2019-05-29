@@ -1,5 +1,4 @@
-.home-page {
-  margin-top: -80px;
+#home-page {
   height: 100vh;
   overflow: hidden;
 }
@@ -86,10 +85,9 @@
 // section TOURS
 .tours {
   background: linear-gradient(to top, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
-  padding: 20px 0 50px;
+  padding: 50px 0;
   h1 {
     text-align: center;
-    margin: 20px 0 50px;
   }
 }
 
@@ -97,6 +95,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  padding-bottom: 25px;
 }
 
 // flipping card

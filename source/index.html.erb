@@ -1,7 +1,7 @@
 ---
 title: Trident Freedivers -  Diving adventures in barbados on one breath
 ---
-<section class="home-page">
+<section id="home-page">
   <div class="banner" style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355683/HomePage_egylnm.jpg);"></div>
   <!-- <div id="home-carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -35,7 +35,10 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
 
 <section class="tours">
   <div class="container">
-    <h1 class="main-title">Our Tours</h1>
+    <div class="title">
+      <h1 class="main-title">Our Tours</h1>
+      <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559053652/line_yellow.png", alt: "Trident Freedivers - line", class:"img-responsive line-separator" %>
+    </div>
     <div class="cards-tours">
 		  <div class="flip-card" ontouchstart="this.classList.toggle('hover');">
         <% link_to "freediving.html", class:"card-link" do %>
