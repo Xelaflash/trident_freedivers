@@ -1,35 +1,28 @@
 #about-page {
   min-height: 100vh;
-  // margin-top: -80px;
   background: linear-gradient(to bottom, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
 }
 
 .about-container {
-  padding: 130px 0 100px 0;
+  padding: 130px 15px 50px 15px;
   margin: 0 auto;
   h1 {
     text-align: center;
     margin-bottom: 20px;
   }
 }
-
-.about-section-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.presentation {
-  width: 50%;
-}
-
 .about-text {
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
+.certif-wrapper {
+  text-align: center;
+}
+
 #certif-logos-about {
-  margin: 20px 55px;
+  margin: 20px auto;
 }
 
 .prez-img {
@@ -37,29 +30,28 @@
   box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.3);
 }
 
-#prez-img1 {
-  height: 350px;
-  margin: 0 0 15px -125px;
-}
-
+#prez-img1,
 #prez-img2 {
-  height: 400px;
-  margin-top: 50px;
+  height: auto;
+  margin: 20px auto;
 }
 
-// responsive styling SMALL Screens
-@media only screen
-and (min-width: 320px)
-and (max-width: 1200px) {
-  .about-container {
-    padding: 120px 15px 0 15px;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .about-section-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
-}
+  .presentation {
+    width: 50%;
+  }
+  #prez-img1 {
+    height: 350px;
+    margin: 0 0 15px -100px;
+  }
 
-// iphones all
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
+  #prez-img2 {
+    height: 400px;
+    margin-top: 50px;
+  }
 }
