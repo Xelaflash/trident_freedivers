@@ -39,6 +39,14 @@ body {
   margin-bottom: 50px;
 }
 
+.page-container {
+  padding: 130px 15px 50px 15px;
+  margin: 0 auto;
+  h1 {
+    text-align: center;
+  }
+}
+
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 812px)
