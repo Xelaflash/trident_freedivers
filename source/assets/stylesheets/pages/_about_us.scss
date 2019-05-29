@@ -5,34 +5,27 @@
 }
 
 .about-container {
-  padding: 130px 0 50px 0;
+  padding: 130px 0 100px 0;
   margin: 0 auto;
-  // for v2
-  text-align: center;
   h1 {
     text-align: center;
     margin-bottom: 20px;
   }
 }
 
+.about-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentation {
+  width: 50%;
+}
+
 .about-text {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 10px;
-}
-
-.float-left {
-  float: left;
-  margin: 15px 15px 15px 10px;
-}
-
-.float-right {
-  float: right;
-  margin: 15px 10px 15px 15px;
-}
-
-.clearfix {
-  overflow: auto;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 #certif-logos-about {
@@ -40,44 +33,18 @@
 }
 
 .prez-img {
-  border-radius: 8px;
-  box-shadow: 2px 0px 10px 0 rgba(255, 255, 255, 0.5),
-              0px 3px 10px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.3);
 }
 
-// kill for V2
-// #prez-img1 {
-//   height: 250px;
-//   margin-bottom: 5px;
-// }
+#prez-img1 {
+  height: 350px;
+  margin: 0 0 15px -125px;
+}
 
 #prez-img2 {
-  // v1 to kill for v2
-  // height: 350px;
-  // margin-top: -15px;
-  // V2
-  height:430px;
-}
-
-#prez-img3 {
-  // height: 400px;
-  // V2
-  height: 500px;
-}
-
-#prez-img4 {
-  height: 320px;
-  // remove for V2
-  // margin: 40px 50px 15px 0;
-  // float: right;
-}
-
-// wrapper for V2
-.image-wrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  height: 400px;
+  margin-top: 50px;
 }
 
 // responsive styling SMALL Screens
@@ -87,34 +54,6 @@ and (max-width: 1200px) {
   .about-container {
     padding: 120px 15px 0 15px;
   }
-// V1
-  // #prez-img2 {
-  //   margin-top: 10px;
-  // }
-  // .certif-wrapper {
-  //   text-align: center;
-  // }
-  // .float-right {
-  //   float: none !important;
-  //   margin: 15px auto;
-  // }
-  // .float-left {
-  //   float: none !important;
-  //   margin: 15px auto;
-  // }
-  // #prez-img4 {
-  //   margin: 15px auto;
-  //   float: none !important;
-  // }
-
-  // V2
-  .prez-img {
-    margin: 20px auto;
-  }
-
-  #prez-img4 {
-    height: 200px;
-  }
 }
 
 // iphones all
@@ -122,14 +61,5 @@ and (max-width: 1200px) {
 and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 2) {
-  // V1
-  // #prez-img1,
-  // #prez-img2,
-  // #prez-img3,
-  // #prez-img4 {
-  //   height: auto;
-  // }
-  // #prez-img2 {
-  //   margin-top: 10px;
-  // }
+
 }
