@@ -1,9 +1,10 @@
 #navbar {
-    width: 100%;
-    background-color: transparent;
-    position: relative;
-    z-index: 10;
-    box-shadow:0 4px 20px 0 rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top:0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  box-shadow:0 4px 20px 0 rgba(255, 255, 255, 0.6);
 }
 
 .navbar-top {
