@@ -4,6 +4,7 @@ import 'bootstrap';
 
 // components JS files
 import { openNav, closeNav } from './components/mobile_nav';
+import './components/nav_color';
 
 const navBtn = document.querySelector(".burger");
 const closeBtn = document.querySelector(".closebtn");
@@ -11,6 +12,7 @@ const closeBtn = document.querySelector(".closebtn");
 navBtn.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
 
-$('.carousel').carousel({
-  interval: 11000
-});
+// carousel js
+// $('.carousel').carousel({
+//   interval: 11000
+// });
