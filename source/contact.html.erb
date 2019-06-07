@@ -8,58 +8,76 @@
     <div id="form">
       <div class="fish" id="fish"></div>
       <div class="fish" id="fish2"></div>
-      <form id="waterform" method="post">
-        <div class="formgroup" id="name-form">
-          <label for="name">Your name*</label>
-          <input type="text" id="name" name="name" />
+
+
+
+        <!-- <form class="contact-form validate-form" method="post" action="https://formspree.io/trident.freedivers@gmail.com">
+
+          <div class="form-group validate-input" data-validate="Name is required">
+            <input class="input-contact" type="text" name="name" required="required">
+            <label for="email" class="animated-label">E-mail</label>
+
+          </div>
+
+          <div class="form-group validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <input class="input2" type="text" name="email" required="required">
+            <span class="focus-input2" data-placeholder="EMAIL"></span>
+          </div>
+
+          <div class="form-group validate-input" data-validate="A subject is required">
+            <span class="focus-input2" data-placeholder="SUBJECT"></span>
+          </div>
+
+          <div class="form-group validate-input">
+            <textarea class="input2" name="message" required="required" data-validate="A subject is required"></textarea>
+            <span class="focus-input2" data-placeholder="MESSAGE"></span>
+          </div>
+
+          <div class="container-contact2-form-btn">
+              <button type="submit" name="submit" class="btn-contact">
+                <span>SEND MESSAGE</span>
+              </button>
+          </div>
+        </form> -->
+
+          <div class="bg-contact2">
+            <div class="container-contact2">
+              <div class="wrap-contact2">
+                <form class="contact2-form validate-form">
+                  <span class="contact2-form-title">
+                    Contact Us
+                  </span>
+
+                  <div class="wrap-input2 validate-input" data-validate="Name is required">
+                    <input class="input2" type="text" name="name">
+                    <span class="focus-input2" data-placeholder="NAME"></span>
+                  </div>
+
+                  <div class="wrap-input2 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input2" type="text" name="email">
+                    <span class="focus-input2" data-placeholder="EMAIL"></span>
+                  </div>
+
+                  <div class="wrap-input2 validate-input" data-validate="Message is required">
+                    <textarea class="input2" name="message"></textarea>
+                    <span class="focus-input2" data-placeholder="MESSAGE"></span>
+                  </div>
+
+                  <div class="container-contact2-form-btn">
+                    <div class="wrap-contact2-form-btn">
+                      <div class="contact2-form-bgbtn"></div>
+                      <button class="contact2-form-btn">
+                        Send Your Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="formgroup" id="email-form">
-          <label for="email">Your e-mail*</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div class="formgroup" id="message-form">
-          <label for="message">Your message</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <input type="submit" value="Send your message!" />
-      </form>
-    </div>
+
+
   </div>
 </div>
-
-
-
-
-<script>
-  $('document').ready(function(){
-  $('input[type="text"], input[type="email"], textarea').focus(function(){
-  var background = $(this).attr('id');
-  $('#' + background + '-form').addClass('formgroup-active');
-  $('#' + background + '-form').removeClass('formgroup-error');
-  });
-  $('input[type="text"], input[type="email"], textarea').blur(function(){
-  var background = $(this).attr('id');
-  $('#' + background + '-form').removeClass('formgroup-active');
-  });
-
-  function errorfield(field){
-  $(field).addClass('formgroup-error');
-  console.log(field);
-  }
-
-  $("#waterform").submit(function() {
-  var stopsubmit = false;
-
-  if($('#name').val() == "") {
-  errorfield('#name-form');
-  stopsubmit=true;
-  }
-  if($('#email').val() == "") {
-  errorfield('#email-form');
-  stopsubmit=true;
-  }
-  if(stopsubmit) return false;
-  });
-
-  });
-</script>
