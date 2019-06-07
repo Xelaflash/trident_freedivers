@@ -24,17 +24,17 @@
 }
 
 .fish {
-  background-image: url('');
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 280px;
   height: 110px;
   margin-left: -235px;
-  // position: absolute;
-  // animation: myfirst 24s;
-  // animation-iteration-count: infinite;
-  // animation-timing-function: linear;
+  position: absolute;
+  animation: myfirst 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #fish {
@@ -46,15 +46,11 @@
   animation-delay: 14s;
 }
 
-input {
+input, textarea {
   outline: none;
   border: none;
 }
 
-textarea {
-  outline: none;
-  border: none;
-}
 
 textarea:focus,
 input:focus {
@@ -63,66 +59,6 @@ input:focus {
 
 input:focus::-webkit-input-placeholder {
   color: transparent;
-}
-
-input:focus:-moz-placeholder {
-  color: transparent;
-}
-
-input:focus::-moz-placeholder {
-  color: transparent;
-}
-
-input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-textarea:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-textarea:focus:-moz-placeholder {
-  color: transparent;
-}
-
-textarea:focus::-moz-placeholder {
-  color: transparent;
-}
-
-textarea:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-input::-webkit-input-placeholder {
-  color: #999999;
-}
-
-input:-moz-placeholder {
-  color: #999999;
-}
-
-input::-moz-placeholder {
-  color: #999999;
-}
-
-input:-ms-input-placeholder {
-  color: #999999;
-}
-
-textarea::-webkit-input-placeholder {
-  color: #999999;
-}
-
-textarea:-moz-placeholder {
-  color: #999999;
-}
-
-textarea::-moz-placeholder {
-  color: #999999;
-}
-
-textarea:-ms-input-placeholder {
-  color: #999999;
 }
 
 /*---------------------------------------------*/
@@ -155,69 +91,40 @@ iframe {
 
 .container-contact2 {
   width: 100%;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(219, 21, 99, 0.8);
-  background: -webkit-linear-gradient(45deg, rgba(213, 0, 125, 0.8), rgba(229, 57, 53, 0.8));
-  background: -o-linear-gradient(45deg, rgba(213, 0, 125, 0.8), rgba(229, 57, 53, 0.8));
-  background: -moz-linear-gradient(45deg, rgba(213, 0, 125, 0.8), rgba(229, 57, 53, 0.8));
-  background: linear-gradient(45deg, rgba(213, 0, 125, 0.8), rgba(229, 57, 53, 0.8));
 }
 
 .wrap-contact2 {
   width: 790px;
-  background: #fff;
+  // background: #fff;
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 90px 55px;
 }
 
-
-/*------------------------------------------------------------------
-[  ]*/
-
 .contact2-form {
   width: 100%;
 }
 
-.contact2-form-title {
-  display: block;
-  font-family: Poppins-Bold;
-  font-size: 39px;
-  color: #333333;
-  line-height: 1.2;
-  text-align: center;
-  padding-bottom: 90px;
-}
-
-
-
-/*------------------------------------------------------------------
-[  ]*/
 
 .wrap-input2 {
   width: 100%;
   position: relative;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid $white;
   margin-bottom: 37px;
 }
 
 .input2 {
   display: block;
   width: 100%;
-
-  font-family: Poppins-Regular;
-  font-size: 15px;
-  color: #555555;
-  line-height: 1.2;
+  font-size: 18px;
+  background: transparent;
+  color: $white;
+  line-height: 1.4;
 }
 
 .focus-input2 {
@@ -228,6 +135,7 @@ iframe {
   top: 0;
   left: 0;
   pointer-events: none;
+  padding: 10px 0;
 }
 
 .focus-input2::before {
@@ -238,17 +146,8 @@ iframe {
   left: 0;
   width: 0;
   height: 2px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
   transition: all 0.4s;
-
-  background: rgba(219, 21, 99, 1);
-  background: -webkit-linear-gradient(45deg, #d5007d, #e53935);
-  background: -o-linear-gradient(45deg, #d5007d, #e53935);
-  background: -moz-linear-gradient(45deg, #d5007d, #e53935);
-  background: linear-gradient(45deg, #d5007d, #e53935);
+  background: $yellow;
 }
 
 .focus-input2::after {
@@ -258,21 +157,15 @@ iframe {
   position: absolute;
   top: 0px;
   left: 0;
-
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  color: #999999;
+  font-size: 18px;
   line-height: 1.2;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 /*---------------------------------------------*/
 input.input2 {
   height: 45px;
+  background: transparent;
 }
 
 input.input2+.focus-input2::after {
@@ -292,7 +185,7 @@ textarea.input2+.focus-input2::after {
 }
 
 .input2:focus+.focus-input2::after {
-  top: -13px;
+  top: -22px;
 }
 
 .input2:focus+.focus-input2::before {
@@ -300,7 +193,7 @@ textarea.input2+.focus-input2::after {
 }
 
 .has-val.input2+.focus-input2::after {
-  top: -13px;
+  top: -22px;
 }
 
 .has-val.input2+.focus-input2::before {
@@ -310,10 +203,6 @@ textarea.input2+.focus-input2::after {
 /*------------------------------------------------------------------
 [ Button ]*/
 .container-contact2-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,16 +225,8 @@ textarea.input2+.focus-input2::after {
   width: 300%;
   height: 100%;
   background: rgba(219, 21, 99, 1);
-  background: -webkit-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
-  background: -o-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
-  background: -moz-linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
-  background: linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935);
   top: 0;
   left: -100%;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -377,14 +258,11 @@ textarea.input2+.focus-input2::after {
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
-
 @media (max-width: 576px) {
   .wrap-contact2 {
     padding: 72px 15px 90px 15px;
   }
 }
-
-
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -402,26 +280,16 @@ textarea.input2+.focus-input2::after {
   border-radius: 2px;
   padding: 4px 25px 4px 10px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0px;
   pointer-events: none;
-
   font-family: Poppins-Regular;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   visibility: hidden;
   opacity: 0;
-
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 
@@ -433,10 +301,6 @@ textarea.input2+.focus-input2::after {
   color: #c80000;
   font-size: 16px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 8px;
 }
@@ -444,4 +308,8 @@ textarea.input2+.focus-input2::after {
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
+}
+
+input:-webkit-autofill {
+  color: #2a2a2a !important;
 }
