@@ -1,12 +1,7 @@
 #contact-page {
    min-height: 100vh;
    background: linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
-    // background-image: url("https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559833750/waves-bg.png");
-    // background-color: white;
-    // background-size: cover;
-    // background-position: center;
 }
-
 
 /* Animation */
 @keyframes myfirst {
@@ -128,7 +123,6 @@ input:focus {
   transition: all 0.4s;
 }
 
-/*---------------------------------------------*/
 input.form-input {
   height: 45px;
   background: transparent;
@@ -170,45 +164,6 @@ textarea.form-input+.focus-input::after {
   text-align: center;
 }
 
-// #form-btn {
-//   border: 1px solid $yellow;
-//   border-radius: 10px;
-//   padding: 15px;
-//   color: $yellow;
-//   z-index: 1;
-//   overflow: hidden;
-//   transition: color 0.4s ease-in-out;
-// }
-
-// #form-btn:hover {
-//   color: $white;
-//   background: $yellow;
-// }
-
-
-// #form-btn::before {
-//   content: '';
-//   z-index: -1;
-//   position: absolute;
-//   top: 100%;
-//   right: 100%;
-//   width: 1em;
-//   height: 1em;
-//   border-radius: 50%;
-//   background-color: $yellow;
-//   transform-origin: center;
-//   transform: translate(50%, -50%) scale(0);
-//   transition: transform 0.45s ease-in-out;
-// }
-
-// #form-btn:hover {
-//   color: $white;
-// }
-
-// #form-btn:hover::before {
-//   transform: translate(50%, -50%) scale(15);
-// }
-
 #form-btn {
   z-index: 1;
   position: relative;
@@ -216,7 +171,8 @@ textarea.form-input+.focus-input::after {
   font-family: inherit;
   color: $yellow;
   border: 1px solid $yellow;
-  padding: 0.5em 1em;
+  padding: 12px 15px;
+  border-radius: 5px;
   outline: none;
   overflow: hidden;
   transition: color 0.4s ease-in-out;
@@ -242,15 +198,13 @@ textarea.form-input+.focus-input::after {
 }
 
 #form-btn:hover::before {
-  transform: translate(50%, -50%) scale(20);
+  transform: translate(50%, -50%) scale(23);
 }
 
+.fa-paper-plane {
+  padding-right: 10px;
+}
 
-
-
-
-
-// [ Alert validate ]
 .validate-input {
   position: relative;
 }
@@ -259,18 +213,17 @@ textarea.form-input+.focus-input::after {
   content: attr(data-validate);
   position: absolute;
   max-width: 70%;
-  background-color: white;
-  border: 1px solid #c80000;
-  border-radius: 2px;
-  padding: 4px 25px 4px 10px;
+  background-color: $white;;
+  border: 1px solid $red;
+  border-radius: 4px;
+  padding: 5px 30px 5px 10px;
   top: 50%;
   transform: translateY(-50%);
   right: 0px;
   pointer-events: none;
-  font-family: Poppins-Regular;
-  color: #c80000;
-  font-size: 13px;
-  line-height: 1.4;
+  color: $red;
+  font-size: 14px;
+  line-height: 1.6;
   text-align: left;
   visibility: hidden;
   opacity: 0;
@@ -278,22 +231,18 @@ textarea.form-input+.focus-input::after {
 }
 
 .alert-validate::after {
-  content: "\f12a";
+  content: "\f071";
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #c80000;
-  font-size: 16px;
+  color: $red;
+  font-size: 20px;
   top: 50%;
   transform: translateY(-50%);
-  right: 8px;
+  right: 5px;
 }
 
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
-}
-
-input:-webkit-autofill {
-  color: #2a2a2a !important;
 }

@@ -13,7 +13,6 @@ $('.form-input').each(function () {
   });
 });
 
-
 const name = $('.validate-input input[name="name"]');
 const email = $('.validate-input input[name="email"]');
 const subject = $('.validate-input input[name="subject"]');
@@ -29,7 +28,6 @@ function hideValidate(input) {
   $(thisAlert).removeClass('alert-validate');
 }
 
-
 $('.validate-form').on('submit', function () {
   let check = true;
 
@@ -37,7 +35,6 @@ $('.validate-form').on('submit', function () {
     showValidate(name);
     check = false;
   }
-
 
   if ($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
     showValidate(email);
