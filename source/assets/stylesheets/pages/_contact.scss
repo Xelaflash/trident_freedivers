@@ -57,21 +57,6 @@ input:focus {
   border-color: transparent !important;
 }
 
-/*---------------------------------------------*/
-button {
-  outline: none !important;
-  border: none;
-  background: transparent;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-iframe {
-  border: none !important;
-}
-
 .container-contact {
   width: 100%;
   display: flex;
@@ -224,42 +209,41 @@ textarea.form-input+.focus-input::after {
 //   transform: translate(50%, -50%) scale(15);
 // }
 
-// #form-btn {
-//   z-index: 1;
-//   position: relative;
-//   font-size: inherit;
-//   font-family: inherit;
-//   color: $yellow;
-//   border: 1px solid $yellow;
-//   padding: 0.5em 1em;
-//   outline: none;
-//   border: none;
-//   overflow: hidden;
-//   transition: color 0.4s ease-in-out;
-// }
+#form-btn {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: $yellow;
+  border: 1px solid $yellow;
+  padding: 0.5em 1em;
+  outline: none;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
 
-// #form-btn::before {
-//   content: '';
-//   z-index: -1;
-//   position: absolute;
-//   top: 100%;
-//   right: 100%;
-//   width: 1em;
-//   height: 1em;
-//   border-radius: 50%;
-//   background-color: $yellow;
-//   transform-origin: center;
-//   transform: translate(50%, -50%) scale(0);
-//   transition: transform 0.45s ease-in-out;
-// }
+#form-btn::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: $yellow;
+  transform-origin: center;
+  transform: translate(50%, -50%) scale(0);
+  transition: transform 0.45s ease-in-out;
+}
 
-// #form-btn:hover {
-//   color: $white;
-// }
+#form-btn:hover {
+  color: $white;
+}
 
-// #form-btn:hover::before {
-//   transform: translate(50%, -50%) scale(20);
-// }
+#form-btn:hover::before {
+  transform: translate(50%, -50%) scale(20);
+}
 
 
 
