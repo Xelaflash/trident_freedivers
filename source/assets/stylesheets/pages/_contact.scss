@@ -41,6 +41,12 @@
 //   animation-delay: 14s;
 // }
 
+.wrapper-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 input, textarea {
   outline: none;
   border: none;
@@ -52,37 +58,24 @@ input:focus {
   border-color: transparent !important;
 }
 
-.container-contact {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.wrapper-contact {
-  width: 790px;
-  border-radius: 10px;
+.container-form {
+  border-right: 2px solid red;
   overflow: hidden;
-  padding: 72px 55px 90px 55px;
-}
-
-.contact-form {
-  width: 100%;
+  padding: 25px 50px;
+  flex-grow: 1;
 }
 
 .wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 2px solid $white;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
 .form-input {
   display: block;
   width: 100%;
-  font-size: 18px;
+  font-size: 17px;
   background: transparent;
   color: $white;
   line-height: 1.4;
@@ -245,4 +238,29 @@ textarea.form-input+.focus-input::after {
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
+}
+
+.contact-details {
+  flex-grow: 1;
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+  h3 {
+    font-family: $headers-font;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  i {
+    padding-right: 20px;
+    font-size: 28px;
+  }
+}
+
+.contact-item {
+  margin-bottom: 40px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
 }

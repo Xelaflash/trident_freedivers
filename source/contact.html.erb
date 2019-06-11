@@ -5,21 +5,27 @@
       <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559053652/line_yellow.png", alt: "Trident Freedivers - line", class:"img-responsive line-separator" %>
     </div>
 
-    <div id="form">
+    <div id="container-contact">
       <div class="fish" id="fish"></div>
       <div class="fish" id="fish2"></div>
 
-      <div class="container-contact">
-        <div class="wrapper-contact">
+      <div class="wrapper-contact">
+        <div class="container-form">
           <form class="contact-form validate-form" autocomplete="off"
             action="https://formspree.io/trident.freedivers@gmail.com">
-            <div class="wrap-input validate-input" data-validate="Name is required">
-              <input class="form-input" type="text" name="name">
-              <span class="focus-input" data-placeholder="NAME"></span>
-            </div>
-            <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
-              <input class="form-input" type="text" name="email">
-              <span class="focus-input" data-placeholder="EMAIL"></span>
+            <div class="row">
+              <div class="col">
+                <div class="wrap-input validate-input" data-validate="Name is required">
+                  <input class="form-input" type="text" name="name">
+                  <span class="focus-input" data-placeholder="NAME"></span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                  <input class="form-input" type="text" name="email">
+                  <span class="focus-input" data-placeholder="EMAIL"></span>
+                </div>
+              </div>
             </div>
             <div class="wrap-input validate-input" data-validate="Subject is required">
               <input class="form-input" type="text" name="subject">
@@ -36,7 +42,22 @@
             </div>
           </form>
         </div>
+        <div class="contact-details">
+          <div class="contact-adress contact-item">
+            <h3><i class="fas fa-globe-americas"></i>Address</h3>
+            <address>Bridgetown, Barbados</address>
+          </div>
+          <div class="contact-phone contact-item">
+            <h3> <i class="fas fa-phone"></i>Phone</h3>
+            <a href="tel:+12462347778">+1 (246) 234-7778</a>
+          </div>
+          <div class="contact-email contact-item">
+            <h3><i class="fas fa-at"></i>E-mail</h3>
+            <a href="mailto:trident.freedivers@gmail.com">trident.freedivers@gmail.com</a>
+          </div>
+        </div>
       </div>
+
 
     </div>
 
