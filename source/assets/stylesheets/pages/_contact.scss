@@ -1,16 +1,19 @@
 #contact-page {
    min-height: 100vh;
    background: linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
+   overflow: hidden;
 }
 
 #container-contact {
   margin-top: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Animation */
-@keyframes myfirst {
+@keyframes fishSwimming {
   0% {
-    margin-left: -235px
+    margin-left: -235px;
   }
 
   70% {
@@ -22,34 +25,32 @@
   }
 }
 
-// .fish {
-//   background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 280px;
-//   height: 110px;
-//   margin-left: -235px;
-//   position: absolute;
-//   animation: myfirst 24s;
-//   animation-iteration-count: infinite;
-//   animation-timing-function: linear;
-// }
+.fish {
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 110px;
+  margin-left: -235px;
+  position: absolute;
+  animation: fishSwimming 24s infinite linear;
+  z-index: -1;
+}
 
-// #fish {
-//   top: 0px;
-// }
+#fish {
+  top: 400px;
+}
 
-// #fish2 {
-//   top: 250px;
-//   animation-delay: 14s;
-// }
+#fish2 {
+  top: 250px;
+  animation-delay: 14s;
+}
 
 input, textarea {
   outline: none;
   border: none;
 }
-
 
 textarea:focus,
 input:focus {
