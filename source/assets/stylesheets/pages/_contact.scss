@@ -23,28 +23,28 @@
   }
 }
 
-.fish {
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 280px;
-  height: 110px;
-  margin-left: -235px;
-  position: absolute;
-  animation: myfirst 24s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+// .fish {
+//   background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 280px;
+//   height: 110px;
+//   margin-left: -235px;
+//   position: absolute;
+//   animation: myfirst 24s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+// }
 
-#fish {
-  top: 0px;
-}
+// #fish {
+//   top: 0px;
+// }
 
-#fish2 {
-  top: 250px;
-  animation-delay: 14s;
-}
+// #fish2 {
+//   top: 250px;
+//   animation-delay: 14s;
+// }
 
 input, textarea {
   outline: none;
@@ -55,10 +55,6 @@ input, textarea {
 textarea:focus,
 input:focus {
   border-color: transparent !important;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: transparent;
 }
 
 /*---------------------------------------------*/
@@ -76,20 +72,7 @@ iframe {
   border: none !important;
 }
 
-
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Contact 2 ]*/
-.bg-contact2 {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.container-contact2 {
+.container-contact {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -98,27 +81,25 @@ iframe {
   padding: 15px;
 }
 
-.wrap-contact2 {
+.wrapper-contact {
   width: 790px;
-  // background: #fff;
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 90px 55px;
 }
 
-.contact2-form {
+.contact-form {
   width: 100%;
 }
 
-
-.wrap-input2 {
+.wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 2px solid $white;
   margin-bottom: 37px;
 }
 
-.input2 {
+.form-input {
   display: block;
   width: 100%;
   font-size: 18px;
@@ -127,7 +108,7 @@ iframe {
   line-height: 1.4;
 }
 
-.focus-input2 {
+.focus-input {
   position: absolute;
   display: block;
   width: 100%;
@@ -138,7 +119,7 @@ iframe {
   padding: 10px 0;
 }
 
-.focus-input2::before {
+.focus-input::before {
   content: "";
   display: block;
   position: absolute;
@@ -150,7 +131,7 @@ iframe {
   background: $yellow;
 }
 
-.focus-input2::after {
+.focus-input::after {
   content: attr(data-placeholder);
   display: block;
   width: 100%;
@@ -163,110 +144,129 @@ iframe {
 }
 
 /*---------------------------------------------*/
-input.input2 {
+input.form-input {
   height: 45px;
   background: transparent;
 }
 
-input.input2+.focus-input2::after {
+input.form-input+.focus-input::after {
   top: 16px;
   left: 0;
 }
 
-textarea.input2 {
+textarea.form-input {
   min-height: 115px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
 
-textarea.input2+.focus-input2::after {
+textarea.form-input+.focus-input::after {
   top: 16px;
   left: 0;
 }
 
-.input2:focus+.focus-input2::after {
+.form-input:focus+.focus-input::after {
   top: -22px;
 }
 
-.input2:focus+.focus-input2::before {
+.form-input:focus+.focus-input::before {
   width: 100%;
 }
 
-.has-val.input2+.focus-input2::after {
+.has-val.form-input+.focus-input::after {
   top: -22px;
 }
 
-.has-val.input2+.focus-input2::before {
+.has-val.input+.focus-input::before {
   width: 100%;
 }
 
-/*------------------------------------------------------------------
-[ Button ]*/
-.container-contact2-form-btn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 13px;
+#btn-wrapper {
+  text-align: center;
 }
 
-.wrap-contact2-form-btn {
-  display: block;
-  position: relative;
-  z-index: 1;
-  border-radius: 2px;
-  width: auto;
-  overflow: hidden;
-  margin: 0 auto;
-}
+// #form-btn {
+//   border: 1px solid $yellow;
+//   border-radius: 10px;
+//   padding: 15px;
+//   color: $yellow;
+//   z-index: 1;
+//   overflow: hidden;
+//   transition: color 0.4s ease-in-out;
+// }
 
-.contact2-form-bgbtn {
-  position: absolute;
-  z-index: -1;
-  width: 300%;
-  height: 100%;
-  background: rgba(219, 21, 99, 1);
-  top: 0;
-  left: -100%;
-  transition: all 0.4s;
-}
-
-.contact2-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  min-width: 244px;
-  height: 50px;
+// #form-btn:hover {
+//   color: $white;
+//   background: $yellow;
+// }
 
 
+// #form-btn::before {
+//   content: '';
+//   z-index: -1;
+//   position: absolute;
+//   top: 100%;
+//   right: 100%;
+//   width: 1em;
+//   height: 1em;
+//   border-radius: 50%;
+//   background-color: $yellow;
+//   transform-origin: center;
+//   transform: translate(50%, -50%) scale(0);
+//   transition: transform 0.45s ease-in-out;
+// }
 
-  font-family: Poppins-Medium;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.2;
+// #form-btn:hover {
+//   color: $white;
+// }
+
+// #form-btn:hover::before {
+//   transform: translate(50%, -50%) scale(15);
+// }
+
+// #form-btn {
+//   z-index: 1;
+//   position: relative;
+//   font-size: inherit;
+//   font-family: inherit;
+//   color: $yellow;
+//   border: 1px solid $yellow;
+//   padding: 0.5em 1em;
+//   outline: none;
+//   border: none;
+//   overflow: hidden;
+//   transition: color 0.4s ease-in-out;
+// }
+
+// #form-btn::before {
+//   content: '';
+//   z-index: -1;
+//   position: absolute;
+//   top: 100%;
+//   right: 100%;
+//   width: 1em;
+//   height: 1em;
+//   border-radius: 50%;
+//   background-color: $yellow;
+//   transform-origin: center;
+//   transform: translate(50%, -50%) scale(0);
+//   transition: transform 0.45s ease-in-out;
+// }
+
+// #form-btn:hover {
+//   color: $white;
+// }
+
+// #form-btn:hover::before {
+//   transform: translate(50%, -50%) scale(20);
+// }
 
 
-}
 
-.wrap-contact2-form-btn:hover .contact2-form-bgbtn {
-  left: 0;
-}
 
-/*------------------------------------------------------------------
-[ Responsive ]*/
-@media (max-width: 576px) {
-  .wrap-contact2 {
-    padding: 72px 15px 90px 15px;
-  }
-}
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
 
+// [ Alert validate ]
 .validate-input {
   position: relative;
 }
