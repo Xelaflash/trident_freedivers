@@ -226,6 +226,17 @@ textarea.form-input+.focus-input::after {
   text-align: center;
 }
 
+#message-body {
+  margin-bottom: 10px;
+}
+
+.msg-infos-required {
+  font-size: 14px;
+  font-style: italic;
+  color: $red;
+  margin-bottom: 40px;
+}
+
 @media (min-width: 1000px) {
   .wrapper-contact {
     display: flex;
