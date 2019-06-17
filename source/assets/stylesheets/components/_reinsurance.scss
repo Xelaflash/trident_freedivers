@@ -1,0 +1,36 @@
+/*Section REINSURANCE */
+.reinsurance {
+  background: $white;
+  padding: 40px 0px;
+  color: $blue;
+
+  h3 {
+    font-family: $main-headers-font;
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+}
+
+#reinsurance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 0;
+}
+
+.reinsurance-item {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.icon-reinsurance {
+  height: 80px;
+  padding-top: 12px;
+  margin: 0 auto;
+}

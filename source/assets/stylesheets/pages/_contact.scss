@@ -236,7 +236,7 @@ textarea.form-input+.focus-input::after {
     margin-top: 100px;
   }
   .container-form {
-    border-right: 2px solid red;
+    border-right: 2px solid $red;
     overflow: hidden;
     padding: 25px 100px 25px 0;
     flex-grow: 1;
