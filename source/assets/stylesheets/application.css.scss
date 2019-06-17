@@ -24,6 +24,13 @@ body {
   margin-bottom: 20px;
 }
 
+.sub-title {
+  font-family: $main-headers-font;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .btn-round {
   border-radius: 40px;
   font-family: $body-font;
