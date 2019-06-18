@@ -1,0 +1,260 @@
+#contact-page {
+   min-height: 100vh;
+   background-image: url('../images/test.png'), linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#container-contact {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+#container-contact {
+  margin-top: 50px;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid $white;
+  margin-bottom: 40px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  background: transparent;
+  color: $white;
+  line-height: 1.4;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  padding: 10px 0;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+  background: $yellow;
+}
+
+.focus-input::after {
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  transition: all 0.4s;
+}
+
+input.form-input {
+  height: 45px;
+  background: transparent;
+}
+
+input.form-input+.focus-input::after {
+  top: 16px;
+  left: 0;
+}
+
+textarea.form-input {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+textarea.form-input+.focus-input::after {
+  top: 16px;
+  left: 0;
+}
+
+.form-input:focus+.focus-input::after {
+  top: -22px;
+}
+
+.form-input:focus+.focus-input::before {
+  width: 100%;
+}
+
+.has-val.form-input+.focus-input::after {
+  top: -22px;
+}
+
+.has-val.input+.focus-input::before {
+  width: 100%;
+}
+
+#btn-wrapper {
+  text-align: center;
+}
+
+#form-btn {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: $yellow;
+  border: 1px solid $yellow;
+  padding: 12px 15px;
+  border-radius: 5px;
+  outline: none;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+#form-btn::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: $yellow;
+  transform-origin: center;
+  transform: translate(50%, -50%) scale(0);
+  transition: transform 0.45s ease-in-out;
+}
+
+#form-btn:hover {
+  color: $white;
+}
+
+#form-btn:hover::before {
+  transform: translate(50%, -50%) scale(23);
+}
+
+.fa-paper-plane {
+  padding-right: 10px;
+}
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: $white;;
+  border: 1px solid $red;
+  border-radius: 4px;
+  padding: 5px 30px 5px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  pointer-events: none;
+  color: $red;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f071";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: $red;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact-details {
+  margin-top: 100px;
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+  h3 {
+    font-family: $headers-font;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  i {
+    padding-right: 20px;
+    font-size: 28px;
+  }
+}
+
+.contact-item {
+  margin-bottom: 40px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+#message-body {
+  margin-bottom: 10px;
+}
+
+.msg-infos-required {
+  font-size: 14px;
+  font-style: italic;
+  color: $red;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1000px) {
+  .wrapper-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #container-contact {
+    margin-top: 60px;
+  }
+  .container-form {
+    border-right: 2px solid $red;
+    overflow: hidden;
+    padding: 25px 100px 25px 0;
+    flex-grow: 1;
+  }
+  .contact-details {
+    flex-grow: 1;
+    padding-left: 25px;
+    margin-top: 0;
+  }
+}

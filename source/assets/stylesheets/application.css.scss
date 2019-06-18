@@ -24,6 +24,13 @@ body {
   margin-bottom: 20px;
 }
 
+.sub-title {
+  font-family: $main-headers-font;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .btn-round {
   border-radius: 40px;
   font-family: $body-font;
@@ -37,6 +44,14 @@ body {
 
 .title {
   margin-bottom: 50px;
+}
+
+.page-container {
+  padding: 130px 15px 50px 15px;
+  margin: 0 auto;
+  h1 {
+    text-align: center;
+  }
 }
 
 @media only screen

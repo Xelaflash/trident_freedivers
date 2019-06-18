@@ -1,1 +1,59 @@
-<h1>Contact</h1>
+<div id="contact-page">
+  <div class="container page-container">
+    <div class="title">
+      <h1 class="main-title">Get in touch</h1>
+      <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559053652/line_yellow.png", alt: "Trident Freedivers - line", class:"img-responsive line-separator" %>
+    </div>
+    <div id="container-contact">
+      <div class="wrapper-contact">
+        <div class="container-form">
+          <form class="contact-form validate-form" autocomplete="off"
+            action="https://formspree.io/trident.freedivers@gmail.com">
+            <div class="row">
+              <div class="col">
+                <div class="wrap-input validate-input" data-validate="Name is required">
+                  <input class="form-input" type="text" name="name">
+                  <span class="focus-input" data-placeholder="NAME"></span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                  <input class="form-input" type="text" name="email">
+                  <span class="focus-input" data-placeholder="EMAIL"></span>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Subject is required">
+              <input class="form-input" type="text" name="subject">
+              <span class="focus-input" data-placeholder="SUBJECT"></span>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
+              <textarea class="form-input" name="message"></textarea>
+              <span class="focus-input" data-placeholder="MESSAGE"></span>
+            </div>
+            <p class="msg-infos-required">Please provide : phone number, accomodation and foot size in your bookings message.</p>
+            <div id="btn-wrapper">
+              <button type="submit" name="submit" id="form-btn">
+                <span><i class="far fa-paper-plane"></i>SEND MESSAGE</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-details">
+          <div class="contact-adress contact-item">
+            <h3><i class="fas fa-globe-americas"></i>Address</h3>
+            <address>Bridgetown, Barbados</address>
+          </div>
+          <div class="contact-phone contact-item">
+            <h3> <i class="fas fa-phone"></i>Phone</h3>
+            <a href="tel:+12462347778">+1 (246) 234-7778</a>
+          </div>
+          <div class="contact-email contact-item">
+            <h3><i class="fas fa-at"></i>E-mail</h3>
+            <a href="mailto:trident.freedivers@gmail.com">trident.freedivers@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

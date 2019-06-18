@@ -2,7 +2,8 @@
   position: absolute;
   top:0;
   width: 100%;
-  background-color: transparent;
+  // background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   box-shadow:0 4px 20px 0 rgba(255, 255, 255, 0.6);
 }
