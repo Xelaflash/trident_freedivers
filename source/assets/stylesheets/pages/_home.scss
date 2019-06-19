@@ -15,24 +15,24 @@
   // animation: kenburns 12s linear infinite;
 }
 
-.carousel {
-  height: 100vh;
-  img {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-  }
-}
+// .carousel {
+//   height: 100vh;
+//   img {
+//     background-size: cover;
+//     background-position: center;
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
 
-@keyframes kenburns {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
+// @keyframes kenburns {
+//   0% {
+//     transform: scale(1);
+//   }
+//   100% {
+//     transform: scale(1.1);
+//   }
+// }
 
 .home-container {
   text-align: center;
