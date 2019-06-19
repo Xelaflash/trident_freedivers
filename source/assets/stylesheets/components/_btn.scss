@@ -5,12 +5,16 @@
 
 .btn-contact {
   background: $yellow;
+  border: 2px solid $yellow;
   color: $white;
   padding: 12px 38px;
+  transition: all 0.2s ease-in;
 }
 
 .btn-contact:hover {
   color: $white;
+  background: transparent;
+  border: 2px solid $yellow;
   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
 }
 
@@ -28,24 +32,6 @@
   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
   opacity: 0.9;
 }
-
-// .btn-card {
-//   padding: 10px 30px;
-//   font-size: 16px;
-//   width: fit-content;
-//   margin: 10px auto;
-//   background: transparent;
-//   color: $white;
-//   border: 2px solid $light-red;
-//   transition: color opacity box-shadow 0.4s ease-in-out;
-// }
-
-// .btn-card:hover {
-//   background: $light-red;
-//   color: $white;
-//   border: 2px solid $light-red;
-//   box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
-// }
 
 .btn-card {
   width: fit-content;
