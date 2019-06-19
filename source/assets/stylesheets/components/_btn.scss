@@ -1,0 +1,35 @@
+.btn-round {
+  border-radius: 40px;
+  font-family: $body-font;
+}
+
+.btn-contact {
+  background: $yellow;
+  color: $white;
+  padding: 12px 38px;
+}
+
+.btn-contact:hover {
+  color: $white;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
+}
+
+.btn-book {
+  background: $red;
+  color: $white;
+  padding: 15px 50px;
+  font-size: 18px;
+}
+
+.btn-book:hover {
+  color: $white;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
+  opacity: 0.9;
+}
+
+
+.btn-card {
+  width: fit-content;
+  margin: auto;
+  margin: 10px auto;
+}
