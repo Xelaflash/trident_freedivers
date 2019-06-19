@@ -10,3 +10,35 @@
 #sprearo-wrapper {
   padding-top: 10px;
 }
+
+.exp-disclaimer {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.spearfishing-infos {
+  background-image: linear-gradient(to right, #80c4d7, #67b4d0, #4fa4c9, #3794c2, #1f83bb, #0f78b5, #026caf, #0061a8, #0059a3, #00519d, #004897, #014091);
+}
+
+#spearfishing-details {
+  padding-top: 25px;
+}
+
+@media (min-width: 1000px) {
+  .spear-tours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+  }
+  #card-left {
+   margin-left: 150px;
+  }
+  #card-bottom {
+    width: 30%;
+    margin-left:15%;
+  }
+  .spearfishing-infos {
+    padding: 50px;
+  }
+}

@@ -38,12 +38,6 @@
   font-size: 28px;
 }
 
-.btn-card {
-  width: fit-content;
-  margin: auto;
-  margin: 10px auto;
-}
-
 .fa-check {
   padding-right: 5px;
 }
@@ -53,7 +47,7 @@
 }
 
 .red-highlight {
-  color: $red;
+  color: $light-red;
 }
 
 #freedive-details {
@@ -61,12 +55,7 @@
 }
 
 .freedive-infos {
-  background: linear-gradient(to bottom, #60a3b6, #4a8a9f, #357289, #1f5a73, #04445d);
-  p {
-    font-size: 16px;
-    line-height: 2;
-    text-align: justify;
-  }
+  background-image: linear-gradient(to left, #73a2bf, #7ca8c4, #85aec8, #8eb5cd, #97bbd2, #8fb2c9, #87a9c0, #7fa0b7, #65869e, #4b6e87, #31566f, #153f59);
 }
 
 @media (min-width: 1000px) {

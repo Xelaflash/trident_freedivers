@@ -15,24 +15,24 @@
   // animation: kenburns 12s linear infinite;
 }
 
-.carousel {
-  height: 100vh;
-  img {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-  }
-}
+// .carousel {
+//   height: 100vh;
+//   img {
+//     background-size: cover;
+//     background-position: center;
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
 
-@keyframes kenburns {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
+// @keyframes kenburns {
+//   0% {
+//     transform: scale(1);
+//   }
+//   100% {
+//     transform: scale(1.1);
+//   }
+// }
 
 .home-container {
   text-align: center;
@@ -43,19 +43,6 @@
   h1 {
     margin: 0 0 50px 0;
   }
-}
-
-.btn-book {
-  background: $red;
-  color: $white;
-  padding: 15px 50px;
-  font-size: 18px;
-}
-
-.btn-book:hover {
-  color: $white;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, .9);
-  opacity: 0.9;
 }
 
 .social-links {
