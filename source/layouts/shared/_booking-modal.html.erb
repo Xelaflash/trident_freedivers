@@ -9,9 +9,6 @@
         </button>
       </div>
       <div class="modal-body">
-
-
-
           <form class="contact-form validate-form" autocomplete="off"
             action="https://formspree.io/trident.freedivers@gmail.com">
             <div class="row">
@@ -28,7 +25,6 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
               <div class="col">
                  <div class="wrap-input validate-input" data-validate="Phone is required">
@@ -43,7 +39,21 @@
                   </div>
                 </div>
             </div>
-
+            <div class="row">
+              <div class="wrap-input validate-input">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option selected>Select a tour</option>
+                  <option>Freediving - 1 Day course</option>
+                  <option>Freediving - 2 Days certification</option>
+                  <option>Freediving - Fun Dive</option>
+                  <option>Spearfishing - Coastal tour</option>
+                  <option>Spearfishing - Blue water tour</option>
+                  <option>Spearfishing - Night tour</option>
+                  <option>Spearfishing - Night tour</option>
+                  <option>Freediving - Underwater Photography tour</option>
+                </select>
+              </div>
+            </div>
             <div class="row">
               <div class="col">
                 <div class="wrap-input validate-input">
@@ -52,34 +62,24 @@
                 </div>
               </div>
               <div class="col">
-                <div class="wrap-input validate-input">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option selected>Select a tour</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
+                <div class="wrap-input validate-input" data-validate="fins size is required">
+                  <input class="form-input" type="text" name="fins size">
+                  <span class="focus-input" data-placeholder="Fins size"></span>
                 </div>
               </div>
             </div>
-            <div class="wrap-input validate-input" data-validate="fins size is required">
-              <input class="form-input" type="text" name="fins size">
-              <span class="focus-input" data-placeholder="Fins size"></span>
-            </div>
-            <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
-              <textarea class="form-input" name="message"></textarea>
-              <span class="focus-input" data-placeholder="MESSAGE"></span>
+            <div class="row">
+              <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
+                <textarea class="form-input" name="message"></textarea>
+                <span class="focus-input" data-placeholder="Message"></span>
+              </div>
             </div>
             <div id="btn-wrapper">
               <button type="submit" name="submit" id="form-btn">
-                <span><i class="far fa-paper-plane"></i>SEND MESSAGE</span>
+                <span>Book</span>
               </button>
             </div>
           </form>
-
-
       </div>
     </div>
   </div>
