@@ -1,7 +1,7 @@
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable func-names */
-
 import $ from 'jquery';
+
 
 $('.form-input').each(function () {
   $(this).on('input', function () {
