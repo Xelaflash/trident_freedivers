@@ -8,7 +8,9 @@ import { openNav, closeNav } from './components/mobile_nav';
 import './components/nav_color';
 import './components/form-validation';
 
-flatpickr(".datepicker", {});
+flatpickr(".datepicker", {
+  dateFormat: "d/m/Y"
+});
 
 const navBtn = document.querySelector(".burger");
 const closeBtn = document.querySelector(".closebtn");
