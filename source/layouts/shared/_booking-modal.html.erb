@@ -9,66 +9,75 @@
         </button>
       </div>
       <div class="modal-body">
-<div class="container-fluid">
-  <div class="container">
-    <div class="formBox">
-      <form>
-        <div class="row">
-          <div class="col-sm-12">
-            <h1>Contact form</h1>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="inputBox ">
-              <div class="inputText">First Name</div>
-              <input type="text" name="" class="input">
+          <form class="contact-form validate-form" autocomplete="off"
+            action="https://formspree.io/trident.freedivers@gmail.com">
+
+            <div class="row">
+              <div class="col">
+                <div class="wrap-input validate-input" data-validate="Name is required">
+                  <input class="form-input" type="text" name="name">
+                  <span class="focus-input" data-placeholder="Name"></span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                  <input class="form-input" type="text" name="email">
+                  <span class="focus-input" data-placeholder="Email"></span>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6">
-            <div class="inputBox">
-              <div class="inputText">Last Name</div>
-              <input type="text" name="" class="input">
+            <div class="row">
+              <div class="col">
+                 <div class="wrap-input validate-input" data-validate="Phone is required">
+                   <input class="form-input" type="text" name="phone">
+                   <span class="focus-input" data-placeholder="Phone Number"></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="wrap-input validate-input" data-validate="Accomodation is required">
+                    <input class="form-input" type="text" name="accomodation">
+                    <span class="focus-input" data-placeholder="Accomodation in Barbados"></span>
+                  </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="inputBox">
-              <div class="inputText">Email</div>
-              <input type="text" name="" class="input">
+            <div class="row">
+              <div class="col">
+                <div class="wrap-input validate-input">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Select a tour</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-6">
-            <div class="inputBox">
-              <div class="inputText">Mobile</div>
-              <input type="text" name="" class="input">
+
+
+
+            <div class="wrap-input validate-input" data-validate="Subject is required">
+              <input class="form-input" type="text" name="subject">
+              <span class="focus-input" data-placeholder="SUBJECT"></span>
             </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="inputBox">
-              <div class="inputText">Email</div>
-              <textarea class="input"></textarea>
+            <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
+              <textarea class="form-input" name="message"></textarea>
+              <span class="focus-input" data-placeholder="MESSAGE"></span>
             </div>
-          </div>
-        </div>
+            <div id="btn-wrapper">
+              <button type="submit" name="submit" id="form-btn">
+                <span><i class="far fa-paper-plane"></i>SEND MESSAGE</span>
+              </button>
+            </div>
+          </form>
 
-        <div class="row">
-          <div class="col-sm-12">
-            <input type="submit" name="" class="button" value="Send Message">
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+
       </div>
     </div>
   </div>
