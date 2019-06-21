@@ -20,7 +20,7 @@ const message = $('.validate-input textarea[name="message"]');
 
 const phone = $('.validate-input input[name="phone"]');
 const accomodation = $('.validate-input input[name="accomodation"]');
-const tour = $('.validate-input input[name="tour"]');
+const tour = $('.validate-input select[name="tour"]');
 const date = $('.validate-input input[name="date"]');
 const finsSize = $('.validate-input input[name="fins size"]');
 
@@ -57,6 +57,31 @@ $('.validate-form').on('submit', function () {
     check = false;
   }
 
+  if ($(phone).val().trim() === '') {
+    showValidate(phone);
+    check = false;
+  }
+
+  if ($(accomodation).val().trim() === '') {
+    showValidate(accomodation);
+    check = false;
+  }
+
+  if ($(tour).val().trim() === '') {
+    showValidate(tour);
+    check = false;
+  }
+
+  if ($(date).val().trim() === '') {
+    showValidate(date);
+    check = false;
+  }
+
+  if ($(finsSize).val().trim() === '') {
+    showValidate(finsSize);
+    check = false;
+  }
+
   return check;
 });
 
@@ -68,7 +93,7 @@ $('.validate-form .form-input').each(function () {
 });
 
 // prevent modal closing if validation not ok
-$('#booking-form-btn').click(function (e) {
-  e.preventDefault();
-  $('#modalBookingForm').submit();
-});
+// $('#booking-form-btn').click(function (e) {
+//   e.preventDefault();
+//   $('#modalBookingForm').submit();
+// });

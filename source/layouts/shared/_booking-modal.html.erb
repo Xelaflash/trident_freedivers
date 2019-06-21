@@ -9,7 +9,7 @@ aria-hidden="true">
         </button>
       </div>
       <div class="modal-body">
-        <form class="contact-form validate-form" autocomplete="off"
+      <form class="contact-form validate-form" autocomplete="off"
         action="https://formspree.io/trident.freedivers@gmail.com" method="post">
         <div class="row">
           <div class="col">
@@ -20,7 +20,7 @@ aria-hidden="true">
           </div>
           <div class="col">
             <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
-              <input class="form-input" type="text" name="email">
+              <input class="form-input" type="email" name="email">
               <span class="focus-input" data-placeholder="Email"></span>
             </div>
           </div>
@@ -28,7 +28,7 @@ aria-hidden="true">
         <div class="row">
           <div class="col">
             <div class="wrap-input validate-input" data-validate="Phone is required">
-              <input class="form-input" type="text" name="phone">
+              <input class="form-input" type="tel" name="phone">
               <span class="focus-input" data-placeholder="Phone Number"></span>
             </div>
           </div>
@@ -41,7 +41,7 @@ aria-hidden="true">
         </div>
         <div class="row">
           <div class="wrap-input validate-input" data-validate="You need to specify a tour">
-            <select class="form-control" id="exampleFormControlSelect1" name="tour">
+            <select class="form-control" id="select-tour" name="tour">
               <option selected>Select a tour</option>
               <option>Freediving - 1 Day course</option>
               <option>Freediving - 2 Days certification</option>
@@ -57,7 +57,7 @@ aria-hidden="true">
         <div class="row">
           <div class="col">
             <div class="wrap-input validate-input" data-validate="A valid date is required">
-              <input class="form-input datepicker" type="text" readonly="readonly" id="date" name="date">
+              <input class="form-input datepicker" type="date" readonly="readonly" id="date" name="date">
               <span class="focus-input" data-placeholder="Date"></span>
             </div>
           </div>
@@ -69,12 +69,12 @@ aria-hidden="true">
           </div>
         </div>
         <div class="row">
-          <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
+          <div class="wrap-input validate-input" data-validate="Message is required" id="booking-message-body">
             <textarea class="form-input" name="message"></textarea>
             <span class="focus-input" data-placeholder="Message"></span>
           </div>
         </div>
-        <div id="btn-wrapper">
+        <div id="book-btn-wrapper">
           <button type="submit" id="booking-form-btn">
             <span>Send</span>
           </button>
