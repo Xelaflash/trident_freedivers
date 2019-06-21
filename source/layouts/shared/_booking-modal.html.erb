@@ -1,5 +1,5 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle"
-  aria-hidden="true">
+aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,78 +9,78 @@
         </button>
       </div>
       <div class="modal-body">
-          <form class="contact-form validate-form" autocomplete="off"
-            action="https://formspree.io/trident.freedivers@gmail.com">
-            <div class="row">
-              <div class="col">
-                <div class="wrap-input validate-input" data-validate="Name is required">
-                  <input class="form-input" type="text" name="name">
-                  <span class="focus-input" data-placeholder="Name"></span>
-                </div>
-              </div>
-              <div class="col">
-                <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                  <input class="form-input" type="text" name="email">
-                  <span class="focus-input" data-placeholder="Email"></span>
-                </div>
-              </div>
+        <form class="contact-form validate-form" autocomplete="off"
+        action="https://formspree.io/trident.freedivers@gmail.com" method="post">
+        <div class="row">
+          <div class="col">
+            <div class="wrap-input validate-input" data-validate="Name is required">
+              <input class="form-input" type="text" name="name">
+              <span class="focus-input" data-placeholder="Name"></span>
             </div>
-            <div class="row">
-              <div class="col">
-                 <div class="wrap-input validate-input" data-validate="Phone is required">
-                   <input class="form-input" type="text" name="phone">
-                   <span class="focus-input" data-placeholder="Phone Number"></span>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="wrap-input validate-input" data-validate="Accomodation is required">
-                    <input class="form-input" type="text" name="accomodation">
-                    <span class="focus-input" data-placeholder="Accomodation in Barbados"></span>
-                  </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
+              <input class="form-input" type="text" name="email">
+              <span class="focus-input" data-placeholder="Email"></span>
             </div>
-            <div class="row">
-              <div class="wrap-input validate-input">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option selected>Select a tour</option>
-                  <option>Freediving - 1 Day course</option>
-                  <option>Freediving - 2 Days certification</option>
-                  <option>Freediving - Fun Dive</option>
-                  <option>Spearfishing - Coastal tour</option>
-                  <option>Spearfishing - Blue water tour</option>
-                  <option>Spearfishing - Night tour</option>
-                  <option>Spearfishing - Night tour</option>
-                  <option>Freediving - Underwater Photography tour</option>
-                </select>
-              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="wrap-input validate-input" data-validate="Phone is required">
+              <input class="form-input" type="text" name="phone">
+              <span class="focus-input" data-placeholder="Phone Number"></span>
             </div>
-            <div class="row">
-              <div class="col">
-                <div class="wrap-input validate-input">
-                  <input class="form-input datepicker" type="text" readonly="readonly" id="date">
-                  <span class="focus-input" data-placeholder="Date"></span>
-                </div>
-              </div>
-              <div class="col">
-                <div class="wrap-input validate-input" data-validate="fins size is required">
-                  <input class="form-input" type="text" name="fins size">
-                  <span class="focus-input" data-placeholder="Fins size"></span>
-                </div>
-              </div>
+          </div>
+          <div class="col">
+            <div class="wrap-input validate-input" data-validate="Accomodation is required">
+              <input class="form-input" type="text" name="accomodation">
+              <span class="focus-input" data-placeholder="Accomodation in Barbados"></span>
             </div>
-            <div class="row">
-              <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
-                <textarea class="form-input" name="message"></textarea>
-                <span class="focus-input" data-placeholder="Message"></span>
-              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wrap-input validate-input">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected>Select a tour</option>
+              <option>Freediving - 1 Day course</option>
+              <option>Freediving - 2 Days certification</option>
+              <option>Freediving - Fun Dive</option>
+              <option>Spearfishing - Coastal tour</option>
+              <option>Spearfishing - Blue water tour</option>
+              <option>Spearfishing - Night tour</option>
+              <option>Spearfishing - Night tour</option>
+              <option>Freediving - Underwater Photography tour</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="wrap-input validate-input">
+              <input class="form-input datepicker" type="text" readonly="readonly" id="date">
+              <span class="focus-input" data-placeholder="Date"></span>
             </div>
-            <div id="btn-wrapper">
-              <button type="submit" name="submit" id="form-btn">
-                <span>Book</span>
-              </button>
+          </div>
+          <div class="col">
+            <div class="wrap-input validate-input" data-validate="fins size is required">
+              <input class="form-input" type="text" name="fins size">
+              <span class="focus-input" data-placeholder="Fins size"></span>
             </div>
-          </form>
-      </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wrap-input validate-input" data-validate="Message is required" id="message-body">
+            <textarea class="form-input" name="message"></textarea>
+            <span class="focus-input" data-placeholder="Message"></span>
+          </div>
+        </div>
+        <div id="btn-wrapper">
+          <button type="submit" id="form-btn">
+            <span>Send</span>
+          </button>
+        </div>
+      </form>
     </div>
+  </div>
   </div>
 </div>
