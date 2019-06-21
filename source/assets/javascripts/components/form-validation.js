@@ -34,7 +34,7 @@ function hideValidate(input) {
   $(thisAlert).removeClass('alert-validate');
 }
 
-$('.validate-form').on('submit', function () {
+function validateForm() {
   let check = true;
 
   if ($(name).val().trim() === '') {
@@ -47,42 +47,52 @@ $('.validate-form').on('submit', function () {
     check = false;
   }
 
-  if ($(subject).val().trim() === '') {
-    showValidate(subject);
-    check = false;
-  }
-
-  if ($(message).val().trim() === '') {
+  if ($(message).length > 0 && $(message).val().trim() === '') {
     showValidate(message);
     check = false;
   }
 
-  if ($(phone).val().trim() === '') {
+  if ($(phone).length > 0 && $(phone).val().trim() === '') {
     showValidate(phone);
     check = false;
   }
 
-  if ($(accomodation).val().trim() === '') {
+  if ($(accomodation).length > 0 && $(accomodation).val().trim() === '') {
     showValidate(accomodation);
     check = false;
   }
 
-  if ($(tour).val().trim() === '') {
+  if ($(tour).length > 0 && $(tour).val().trim() === '') {
     showValidate(tour);
     check = false;
   }
 
-  if ($(date).val().trim() === '') {
+  if ($(date).length > 0 && $(date).val().trim() === '') {
     showValidate(date);
     check = false;
   }
 
-  if ($(finsSize).val().trim() === '') {
+  if ($(finsSize).length > 0 && $(finsSize).val().trim() === '') {
     showValidate(finsSize);
     check = false;
   }
 
+  if ($(subject).length > 0 && $(subject).val().trim() === '') {
+    showValidate(subject);
+    check = false;
+  }
+
   return check;
+}
+
+
+$('.validate-form').on('click', '.form-submit', function (e) {
+  const validated = validateForm();
+  if (validated === false) {
+    e.preventDefault();
+  } else {
+    $('.validate-form').submit();
+  }
 });
 
 
@@ -91,9 +101,3 @@ $('.validate-form .form-input').each(function () {
     hideValidate(this);
   });
 });
-
-// prevent modal closing if validation not ok
-// $('#booking-form-btn').click(function (e) {
-//   e.preventDefault();
-//   $('#modalBookingForm').submit();
-// });
