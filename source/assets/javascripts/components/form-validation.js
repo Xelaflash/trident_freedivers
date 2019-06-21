@@ -18,6 +18,12 @@ const email = $('.validate-input input[name="email"]');
 const subject = $('.validate-input input[name="subject"]');
 const message = $('.validate-input textarea[name="message"]');
 
+const phone = $('.validate-input input[name="phone"]');
+const accomodation = $('.validate-input input[name="accomodation"]');
+const tour = $('.validate-input input[name="tour"]');
+const date = $('.validate-input input[name="date"]');
+const finsSize = $('.validate-input input[name="fins size"]');
+
 function showValidate(input) {
   const thisAlert = $(input).parent();
   $(thisAlert).addClass('alert-validate');
@@ -59,4 +65,10 @@ $('.validate-form .form-input').each(function () {
   $(this).focus(function () {
     hideValidate(this);
   });
+});
+
+// prevent modal closing if validation not ok
+$('#booking-form-btn').click(function (e) {
+  e.preventDefault();
+  $('#modalBookingForm').submit();
 });

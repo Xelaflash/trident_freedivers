@@ -1,9 +1,9 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle"
+<div class="modal fade" id="modalBookingForm" tabindex="-1" role="dialog" aria-labelledby="modalBookingForm"
 aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="modal-title">Book a tour</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -40,8 +40,8 @@ aria-hidden="true">
           </div>
         </div>
         <div class="row">
-          <div class="wrap-input validate-input">
-            <select class="form-control" id="exampleFormControlSelect1">
+          <div class="wrap-input validate-input" data-validate="You need to specify a tour">
+            <select class="form-control" id="exampleFormControlSelect1" name="tour">
               <option selected>Select a tour</option>
               <option>Freediving - 1 Day course</option>
               <option>Freediving - 2 Days certification</option>
@@ -56,8 +56,8 @@ aria-hidden="true">
         </div>
         <div class="row">
           <div class="col">
-            <div class="wrap-input validate-input">
-              <input class="form-input datepicker" type="text" readonly="readonly" id="date">
+            <div class="wrap-input validate-input" data-validate="A valid date is required">
+              <input class="form-input datepicker" type="text" readonly="readonly" id="date" name="date">
               <span class="focus-input" data-placeholder="Date"></span>
             </div>
           </div>
@@ -75,7 +75,7 @@ aria-hidden="true">
           </div>
         </div>
         <div id="btn-wrapper">
-          <button type="submit" id="form-btn">
+          <button type="submit" id="booking-form-btn">
             <span>Send</span>
           </button>
         </div>
