@@ -27,14 +27,14 @@ input:focus {
   margin-top: 50px;
 }
 
-.wrap-input {
+.contact-wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 2px solid $white;
   margin-bottom: 40px;
 }
 
-.form-input {
+.contact-form-input {
   display: block;
   width: 100%;
   font-size: 17px;
@@ -43,7 +43,7 @@ input:focus {
   line-height: 1.4;
 }
 
-.focus-input {
+.contact-focus-input {
   position: absolute;
   display: block;
   width: 100%;
@@ -54,7 +54,7 @@ input:focus {
   padding: 10px 0;
 }
 
-.focus-input::before {
+.contact-focus-input::before {
   content: "";
   display: block;
   position: absolute;
@@ -66,7 +66,7 @@ input:focus {
   background: $yellow;
 }
 
-.focus-input::after {
+.contact-focus-input::after {
   content: attr(data-placeholder);
   display: block;
   width: 100%;
@@ -78,40 +78,40 @@ input:focus {
   transition: all 0.4s;
 }
 
-input.form-input {
+input.contact-form-input {
   height: 45px;
   background: transparent;
 }
 
-input.form-input+.focus-input::after {
+input.contact-form-input+.contact-focus-input::after {
   top: 16px;
   left: 0;
 }
 
-textarea.form-input {
+textarea.contact-form-input {
   min-height: 115px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
 
-textarea.form-input+.focus-input::after {
+textarea.contact-form-input+.contact-focus-input::after {
   top: 16px;
   left: 0;
 }
 
-.form-input:focus+.focus-input::after {
+.contact-form-input:focus+.contact-focus-input::after {
   top: -22px;
 }
 
-.form-input:focus+.focus-input::before {
+.contact-form-input:focus+.contact-focus-input::before {
   width: 100%;
 }
 
-.has-val.form-input+.focus-input::after {
+.has-val.contact-form-input+.contact-focus-input::after {
   top: -22px;
 }
 
-.has-val.input+.focus-input::before {
+.has-val.input+.contact-focus-input::before {
   width: 100%;
 }
 
