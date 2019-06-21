@@ -5,3 +5,14 @@
 #date {
   color:black;
 }
+
+.iti-flag {
+  background-image: url("../images/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .iti-flag {
+    background-image: url("../images/flags@2x.png");
+  }
+}
