@@ -16,7 +16,6 @@ const phoneNumber = intlTelInput(input, {
   hiddenInput: "full_phone"
 });
 
-
 function reset() {
   input.classList.remove("error");
   errorMsg.innerHTML = "";
@@ -33,7 +32,12 @@ input.addEventListener('blur', () => {
     } else {
       input.classList.add("error");
       const errorCode = phoneNumber.getValidationError();
-      errorMsg.innerHTML = errorMap[errorCode];
+      console.log(errorCode)
+      if (errorCode === -99) {
+        errorMsg.innerHTML = "Invalid number";
+      } else {
+        errorMsg.innerHTML = errorMap[errorCode];
+      }
       errorMsg.classList.remove("hide");
     }
   }
