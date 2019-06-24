@@ -5,6 +5,8 @@ const input = document.querySelector("#phone");
 const errorMsg = document.querySelector("#error-msg");
 const validMsg = document.querySelector("#valid-msg");
 
+
+
 // here, the index maps to the error code returned from getValidationError -
 const errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
 
@@ -16,6 +18,10 @@ const phoneNumber = intlTelInput(input, {
   hiddenInput: "full_phone",
   formatOnDisplay: true
 });
+
+const telDiv = document.querySelector(".intl-tel-input");
+telDiv.setAttribute("data-validate", "Phone is required");
+
 
 function reset() {
   input.classList.remove("error");
@@ -41,6 +47,8 @@ input.addEventListener('blur', () => {
       errorMsg.classList.remove("hide");
     }
   }
+  const number = phoneNumber.getNumber();
+  input.innerHTML = number;
 });
 
 

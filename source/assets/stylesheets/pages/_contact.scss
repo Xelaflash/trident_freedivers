@@ -183,6 +183,7 @@ textarea.contact-form-input+.contact-focus-input::after {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.4s;
+  z-index: 2;
 }
 
 .alert-validate::after {
@@ -195,6 +196,7 @@ textarea.contact-form-input+.contact-focus-input::after {
   top: 50%;
   transform: translateY(-50%);
   right: 5px;
+  z-index: 2;
 }
 
 .alert-validate:hover:before {
