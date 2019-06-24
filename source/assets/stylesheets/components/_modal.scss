@@ -2,10 +2,27 @@
   color:black;
 }
 
-#date {
-  color:black;
+.row {
+  margin: 15px 0;
 }
 
+.book-form-input {
+  background: #fff;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.book-form-input:focus {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+// flag for phone number field
 .iti-flag {
   background-image: url("../images/flags.png");
 }
@@ -17,6 +34,34 @@
   }
 }
 
+.intl-tel-input {
+  display: flex;
+}
+
+.selected-flag {
+  outline: none;
+}
+.intl-tel-input.separate-dial-code .selected-flag {
+  border-radius: 24px;
+}
+
 .hide {
   display: none;
+}
+
+#valid-msg {
+  color: #00a300;
+  padding-left: 10px;
+}
+
+#error-msg {
+  color: $red;
+  padding-left: 10px;
+}
+
+
+
+
+#book-msg {
+  min-height: 100px;
 }

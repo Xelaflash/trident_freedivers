@@ -13,7 +13,8 @@ const phoneNumber = intlTelInput(input, {
   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/15.1.2/js/utils.js",
   // utilsScript: "/node_modules/intl-tel-input/build/js/utils.js"
   separateDialCode: true,
-  hiddenInput: "full_phone"
+  hiddenInput: "full_phone",
+  formatOnDisplay: true
 });
 
 function reset() {
@@ -33,14 +34,15 @@ input.addEventListener('blur', () => {
       input.classList.add("error");
       const errorCode = phoneNumber.getValidationError();
       if (errorCode === -99) {
-        errorMsg.innerHTML = "Invalid number";
+        errorMsg.innerHTML = `<i class="fas fa-times"></i> Invalid number`;
       } else {
-        errorMsg.innerHTML = errorMap[errorCode];
+        errorMsg.innerHTML = `<i class="fas fa-times"></i> ${errorMap[errorCode]}`;
       }
       errorMsg.classList.remove("hide");
     }
   }
 });
+
 
 // on keyup / change flag: reset
 input.addEventListener('change', reset);
