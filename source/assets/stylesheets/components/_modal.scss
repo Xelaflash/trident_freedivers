@@ -1,5 +1,15 @@
+.modal-header {
+  text-align: center;
+  border-bottom: 1px solid $red;
+}
+
+.modal-title {
+  font-family: $main-headers-font;
+  font-size: 38px;
+}
+
 .modal-content {
-  color:black;
+  color:$dark-blue;
 }
 
 .row {
@@ -49,6 +59,7 @@
 .selected-flag {
   outline: none;
 }
+
 .intl-tel-input.separate-dial-code .selected-flag {
   border-radius: 24px;
 }
@@ -83,4 +94,26 @@
 .alert-validate-modal::after {
   top: 18px;
   right: 22px;
+}
+
+#book-btn-wrapper {
+  text-align: center;
+}
+
+#booking-form-btn {
+  color: white;
+  background: linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
+  padding: 15px 65px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+    0 2px 0 -1px rgba(0, 0, 0, 0.13),
+    0 3px 0 -1px rgba(0, 0, 0, 0.08),
+    0 3px 13px -1px rgba(0, 0, 0, 0.21);
+    border-radius: 25px;
+}
+
+#booking-form-btn:active {
+  bottom: 2px;
+  border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+  position: relative;
 }

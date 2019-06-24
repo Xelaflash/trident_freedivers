@@ -40,3 +40,14 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .alert-form-validation::before {
+
+    max-width: 100%;
+
+  }
+}

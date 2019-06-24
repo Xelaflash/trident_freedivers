@@ -1,5 +1,4 @@
 /* eslint-disable func-names */
-// import $ from 'jquery';
 import 'popper.js';
 import 'bootstrap';
 import flatpickr from "flatpickr";

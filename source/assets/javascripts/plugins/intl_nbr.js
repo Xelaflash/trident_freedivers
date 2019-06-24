@@ -6,7 +6,6 @@ const errorMsg = document.querySelector("#error-msg");
 const validMsg = document.querySelector("#valid-msg");
 
 
-
 // here, the index maps to the error code returned from getValidationError -
 const errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
 
@@ -50,7 +49,6 @@ input.addEventListener('blur', () => {
   const number = phoneNumber.getNumber();
   input.innerHTML = number;
 });
-
 
 // on keyup / change flag: reset
 input.addEventListener('change', reset);
