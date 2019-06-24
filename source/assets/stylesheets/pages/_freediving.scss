@@ -9,6 +9,15 @@
   padding: 110px 15px 50px 15px;
 }
 
+#freedive-text:first-letter {
+  font-size: calc(60px + 0.75vw);
+  line-height: 40px;
+  color: $yellow;
+  float: left;
+  padding-right: 15px;
+  font-family: $main-headers-font;
+}
+
 .card {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
   color: $white;

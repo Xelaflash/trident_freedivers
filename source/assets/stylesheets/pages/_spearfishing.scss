@@ -27,6 +27,15 @@
   padding: 50px 0;
 }
 
+#spear-text:first-letter {
+  font-size: calc(60px + 0.75vw);
+  line-height: 40px;
+  color: $yellow;
+  float: left;
+  padding-right: 15px;
+  font-family: $main-headers-font;
+}
+
 @media (min-width: 1000px) {
   .spear-tours {
     display: flex;
