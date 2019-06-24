@@ -32,7 +32,6 @@ input.addEventListener('blur', () => {
     } else {
       input.classList.add("error");
       const errorCode = phoneNumber.getValidationError();
-      console.log(errorCode)
       if (errorCode === -99) {
         errorMsg.innerHTML = "Invalid number";
       } else {
