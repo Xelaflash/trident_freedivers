@@ -38,6 +38,14 @@
   display: flex;
 }
 
+.intl-tel-input .flag-container {
+  padding: 0;
+}
+
+.intl-tel-input .country-list {
+  z-index: 10;
+}
+
 .selected-flag {
   outline: none;
 }
@@ -61,4 +69,18 @@
 
 #book-message {
   min-height: 100px;
+}
+
+.validate-modal-input {
+  position: relative;
+}
+
+.alert-validate-modal::before {
+  top: 16px;
+  right: 18px;
+}
+
+.alert-validate-modal::after {
+  top: 18px;
+  right: 22px;
 }

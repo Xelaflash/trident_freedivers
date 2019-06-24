@@ -4,3 +4,39 @@
   right: 16px;
   z-index: 1000;
 }
+
+.alert-form-validation::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: $white;
+  border: 1px solid $red;
+  border-radius: 4px;
+  padding: 5px 30px 5px 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: $red;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 2;
+}
+
+.alert-form-validation::after {
+  content: "\f071";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: $red;
+  font-size: 20px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.alert-form-validation:hover:before {
+  visibility: visible;
+  opacity: 1;
+}

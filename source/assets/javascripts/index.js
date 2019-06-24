@@ -9,6 +9,7 @@ import flatpickr from "flatpickr";
 import { openNav, closeNav } from './components/mobile_nav';
 import './components/nav_color';
 import './components/form-validation';
+import './components/modal-validation';
 
 import './plugins/intl_nbr';
 

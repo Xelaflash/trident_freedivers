@@ -2,7 +2,7 @@
 /* eslint-disable func-names */
 import $ from 'jquery';
 
-$('.form-input, .book-form-input').each(function () {
+$('.form-input').each(function () {
   $(this).on('input', function () {
     if ($(this).val().trim() !== "") {
       $(this).addClass('has-val');
@@ -17,21 +17,15 @@ const email = $('.validate-input input[name="email"]');
 const subject = $('.validate-input input[name="subject"]');
 const message = $('.validate-input textarea[name="message"]');
 
-const phone = $('.validate-input input[id="phone"]');
-const accomodation = $('.validate-input input[name="accomodation"]');
-const tour = $('.validate-input select[name="tour"]');
-const date = $('.validate-input input[name="date"]');
-const finsSize = $('.validate-input input[name="fins size"]');
-
 
 function showValidate(input) {
   const parentDiv = $(input).parent();
-  $(parentDiv).addClass('alert-validate');
+  $(parentDiv).addClass('alert-validate alert-form-validation');
 }
 
 function hideValidate(input) {
   const parentDiv = $(input).parent();
-  $(parentDiv).removeClass('alert-validate');
+  $(parentDiv).removeClass('alert-validate alert-form-validation');
 }
 
 function validateForm() {
@@ -52,32 +46,6 @@ function validateForm() {
     check = false;
   }
 
-  if ($(phone).length > 0 && $(phone).val().trim() === '') {
-    showValidate(phone);
-    check = false;
-  }
-
-  if ($(accomodation).length > 0 && $(accomodation).val().trim() === '') {
-    showValidate(accomodation);
-    check = false;
-  }
-
-
-  if ($(tour).length > 0 && $(tour).val() === 'Select a tour') {
-    showValidate(tour);
-    check = false;
-  }
-
-  if ($(date).length > 0 && $(date).val().trim() === '') {
-    showValidate(date);
-    check = false;
-  }
-
-  if ($(finsSize).length > 0 && $(finsSize).val().trim() === '') {
-    showValidate(finsSize);
-    check = false;
-  }
-
   if ($(subject).length > 0 && $(subject).val().trim() === '') {
     showValidate(subject);
     check = false;
@@ -87,7 +55,7 @@ function validateForm() {
 }
 
 
-$('.validate-form').on('click', '.form-submit', function (e) {
+$('.validate-form').on('click', '.contact-form-submit', function (e) {
   const validated = validateForm();
   if (validated === false) {
     e.preventDefault();
