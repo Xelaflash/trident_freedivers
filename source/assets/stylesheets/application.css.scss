@@ -31,6 +31,7 @@ a:focus,
   font-family: $main-headers-font;
   font-size: 72px;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 1px $dark-blue;
 }
 
 .sub-title {
@@ -38,6 +39,7 @@ a:focus,
   font-size: 48px;
   margin-bottom: 20px;
   text-align: center;
+  text-shadow: 1px 1px 1px $dark-blue;
 }
 
 .line-separator {
