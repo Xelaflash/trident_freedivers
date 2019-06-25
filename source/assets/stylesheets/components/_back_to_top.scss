@@ -1,6 +1,6 @@
 .back_to_top {
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   right: 10px;
   text-align: center;
   transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
@@ -10,13 +10,14 @@
 
 #backToTop {
   position: relative;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   z-index: 1000;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
-  background-color: $green;
+  background-color: $yellow;
   border: none;
+  padding: 0;
 }
 
 .back_to_top.show {
@@ -30,24 +31,26 @@
 
 .fa-chevron-up {
   color: white;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .back_top_text {
+  color: $yellow;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
-  z-index: -1;
   text-align: center;
   width: 100%;
+  z-index: -1;
   font-size: 14px;
-  letter-spacing: -1px;
-  transition: .3s ease-in-out;
+  transition: .3s ease-in;
   opacity: 0;
   margin: 0;
+  line-height: 1.2;
 }
 
 .back_to_top:hover .back_top_text {
-  bottom: -40px;
+  bottom: -20px;
+  left: 0;
   opacity: 1;
 }
