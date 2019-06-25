@@ -29,3 +29,11 @@ flatpickr(".datepicker", {
 // $('.carousel').carousel({
 //   interval: 11000
 // });
+
+// remove reinsurance for mobile (except homepage)
+const currentPage = document.location.pathname;
+const reinsurance = document.querySelector(".reinsurance");
+
+if (window.innerWidth <= 812 && currentPage !== "/") {
+  reinsurance.style.display = 'none';
+}
