@@ -6,7 +6,16 @@
 .about-text {
   font-size: 17px;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.about-text:first-child:first-letter {
+  font-size: calc(60px + 0.75vw);
+  line-height: 40px;
+  color: $yellow;
+  float: left;
+  padding-right: 15px;
+  font-family: $main-headers-font;
 }
 
 .certif-wrapper {
@@ -39,7 +48,7 @@
   }
   #prez-img1 {
     width: 500px;
-    margin: 0 0 15px -50px;
+    margin: 0 0 15px -33px;
   }
 
   #prez-img2 {

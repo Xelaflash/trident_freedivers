@@ -1,6 +1,7 @@
 #contact-page {
    min-height: 100vh;
-   background-image: url('../images/test.png'), linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
+   background-image: url('../images/fishBg.png'),
+   linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -26,14 +27,14 @@ input:focus {
   margin-top: 50px;
 }
 
-.wrap-input {
+.contact-wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 2px solid $white;
   margin-bottom: 40px;
 }
 
-.form-input {
+.contact-form-input {
   display: block;
   width: 100%;
   font-size: 17px;
@@ -42,7 +43,7 @@ input:focus {
   line-height: 1.4;
 }
 
-.focus-input {
+.contact-focus-input {
   position: absolute;
   display: block;
   width: 100%;
@@ -53,7 +54,7 @@ input:focus {
   padding: 10px 0;
 }
 
-.focus-input::before {
+.contact-focus-input::before {
   content: "";
   display: block;
   position: absolute;
@@ -65,7 +66,7 @@ input:focus {
   background: $yellow;
 }
 
-.focus-input::after {
+.contact-focus-input::after {
   content: attr(data-placeholder);
   display: block;
   width: 100%;
@@ -77,40 +78,40 @@ input:focus {
   transition: all 0.4s;
 }
 
-input.form-input {
+input.contact-form-input {
   height: 45px;
   background: transparent;
 }
 
-input.form-input+.focus-input::after {
+input.contact-form-input+.contact-focus-input::after {
   top: 16px;
   left: 0;
 }
 
-textarea.form-input {
+textarea.contact-form-input {
   min-height: 115px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
 
-textarea.form-input+.focus-input::after {
+textarea.contact-form-input+.contact-focus-input::after {
   top: 16px;
   left: 0;
 }
 
-.form-input:focus+.focus-input::after {
+.contact-form-input:focus+.contact-focus-input::after {
   top: -22px;
 }
 
-.form-input:focus+.focus-input::before {
+.contact-form-input:focus+.contact-focus-input::before {
   width: 100%;
 }
 
-.has-val.form-input+.focus-input::after {
+.has-val.contact-form-input+.contact-focus-input::after {
   top: -22px;
 }
 
-.has-val.input+.focus-input::before {
+.has-val.input+.contact-focus-input::before {
   width: 100%;
 }
 
@@ -164,41 +165,13 @@ textarea.form-input+.focus-input::after {
 }
 
 .alert-validate::before {
-  content: attr(data-validate);
-  position: absolute;
-  max-width: 70%;
-  background-color: $white;;
-  border: 1px solid $red;
-  border-radius: 4px;
-  padding: 5px 30px 5px 10px;
   top: 50%;
-  transform: translateY(-50%);
   right: 0px;
-  pointer-events: none;
-  color: $red;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: left;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.4s;
 }
 
 .alert-validate::after {
-  content: "\f071";
-  font-family: FontAwesome;
-  display: block;
-  position: absolute;
-  color: $red;
-  font-size: 20px;
   top: 50%;
-  transform: translateY(-50%);
   right: 5px;
-}
-
-.alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
 }
 
 .contact-details {
@@ -235,6 +208,7 @@ textarea.form-input+.focus-input::after {
   font-style: italic;
   color: $red;
   margin-bottom: 40px;
+  padding-left: 15px;
 }
 
 @media (min-width: 1000px) {

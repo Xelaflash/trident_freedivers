@@ -6,6 +6,8 @@
 
 // External libraries
 @import "bootstrap";
+@import "flatpickr/dist/themes/material_blue";
+@import "intl-tel-input/src/css/intlTelInput";
 
 // Your CSS partials
 @import "components/index";
@@ -18,10 +20,18 @@ body {
   color: $white;
 }
 
+button:focus,
+a:focus,
+.btn:focus {
+  outline: 1px auto -webkit-focus-ring-color;
+}
+
+
 .main-title {
   font-family: $main-headers-font;
   font-size: 72px;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 1px $dark-blue;
 }
 
 .sub-title {
@@ -29,6 +39,7 @@ body {
   font-size: 48px;
   margin-bottom: 20px;
   text-align: center;
+  text-shadow: 1px 1px 1px $dark-blue;
 }
 
 .line-separator {
@@ -51,9 +62,16 @@ body {
 
 .infos-text {
   font-size: 16px;
-  line-height: 2;
-  text-align: justify;
+  line-height: 26px;
+  text-align: left;
+
 }
+
+.description-text {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
 
 @media only screen
 and (min-device-width: 320px)

@@ -3,10 +3,20 @@
   background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559830473/hanna-line2.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
 }
 
 #freedive-container {
-  padding: 110px 15px 50px 15px;
+  padding: 110px 15px 0 15px;
+}
+
+#freedive-text:first-letter {
+  font-size: calc(60px + 0.75vw);
+  line-height: 40px;
+  color: $yellow;
+  float: left;
+  padding-right: 20px;
+  font-family: $main-headers-font;
 }
 
 .card {
@@ -42,10 +52,6 @@
   padding-right: 5px;
 }
 
-.fun-dives {
-  margin-top: 50px;
-}
-
 .red-highlight {
   color: $light-red;
 }
@@ -55,7 +61,19 @@
 }
 
 .freedive-infos {
-  background-image: linear-gradient(to left, #73a2bf, #7ca8c4, #85aec8, #8eb5cd, #97bbd2, #8fb2c9, #87a9c0, #7fa0b7, #65869e, #4b6e87, #31566f, #153f59);
+  padding: 50px 0;
+}
+
+.freedive-infos {
+  background-image: linear-gradient(to bottom, #73a2bf, #7ca8c4, #85aec8, #8eb5cd, #97bbd2, #8fb2c9, #87a9c0, #7fa0b7, #65869e, #4b6e87, #31566f, #153f59);
+}
+
+.contact-link {
+  color: $white;
+  text-decoration: underline;
+  &:hover {
+    color: $white;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -63,24 +81,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -20px;
-  }
-
-  .fun-dives {
-    display: inline-block;
-    position: absolute;
-    bottom: 20px;
-
-    p {
-      margin-bottom: 0;
-    }
+    margin-top: 40px;
   }
 
   .card {
     width: 325px;
   }
 
+  .fun-dives {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 40px;
+  }
+
+  #fun-dive-left{
+    max-width: 500px;
+  }
+  #fun-dive-right{
+    max-width: 349px;
+  }
+
   .freedive-infos {
     padding: 50px;
   }
+}
+
+.fun-dives {
+  margin: 40px auto;
+}
+
+#contact-link-text {
+  font-size:18px;
+  margin: 20px auto;
+  text-align: center;
 }

@@ -1,6 +1,5 @@
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable func-names */
-
 import $ from 'jquery';
 
 $('.form-input').each(function () {
@@ -18,17 +17,18 @@ const email = $('.validate-input input[name="email"]');
 const subject = $('.validate-input input[name="subject"]');
 const message = $('.validate-input textarea[name="message"]');
 
+
 function showValidate(input) {
-  const thisAlert = $(input).parent();
-  $(thisAlert).addClass('alert-validate');
+  const parentDiv = $(input).parent();
+  $(parentDiv).addClass('alert-validate alert-form-validation');
 }
 
 function hideValidate(input) {
-  const thisAlert = $(input).parent();
-  $(thisAlert).removeClass('alert-validate');
+  const parentDiv = $(input).parent();
+  $(parentDiv).removeClass('alert-validate alert-form-validation');
 }
 
-$('.validate-form').on('submit', function () {
+function validateForm() {
   let check = true;
 
   if ($(name).val().trim() === '') {
@@ -41,21 +41,31 @@ $('.validate-form').on('submit', function () {
     check = false;
   }
 
-  if ($(subject).val().trim() === '') {
-    showValidate(subject);
-    check = false;
-  }
-
-  if ($(message).val().trim() === '') {
+  if ($(message).length > 0 && $(message).val().trim() === '') {
     showValidate(message);
     check = false;
   }
 
+  if ($(subject).length > 0 && $(subject).val().trim() === '') {
+    showValidate(subject);
+    check = false;
+  }
+
   return check;
+}
+
+
+$('.validate-form').on('click', '.contact-form-submit', function (e) {
+  const validated = validateForm();
+  if (validated === false) {
+    e.preventDefault();
+  } else {
+    $('.validate-form').submit();
+  }
 });
 
 
-$('.validate-form .form-input').each(function () {
+$('.validate-form, .form-input').each(function () {
   $(this).focus(function () {
     hideValidate(this);
   });
