@@ -1,0 +1,53 @@
+.back_to_top {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  text-align: center;
+  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTop {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  z-index: 1000;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $green;
+  border: none;
+}
+
+.back_to_top.show {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.back_to_top.show:hover {
+  opacity: 1;
+}
+
+.fa-chevron-up {
+  color: white;
+  font-size: 26px;
+}
+
+.back_top_text {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: -1px;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  margin: 0;
+}
+
+.back_to_top:hover .back_top_text {
+  bottom: -40px;
+  opacity: 1;
+}
