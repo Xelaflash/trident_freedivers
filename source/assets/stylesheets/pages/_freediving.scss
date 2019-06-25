@@ -52,10 +52,6 @@
   padding-right: 5px;
 }
 
-.fun-dives {
-  margin-top: 50px;
-}
-
 .red-highlight {
   color: $light-red;
 }
@@ -72,19 +68,51 @@
   background-image: linear-gradient(to bottom, #73a2bf, #7ca8c4, #85aec8, #8eb5cd, #97bbd2, #8fb2c9, #87a9c0, #7fa0b7, #65869e, #4b6e87, #31566f, #153f59);
 }
 
+.contact-link {
+  color: $white;
+  text-decoration: underline;
+  &:hover {
+    color: $white;
+  }
+}
+
 @media (min-width: 1000px) {
   .freedive-courses {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 40px;
   }
 
   .card {
     width: 325px;
   }
 
+  .fun-dives {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 40px;
+  }
+
+  #fun-dive-left{
+    max-width: 500px;
+  }
+  #fun-dive-right{
+    max-width: 349px;
+  }
+
   .freedive-infos {
     padding: 50px;
   }
+}
+
+.fun-dives {
+  margin: 40px auto;
+}
+
+#contact-link-text {
+  font-size:18px;
+  margin: 20px auto;
+  text-align: center;
 }
