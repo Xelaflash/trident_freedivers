@@ -60,8 +60,10 @@ a:focus,
 
 .infos-text {
   font-size: 16px;
-  line-height: 2;
-  text-align: justify;
+  line-height: 26px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
 }
 
 
