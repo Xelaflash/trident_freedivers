@@ -18,8 +18,7 @@ input, textarea {
   border: none;
 }
 
-textarea:focus,
-input:focus {
+.contact-form-input:focus {
   border-color: transparent !important;
 }
 
