@@ -27,7 +27,8 @@
 
 .alert-form-validation::after {
   content: "\f071";
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   display: block;
   position: absolute;
   color: $red;

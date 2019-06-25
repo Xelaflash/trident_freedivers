@@ -9,6 +9,7 @@ import { openNav, closeNav } from './components/mobile_nav';
 import './components/nav_color';
 import './components/form-validation';
 import './components/modal-validation';
+import './components/back_to_top';
 
 import './plugins/intl_nbr';
 
