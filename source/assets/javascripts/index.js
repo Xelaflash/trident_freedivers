@@ -2,6 +2,7 @@
 import 'popper.js';
 import 'bootstrap';
 import flatpickr from "flatpickr";
+import 'focus-visible';
 
 
 // components JS files

@@ -20,11 +20,13 @@ body {
   color: $white;
 }
 
-button:focus,
-a:focus,
-.btn:focus {
-  outline: 1px auto -webkit-focus-ring-color;
-}
+// button:focus,
+// a:focus,
+// .btn:focus {
+//   outline: 1px auto -webkit-focus-ring-color;
+// }
+
+
 
 .main-title {
   font-family: $main-headers-font;
