@@ -10,9 +10,12 @@ import './components/nav_color';
 import './components/form-validation';
 import './components/modal-validation';
 import './components/back_to_top';
+import { handleFirstTab } from './components/keyboard_focus';
 
 import './plugins/intl_nbr';
 
+// outline for keyboard user on focus
+window.addEventListener('keydown', handleFirstTab);
 
 // nav mobile
 const navBtn = document.querySelector(".burger");
@@ -33,28 +36,3 @@ const reinsurance = document.querySelector(".reinsurance");
 if (window.innerWidth <= 812 && currentPage !== "/") {
   reinsurance.style.display = 'none';
 }
-
-// function handleTab(e) {
-//   if (e.keyCode === 9) { // "hey I am a keyboard user"
-//     document.body.classList.add('user-tabbing');
-//     window.removeEventListener('keydown', handleTab);
-//   }
-// }
-
-// window.addEventListener('keydown', handleTab);
-
-
-function handleFirstTab(e) {
-  if (e.keyCode === 9) {
-    document.body.classList.add('user-is-tabbing');
-    window.removeEventListener('keydown', handleFirstTab);
-    window.addEventListener('mousedown', handleMouseDownOnce);
-  }
-}
-
-function handleMouseDownOnce() {
-  document.body.classList.remove('user-is-tabbing');
-  window.removeEventListener('mousedown', handleMouseDownOnce);
-  window.addEventListener('keydown', handleFirstTab);
-}
-window.addEventListener('keydown', handleFirstTab);
