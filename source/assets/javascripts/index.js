@@ -10,9 +10,12 @@ import './components/nav_color';
 import './components/form-validation';
 import './components/modal-validation';
 import './components/back_to_top';
+import { handleFirstTab } from './components/keyboard_focus';
 
 import './plugins/intl_nbr';
 
+// outline for keyboard user on focus
+window.addEventListener('keydown', handleFirstTab);
 
 // nav mobile
 const navBtn = document.querySelector(".burger");
@@ -25,11 +28,6 @@ closeBtn.addEventListener("click", closeNav);
 flatpickr(".datepicker", {
   dateFormat: "d/m/Y"
 });
-
-// carousel js
-// $('.carousel').carousel({
-//   interval: 11000
-// });
 
 // remove reinsurance for mobile (except homepage)
 const currentPage = document.location.pathname;
