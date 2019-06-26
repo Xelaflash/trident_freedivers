@@ -59,10 +59,6 @@
   z-index: 10;
 }
 
-.selected-flag {
-  outline: none;
-}
-
 // for safari (do not take modal content color cause dropdown out of flow)
 .country-name {
   color:$dark-blue;

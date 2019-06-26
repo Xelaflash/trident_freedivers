@@ -13,7 +13,6 @@
 }
 
 input, textarea {
-  outline: none;
   border: none;
 }
 
@@ -126,7 +125,6 @@ textarea.contact-form-input+.contact-focus-input::after {
   border: 1px solid $yellow;
   padding: 12px 15px;
   border-radius: 5px;
-  outline: none;
   overflow: hidden;
   transition: color 0.4s ease-in-out;
 }
