@@ -3,7 +3,7 @@ const sidenavInner = document.querySelector(".sidenav");
 
 function toogleNav() {
   burger.classList.toggle("is-active");
-  sidenavInner.classList.toggle("show");
+  sidenavInner.classList.toggle("show-sidenav");
 }
 
 // eslint-disable-next-line import/prefer-default-export
