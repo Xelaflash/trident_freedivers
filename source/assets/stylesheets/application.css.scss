@@ -17,7 +17,6 @@
 // Main utlitities
 html {
   height: 100%;
-  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -45,8 +44,9 @@ body:not(.user-is-tabbing) .selected-flag:focus {
 .freezePage {
   overflow: hidden;
   height: 100%;
-  position: relative;
 }
+
+
 
 .main-title {
   font-family: $main-headers-font;
@@ -96,7 +96,14 @@ body:not(.user-is-tabbing) .selected-flag:focus {
 and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    overflow: scroll;
+  }
+
   .main-title {
     font-size: 55px;
+  }
+  .freezePage {
+    position: relative;
   }
 }
