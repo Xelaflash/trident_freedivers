@@ -25,7 +25,7 @@ sidenavTrigger.addEventListener("click", toogleNav);
 
 // date picker init
 flatpickr(".datepicker", {
-  dateFormat: "d/m/Y"
+  dateFormat: "m/d/Y"
 });
 
 // remove reinsurance for mobile (except homepage)
