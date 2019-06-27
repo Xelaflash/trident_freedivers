@@ -1,9 +1,10 @@
-function openNav() {
-  document.querySelector(".sidenav").style.width = "100%";
+const burger = document.querySelector(".hamburger");
+const sidenavInner = document.querySelector(".sidenav");
+
+function toogleNav() {
+  burger.classList.toggle("is-active");
+  sidenavInner.classList.toggle("show");
 }
 
-function closeNav() {
-  document.querySelector(".sidenav").style.width = "0";
-}
-
-export { openNav, closeNav };
+// eslint-disable-next-line import/prefer-default-export
+export { toogleNav };
