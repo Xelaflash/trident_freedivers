@@ -4,7 +4,7 @@ import anime from 'animejs';
 function animeLetters() {
   // eslint-disable-next-line func-names
   $('.ml2').each(function () {
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\S)/g, "<span class='letter'>$&</span>"));
   });
   anime.timeline({
     loop: 1
@@ -16,18 +16,18 @@ function animeLetters() {
     easing: "easeOutExpo",
     duration: 1200,
     delay(_el, i) {
-      return 180 * i;
+      return 150 * i;
     }
   }).add({
     targets: '.ml2',
     opacity: 1,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 2000,
+    delay: 1000,
     loop: 1
   });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  animeLetters();
+  window.setTimeout(animeLetters, 1000);
 });
