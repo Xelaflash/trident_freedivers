@@ -13,6 +13,7 @@ import { toogleNav } from './components/mobile_nav';
 import { handleFirstTab } from './components/keyboard_focus';
 
 import './plugins/intl_nbr';
+import './plugins/anim_letters';
 
 
 // outline for keyboard user on focus
