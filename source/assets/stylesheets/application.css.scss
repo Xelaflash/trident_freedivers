@@ -15,9 +15,14 @@
 
 
 // Main utlitities
+html {
+  height: 100%;
+}
+
 body {
   font-family: $body-font;
   color: $white;
+  height: 100%;
 }
 
 body.user-is-tabbing *:focus,
@@ -33,6 +38,10 @@ body:not(.user-is-tabbing) textarea:focus,
 body:not(.user-is-tabbing) a:focus,
 body:not(.user-is-tabbing) .selected-flag:focus {
   outline: none !important;
+}
+
+.sidenav {
+  -webkit-overflow-scrolling: touch;
 }
 
 .main-title {
@@ -72,7 +81,6 @@ body:not(.user-is-tabbing) .selected-flag:focus {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
-
 }
 
 .description-text {
