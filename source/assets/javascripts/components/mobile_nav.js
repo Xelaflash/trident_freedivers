@@ -1,17 +1,14 @@
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-
 const burger = document.querySelector(".hamburger");
 const sidenavInner = document.querySelector(".sidenav");
+const { body } = document;
 
 function toogleNav() {
   burger.classList.toggle("is-active");
   sidenavInner.classList.toggle("show-sidenav");
   if (sidenavInner.classList.contains('show-sidenav')) {
-    console.log('open bg not scrollable');
-    disableBodyScroll(sidenavInner);
+    body.classList.add("freezePage");
   } else {
-    console.log('close bg scrollable');
-    enableBodyScroll(sidenavInner);
+    body.classList.remove("freezePage");
   }
 }
 

@@ -4,8 +4,6 @@ import 'bootstrap';
 import flatpickr from "flatpickr";
 import $ from 'jquery';
 
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-
 // components JS files
 import './components/nav_color';
 import './components/form-validation';
@@ -43,14 +41,9 @@ if (window.innerWidth <= 812 && currentPage !== "/") {
 // body scroll lock for touch device when modal/sidenav open
 const targetElementModal = document.querySelector('#modalBookingForm');
 
-// disable scroll when modal open
 $(targetElementModal).on('shown.bs.modal', () => {
-  console.log("scroll disable");
-  disableBodyScroll(targetElementModal);
+  $('body').addClass('freezePage');
 });
-
-// re-enable scroll when modal close
 $(targetElementModal).on('hidden.bs.modal', () => {
-  console.log("scroll ok");
-  enableBodyScroll(targetElementModal);
+  $('body').removeClass('freezePage');
 });
