@@ -24,9 +24,12 @@
     </div>
     <!-- Burger menu for small screens -->
     <div class="mobile_nav d-md-none">
-      <i class="fas fa-bars burger"></i>
+      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" aria-controls="navigation" id="sidenav-trigger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
       <div class="sidenav">
-        <i class="far fa-times-circle closebtn"></i>
         <a href="#home-page">
           <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559050885/logo_spear_white.png", alt: "Trident Freedivers - Logo", class:"img-responsive", id: "logo-sideNav" %>
         </a>

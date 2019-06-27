@@ -15,9 +15,15 @@
 
 
 // Main utlitities
+html {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-family: $body-font;
   color: $white;
+  height: 100%;
 }
 
 body.user-is-tabbing *:focus,
@@ -34,6 +40,13 @@ body:not(.user-is-tabbing) a:focus,
 body:not(.user-is-tabbing) .selected-flag:focus {
   outline: none !important;
 }
+
+.freezePage {
+  overflow: hidden;
+  height: 100%;
+}
+
+
 
 .main-title {
   font-family: $main-headers-font;
@@ -72,7 +85,6 @@ body:not(.user-is-tabbing) .selected-flag:focus {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
-
 }
 
 .description-text {
@@ -84,7 +96,23 @@ body:not(.user-is-tabbing) .selected-flag:focus {
 and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    overflow: scroll;
+  }
   .main-title {
     font-size: 55px;
+  }
+  .freezePage {
+    position: relative;
+  }
+}
+
+@media only screen
+and (max-width: 490px) {
+  .main-title {
+    font-size: 52px;
+  }
+  .btn-book {
+    padding: 16px 39px;
   }
 }
