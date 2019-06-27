@@ -99,11 +99,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
   html {
     overflow: scroll;
   }
-
   .main-title {
     font-size: 55px;
   }
   .freezePage {
     position: relative;
+  }
+}
+
+@media only screen
+and (max-width: 490px) {
+  .main-title {
+    font-size: 52px;
+  }
+  .btn-book {
+    padding: 16px 39px;
   }
 }
