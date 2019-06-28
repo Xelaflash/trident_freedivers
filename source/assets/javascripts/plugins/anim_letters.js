@@ -52,5 +52,5 @@ function animeLetters() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  window.setTimeout(animeLetters, 1000);
+  window.setTimeout(animeLetters, 300);
 });
