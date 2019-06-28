@@ -1,5 +1,5 @@
 #home-page {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -73,7 +73,7 @@
 
 // flipping card
 .flip-card {
-  height: 420px;
+  height: 450px;
 }
 
 .card-inner {
@@ -88,13 +88,12 @@
   transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
   backface-visibility: hidden;
   text-align: center;
-  min-height: 420px;
+  min-height: 450px;
   border-radius: 5px;
   color: $white;
 }
 
 .back {
-  // background: linear-gradient(to right top, #b2d5f4, #7da9da, #4f7cbe, #2851a0, #00267f, #050F36);
   background: $white;
 }
 
@@ -110,48 +109,24 @@
   backface-visibility: hidden;
 }
 
-.card-inner:hover .front,
-.card-inner:hover .back {
-  transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 .inner {
   transform: translateY(-50%) translateZ(60px) scale(0.94);
   top: 50%;
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   perspective: inherit;
   z-index: 2;
 }
 
-.card-inner .back {
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
-}
 
-.card-inner .front {
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
-}
-
-.card-inner:hover .back {
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
-}
-
-.card-inner:hover .front {
-  transform: rotateY(-180deg);
-  transform-style: preserve-3d;
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .front .inner p {
@@ -163,14 +138,12 @@
 }
 
 .course-title {
-  // color: $white;
   color: $dark-blue;
   font-size: 20px;
 }
 
 .price-tag {
   font-family: $main-headers-font;
-  // color: $white;
   color: $dark-blue;
   font-size: 20px;
 }
@@ -193,6 +166,91 @@
   width: 50%;
   border-top: 1px solid $red;
 }
+
+.learn-more-link {
+  position: relative;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: baseline;
+  color: $red;
+  margin-top: 10px;
+}
+
+.learn-more-link span {
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.learn-more-link svg {
+  margin-left: 5px;
+  fill: none;
+  stroke: $red;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.learn-more-link:hover span {
+  text-decoration: none;
+  color: $red;
+}
+
+.card-inner .front {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.card-inner .back {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+// flip effect for regular browser
+.flip-card:hover .front,
+.flip-card:hover .back {
+  transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
+}
+
+.flip-card:hover .front {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+
+
+
+// flip effect for mobile on touch event toggle class hover
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+.card-hover-effect .front,
+.card-hover-effect .back {
+    transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8) !important;
+  }
+.card-hover-effect .front {
+    transform: rotateY(-180deg) !important;
+    transform-style: preserve-3d !important;
+  }
+.card-hover-effect .back {
+    transform: rotateY(0deg) !important;
+    transform-style: preserve-3d !important;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 // responsive styling SMALL Screens
 @media only screen

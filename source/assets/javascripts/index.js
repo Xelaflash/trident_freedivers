@@ -2,7 +2,6 @@
 import 'popper.js';
 import 'bootstrap';
 import flatpickr from "flatpickr";
-import $ from 'jquery';
 
 // components JS files
 import './components/nav_color';
@@ -46,4 +45,12 @@ $(targetElementModal).on('shown.bs.modal', () => {
 });
 $(targetElementModal).on('hidden.bs.modal', () => {
   $('body').removeClass('freezePage');
+});
+
+
+// flip card effect for touch screen devices
+document.querySelectorAll(".card-inner").forEach((card) => {
+  card.addEventListener("touchstart", (event) => {
+    event.currentTarget.classList.toggle('card-hover-effect');
+  });
 });

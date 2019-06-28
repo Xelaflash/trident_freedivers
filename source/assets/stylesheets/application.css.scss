@@ -103,7 +103,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 55px;
   }
   .freezePage {
-    position: relative;
+    position: fixed;
+    width: 100%;
   }
 }
 

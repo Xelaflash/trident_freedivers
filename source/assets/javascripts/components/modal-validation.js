@@ -1,6 +1,5 @@
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable func-names */
-import $ from 'jquery';
 
 $('.book-form-input').each(function () {
   $(this).on('input', function () {
@@ -41,7 +40,7 @@ function validateForm() {
     check = false;
   }
 
-  if ($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+  if ($(email).val().trim().match(/^([a-zA-Z0-9_\-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
     showValidate(email);
     check = false;
   }

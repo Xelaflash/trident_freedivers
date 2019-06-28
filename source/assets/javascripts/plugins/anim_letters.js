@@ -1,6 +1,5 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import anime from 'animejs';
-
 
 const sUsrAg = navigator.userAgent;
 let sBrowser;
@@ -24,7 +23,9 @@ if (sUsrAg.indexOf("Firefox") > -1) {
 function animeLetters() {
   // eslint-disable-next-line func-names
   if (sBrowser !== "Apple Safari") {
+    // eslint-disable-next-line func-names
     $('.ml2').each(function () {
+      // eslint-disable-next-line no-control-regex
       $(this).html($(this).text().replace(/([^\x00-\x80]|\S)/g, "<span class='letter'>$&</span>"));
     });
     anime.timeline({
@@ -51,5 +52,5 @@ function animeLetters() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  window.setTimeout(animeLetters, 1000);
+  window.setTimeout(animeLetters, 300);
 });

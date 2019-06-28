@@ -2,7 +2,9 @@
 title: Trident Freedivers -  Diving adventures in barbados on one breath
 ---
 <section id="home-page">
-  <div class="banner" style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355683/HomePage_egylnm.jpg);"></div>
+  <div class="banner"
+    style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/q_100/v1561743347/HomePage.jpg);">
+    </div>
   <div class="home-container">
     <h1 class="main-title ml2">Let's go diving</h1>
     <%= link_to "Book Now", "#modalBookingForm", "data-toggle" => "modal", class: "btn-round btn-book" %>
@@ -20,11 +22,10 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
       <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559053652/line_yellow.png", alt: "Trident Freedivers - line", class:"img-responsive line-separator" %>
     </div>
     <div class="cards-tours">
-		  <div class="flip-card" ontouchstart="this.classList.toggle('hover');">
-        <% link_to "freediving.html", class:"card-link" do %>
+		  <div class="flip-card">
 			  <div class="card-inner">
 			    <div class="front"
-			      style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559137491/line_dive.jpg)">
+			      style="background-image: url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561744901/card-freedive.jpg)">
 			      <div class="inner">
 			        <p>Freediving</p>
             </div>
@@ -40,17 +41,22 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
               <p class="course-title">Fun Dives  <br> <small>(Ship wreks, Marine life, Night dive)</small> </p>
               <p class="course-title" id="fun-dive"></p>
               <p class="price-tag">$ 35 - 150 /person</p>
+              <% link_to "freediving.html", class:"learn-more-link" do %>
+                <span>Learn More</span>
+                <svg width="13px" height="8px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              <% end %>
 			      </div>
           </div>
         </div>
-        <% end %>
       </div>
-			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
-        <% link_to "spearfishing.html", class:"card-link" do %>
+			<div class="flip-card">
 			  <div class="card-inner">
 			    <div class="front"
 			      style="background-image:
-			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558355457/Page5wahoo_qi7fef.jpg)">
+			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561744553/card-spear2.jpg)">
 			      <div class="inner">
 			        <p>Spearfishing</p>
 			      </div>
@@ -65,17 +71,22 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
               <hr class="separator">
               <p class="course-title">Spearfishing @ Night</p>
               <p class="price-tag">$ 150 /person</p>
+              <% link_to "spearfishing.html", class:"learn-more-link" do %>
+                <span>Learn More</span>
+                <svg width="13px" height="8px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              <% end %>
 			      </div>
 			    </div>
         </div>
-        <% end %>
       </div>
-			<div class="flip-card" ontouchstart="this.classList.toggle('hover');">
-        <% link_to "underwater_photo.html", class:"card-link" do %>
+			<div class="flip-card">
 			  <div class="card-inner">
 			    <div class="front"
 			      style="background-image:
-			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1558356627/Page4_aelrnn.jpg)">
+			      url(https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561741636/card-underwater.jpg)">
 			      <div class="inner">
 			        <p>Underwater Photography</p>
 			      </div>
@@ -84,10 +95,16 @@ title: Trident Freedivers -  Diving adventures in barbados on one breath
 			      <div class="inner">
               <p class="course-title">Underwater Photography Tour</pc>
               <p class="price-tag">$ 150 /person</p>
+              <% link_to "underwater_photo.html", class:"learn-more-link" do %>
+                <span>Learn More</span>
+                <svg width="13px" height="8px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              <% end %>
 			      </div>
 			    </div>
 			  </div>
-        <% end %>
 			</div>
     </div>
   </div>
