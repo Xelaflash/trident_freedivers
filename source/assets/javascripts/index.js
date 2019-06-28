@@ -2,7 +2,6 @@
 import 'popper.js';
 import 'bootstrap';
 import flatpickr from "flatpickr";
-import $ from 'jquery';
 
 // components JS files
 import './components/nav_color';

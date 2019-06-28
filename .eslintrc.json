@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jquery": true
     },
     "extends": "airbnb-base",
     "globals": {
@@ -17,6 +18,8 @@
         "comma-dangle": "off",
         "quotes": "off",
         "arrow-body-style": 0,
-        "space-before-function-paren": 0
+        "space-before-function-paren": 0,
+        "import/prefer-default-export": "off",
+        "prefer-destructuring": "off"
     }
 }

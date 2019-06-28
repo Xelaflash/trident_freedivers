@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 const btn = $('.back_to_top');
 
 $(window).scroll(() => {
