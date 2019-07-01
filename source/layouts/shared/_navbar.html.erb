@@ -2,13 +2,13 @@
   <div class="navbar-top">
     <div class="logo">
       <!-- logo for big screens -->
-      <a class="d-none d-lg-block" href="/index.html">
-        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742326/logo_trident_white.png", alt: "Trident Freedivers - Logo", class:"logo-pic img-responsive" %>
-      </a>
+        <% link_to "/index.html" do %>
+          <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742326/logo_trident_white.png", alt: "Trident Freedivers - Logo", class:"logo-pic img-responsive d-none d-lg-block" %>
+        <% end %>
       <!-- logo for small screens -->
-      <a class="d-block d-sm-block d-md-block d-lg-none" href="/">
-        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742623/logo_cross.png", alt: "Trident Freedivers - Logo", class:"img-responsive", id: "logo2" %>
-      </a>
+      <% link_to "/index.html" do %>
+        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742623/logo_cross.png", alt: "Trident Freedivers - Logo", class:"img-responsive d-block d-sm-block d-md-block d-lg-none", id: "logo2" %>
+      <% end %>
     </div>
     <!-- Right Navigation -->
     <div class="navbar-middle d-none d-md-block d-xl-block">
@@ -30,9 +30,9 @@
         </span>
       </button>
       <div class="sidenav">
-        <a href="/index.html">
+        <% link_to "/index.html" do %>
           <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559050885/logo_spear_white.png", alt: "Trident Freedivers - Logo", class:"img-responsive", id: "logo-sideNav" %>
-        </a>
+        <% end %>
         <ul>
           <li class="navbar-item"><%= link_to "About Us", "about_us.html" %></li>
           <li class="navbar-item"><%= link_to "Freediving", "freediving.html" %></li>
