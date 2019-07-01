@@ -49,8 +49,23 @@ $(targetElementModal).on('hidden.bs.modal', () => {
 
 
 // flip card effect for touch screen devices
+let touchPos;
 document.querySelectorAll(".card-inner").forEach((card) => {
-  card.addEventListener("touchend", (event) => {
-    event.currentTarget.classList.toggle('card-hover-effect');
+  card.addEventListener("touchstart", (event) => {
+    console.log("touch start begin");
+    event.preventDefault();
+    touchPos = document.body.scrollTop;
+    console.log(touchPos);
+  });
+  card.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    console.log(e.type);
+    console.log(document.body.scrollTop);
+    if (e.type === 'touchend' && (Math.abs(touchPos - document.body.scrollTop) > 3)) {
+      alert("this is a scroll");
+    } else {
+      alert("c'est un click");
+      e.currentTarget.classList.toggle('card-hover-effect');
+    }
   });
 });
