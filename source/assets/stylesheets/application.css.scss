@@ -46,8 +46,6 @@ body:not(.user-is-tabbing) .selected-flag:focus {
   height: 100%;
 }
 
-
-
 .main-title {
   font-family: $main-headers-font;
   font-size: 72px;
@@ -84,10 +82,10 @@ body:not(.user-is-tabbing) .selected-flag:focus {
 .infos-text {
   font-size: 16px;
   line-height: 26px;
-  text-align: left;
 }
 
 .description-text {
+  text-align: justify;
   max-width: 800px;
   margin: 0 auto 1.5rem;
 }

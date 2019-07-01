@@ -25,7 +25,8 @@
   padding: 1em;
   box-shadow: 0 0 5em -1em $white;
   border: 2px solid $yellow;
-  margin-bottom: 20px;
+  max-width: 560px;
+
   h3 {
     font-family: $headers-font;
     text-align: center;
@@ -75,6 +76,12 @@
   }
 }
 
+@media (max-width: 999px) {
+  .card {
+    margin: 0 auto 20px;
+  }
+}
+
 @media (min-width: 1000px) {
   .freedive-courses {
     display: flex;
@@ -85,6 +92,7 @@
 
   .card {
     width: 325px;
+    margin-bottom: 20px;
   }
 
   .fun-dives {

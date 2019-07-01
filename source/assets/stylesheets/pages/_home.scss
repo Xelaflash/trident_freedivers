@@ -66,7 +66,7 @@
 
 .cards-tours {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
   padding-bottom: 25px;
 }
@@ -120,7 +120,6 @@
   perspective: inherit;
   z-index: 2;
 }
-
 
 .back {
   position: absolute;
@@ -225,8 +224,6 @@
   }
 }
 
-
-
 // flip effect for mobile on touch event toggle class hover
 @media only screen and (min-device-width: 320px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .card-hover-effect .front,
@@ -245,18 +242,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 // responsive styling SMALL Screens
 @media only screen
   and (min-width: 320px)
@@ -273,7 +258,11 @@
 // grids responsive
 @media (min-width: 100px)
   and (max-width: 991px) {
-  .cards-tours,
+  .cards-tours {
+      grid-template-columns: 1fr;
+      max-width: 560px;
+      margin: auto;
+  }
   #reinsurance-grid {
     grid-template-columns: 1fr;
   }
@@ -287,10 +276,6 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .cards-tours,
-  #reinsurance-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .reinsurance-item {
     border-left: 1px solid $yellow;
     &:nth-child(-n+1) {

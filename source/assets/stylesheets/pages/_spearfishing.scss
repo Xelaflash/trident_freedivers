@@ -36,15 +36,12 @@
   font-family: $main-headers-font;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .spear-tours {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 40px 0 100px;
-  }
-  #card-left {
-   margin-left: 150px;
   }
   #card-bottom {
     width: 30%;
@@ -52,5 +49,11 @@
   }
   .spearfishing-infos {
     padding: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #card-left {
+    margin-left:150px;
   }
 }
