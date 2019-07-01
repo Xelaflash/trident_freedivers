@@ -50,7 +50,7 @@ $(targetElementModal).on('hidden.bs.modal', () => {
 
 // flip card effect for touch screen devices
 document.querySelectorAll(".card-inner").forEach((card) => {
-  card.addEventListener("touchstart", (event) => {
+  card.addEventListener("touchend", (event) => {
     event.currentTarget.classList.toggle('card-hover-effect');
   });
 });

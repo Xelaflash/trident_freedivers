@@ -196,52 +196,57 @@
   color: $red;
 }
 
-.card-inner .front {
+
+.flip-card .front {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
 }
-.card-inner .back {
+
+.flip-card .back {
   transform: rotateY(180deg);
   transform-style: preserve-3d;
 }
 
 // flip effect for regular browser
-.flip-card:hover .front,
-.flip-card:hover .back {
-  transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
-}
+@media (hover: hover) {
+  .flip-card:hover .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+  }
 
-.flip-card:hover .front {
-  transform: rotateY(-180deg);
-  transform-style: preserve-3d;
-}
+  .flip-card:hover .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
 
-.flip-card:hover .back {
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
+  .flip-card:hover .front,
+  .flip-card:hover .back {
+    transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
+  }
 }
-
 
 
 
 // flip effect for mobile on touch event toggle class hover
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 1366px)
-and (-webkit-min-device-pixel-ratio: 2) {
-.card-hover-effect .front,
-.card-hover-effect .back {
-    transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8) !important;
+@media only screen and (min-device-width: 320px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .card-hover-effect .front,
+  .card-hover-effect .back {
+    transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
   }
-.card-hover-effect .front {
-    transform: rotateY(-180deg) !important;
-    transform-style: preserve-3d !important;
+
+  .card-hover-effect .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
   }
-.card-hover-effect .back {
-    transform: rotateY(0deg) !important;
-    transform-style: preserve-3d !important;
+
+  .card-hover-effect .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
   }
 }
+
+
+
 
 
 
