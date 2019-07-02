@@ -25,10 +25,13 @@
 }
 
 // title anim
+.ml2 {
+
+}
 .ml2 .letter {
   display: inline-block;
+  will-change: transform;
   line-height: 1em;
-  opacity: 1;
 }
 
 .social-links {
