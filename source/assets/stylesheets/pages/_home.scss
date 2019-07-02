@@ -228,9 +228,6 @@
 @media only screen and (min-device-width: 320px)
 and (max-device-width: 1366px)
 and (-webkit-min-device-pixel-ratio: 2) {
-  .card-inner {
-    overflow: scroll;
-  }
   .card-hover-effect .front,
   .card-hover-effect .back {
     transition: transform .8s cubic-bezier(0.5, 0.2, 0.2, 0.8);
