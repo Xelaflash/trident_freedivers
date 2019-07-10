@@ -1,0 +1,137 @@
+#error-404-page {
+  background: linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
+  text-align: center;
+  min-height:100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-text {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  h1 {
+    font-family: montserrat, sans-serif;
+    font-size: 14rem;
+    font-weight: 900;
+    margin: 0;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: -55px;
+    margin-left: -65px;
+    line-height: 1;
+    span {
+      text-shadow: -8px 0 0 #7fc2d7;
+    }
+  }
+  h2, h3 {
+    font-family: $headers-font;
+  }
+}
+
+.btn-404 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border: 1px solid $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: $white;
+  font-weight: 700;
+  box-shadow: 0px 4px 15px -5px #7fc2d7;
+  transition: all 0.5s;
+  margin-top: 10px;
+
+  &:hover {
+    color: $white;
+    background: #7fc2d7;
+    border: 1px solid #7fc2d7;
+  }
+}
+
+// fishes animation
+@keyframes swimming {
+  0% {
+    margin-left: -375px;
+  }
+
+  70% {
+    margin-left: 100%;
+  }
+
+  100% {
+    margin-left: 100%;
+
+  }
+}
+
+@keyframes flying {
+  0% {
+    top: 5%;
+  }
+  50% {
+    top: 0%;
+  }
+  75% {
+    top: 10%;
+  }
+  100% {
+    top: 5%;
+  }
+
+}
+
+.fish {
+  position: absolute;
+  animation: swimming 30s linear infinite;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#fish1 {
+  background-image: url('../images/fishes.png');
+  top: 10%;
+  width: 150px;
+  height: 80px;
+  margin-left: -150px;
+  animation-delay: 15s;
+}
+
+#fish2 {
+  background-image: url('../images/spearo.png');
+  bottom: 2%;
+  width: 375px;
+  height: 150px;
+  margin-left: -375px;
+}
+
+#fish3 {
+  background-image: url('../images/flying-fish.png');
+  top: 5%;
+  width: 100px;
+  margin-left:-100px;
+  height: 130px;
+  animation: swimming 30s linear infinite,
+  flying 4s ease-in-out infinite;
+  animation-delay: 6s;
+}
+// end animation
+
+@media (min-width: 320px) and (max-width: 912px) {
+  .error-text {
+    h1 {
+      font-size: 5rem;
+      letter-spacing: -15px;
+      margin-left: -20px;
+    }
+    h2, h3 {
+      font-size: 1rem;
+    }
+  }
+}

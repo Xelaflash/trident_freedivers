@@ -8,6 +8,8 @@ set :js_dir,     'assets/javascripts'
 
 
 
+
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -24,6 +26,8 @@ activate :external_pipeline,
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/404.html', layout: "error_pages", directory_index: false
+page '/500.html', layout: "error_pages", directory_index: false
 
 configure :development do
   set      :debug_assets, true
@@ -34,7 +38,7 @@ end
 configure :build do
   activate :minify_css
   # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
-  # activate :minify_javascript
+  activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
   set :relative_links, true
