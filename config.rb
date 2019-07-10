@@ -15,10 +15,10 @@ activate :autoprefixer do |prefix|
 end
 
 activate :external_pipeline,
-         name: :webpack,
-         command: build? ? 'yarn run build' : 'yarn run start',
-         source: 'dist',
-         latency: 1
+  name: :webpack,
+  command: build? ? 'yarn run build' : 'yarn run start',
+  source: 'dist',
+  latency: 1
 
 # ------ Uncomment and adapt if you want to use i18n ------
 # activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
@@ -26,8 +26,10 @@ activate :external_pipeline,
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-page '/404.html', layout: "error_pages", directory_index: false
-page '/500.html', layout: "error_pages", directory_index: false
+page '/404.html', layout: "error_pages"
+page '/500.html', layout: "error_pages"
+
+activate :directory_indexes
 
 configure :development do
   set      :debug_assets, true
