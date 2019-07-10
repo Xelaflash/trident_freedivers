@@ -131,12 +131,19 @@
   width: 100%;
 }
 
-.front .inner p {
+.front .inner {
   color: $white;
   font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  position: relative;
+  p {
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  i {
+    position: absolute;
+    bottom: -200%;
+    left: 48%;
+  }
 }
 
 .course-title {
@@ -202,6 +209,7 @@
 .flip-card .front {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
+  cursor: pointer;
 }
 
 .flip-card .back {

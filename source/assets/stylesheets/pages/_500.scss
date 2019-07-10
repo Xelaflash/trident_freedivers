@@ -1,0 +1,160 @@
+#error-500-page {
+  position: relative;
+  height: 100vh;
+  color:$white;
+}
+
+#error-500-page .error {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -35%);
+}
+
+.error {
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.error .error-500 {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+}
+
+.error .error-500 h1 {
+  font-size: 12rem;
+  font-weight: 200;
+  margin: 0px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 51%;
+  top: 50%;
+  transform: translate(-51%, -50%);
+}
+
+.error .error-500 h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  right: 0;
+}
+
+.error-btn {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: $barbados-blue;
+  font-size: 18px;
+  transition: 0.2s all;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+}
+
+.error-btn:hover {
+  color: $yellow;
+  background: $barbados-blue;
+}
+
+// sunset animation
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #48bcff;
+  display: block;
+  position: relative;
+  animation: ani-one 4s ease-in-out 4s forwards 1,
+            ani-two 4s ease-in-out 10s forwards 1;
+}
+
+.round {
+  background: #FFFF00;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left:50%;
+  border-radius: 50%;
+  animation: ani-three 8s ease-in-out forwards 1,
+            ani-four 8s ease-in-out 8s forwards 1;
+  transform: translate(-50%);
+}
+
+.wrapper-2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.img-area img {
+  width: 25%;
+  max-height: 290px;
+  float: left;
+}
+
+@keyframes ani-one {
+  70% {
+    background: #fd5e53;
+  }
+  100% {
+    background: #040427;
+  }
+}
+
+@keyframes ani-two {
+  0% {
+    background: #050F36;
+  }
+  70% {
+    background: #fd5e53;
+  }
+  100% {
+    background: #48bcff;
+  }
+}
+
+@keyframes ani-three {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 70%;
+    background: $yellow;
+  }
+}
+
+@keyframes ani-four {
+  0% {
+    top: 70%;
+    background: $yellow;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@media (min-width: 320px)
+and (max-width: 912px) {
+
+  .error .error-500 {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+}
