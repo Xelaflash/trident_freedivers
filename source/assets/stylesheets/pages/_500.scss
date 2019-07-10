@@ -4,47 +4,32 @@
   color:$white;
 }
 
-#error-500-page .error {
+.error-500 {
+  width: 100%;
   position: absolute;
   left: 50%;
-  top: 35%;
-  transform: translate(-50%, -35%);
-}
-
-.error {
-  width: 100%;
-  line-height: 1.4;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  z-index: 1;
   text-align: center;
-}
-
-.error .error-500 {
-  position: relative;
-  height: 200px;
-  margin: 0px auto 20px;
-}
-
-.error .error-500 h1 {
-  font-size: 12rem;
-  font-weight: 200;
-  margin: 0px;
-  text-transform: uppercase;
-  position: absolute;
-  left: 51%;
-  top: 50%;
-  transform: translate(-51%, -50%);
-}
-
-.error .error-500 h2 {
-  font-size: 28px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 10px 5px;
-  margin: auto;
-  display: inline-block;
-  position: absolute;
-  bottom: -20%;
-  left: 0;
-  right: 0;
+  h1 {
+    font-family: montserrat, sans-serif;
+    font-size: 14rem;
+    font-weight: 900;
+    margin: 0;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: -55px;
+    margin-left: -65px;
+    line-height: 0.8;
+    span {
+      text-shadow: -8px 0 0 $yellow;
+    }
+  }
+  h2,
+  h3 {
+    font-family: $headers-font;
+  }
 }
 
 .error-btn {
@@ -54,19 +39,17 @@
   color: #fff;
   text-transform: uppercase;
   padding: 13px 23px;
-  background: $barbados-blue;
+  border : 1px solid $white;
   font-size: 18px;
   transition: 0.2s all;
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  transform: translate(-50%);
   border-radius: 5px;
+  margin-top:20px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 15px -5px #fd5e53;
 }
 
 .error-btn:hover {
   color: $yellow;
-  background: $barbados-blue;
 }
 
 // sunset animation
@@ -139,7 +122,6 @@
     top: 70%;
     background: $yellow;
   }
-
   100% {
     top: 0;
   }
@@ -147,12 +129,16 @@
 
 @media (min-width: 320px)
 and (max-width: 912px) {
-  .error .error-500 {
+  .error-500 {
+    top:50%;
     h1 {
       font-size: 5rem;
+      letter-spacing: -15px;
+      margin-left: -20px;
     }
     h2 {
       font-size: 1.5rem;
+      margin-top:10px;
     }
   }
 }
