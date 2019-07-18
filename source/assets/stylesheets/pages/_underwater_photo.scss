@@ -1,6 +1,18 @@
 #underwater-page {
-  background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561745097/underwater-photo.jpg');
+  background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1563464237/underwater.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  #photo-card {
+    float: right;
+    margin-top: -25px;
+  }
+}
+@media (min-width: 1050px) {
+  #photo-card {
+    margin-right: -40px;
+  }
 }
