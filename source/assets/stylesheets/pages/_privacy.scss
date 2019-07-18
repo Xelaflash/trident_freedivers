@@ -1,0 +1,32 @@
+.privacy-page {
+  background: $dark-blue;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+  a {
+    color: white;
+    text-decoration: underline;
+
+  }
+
+  h1 {
+    font-size:38px;
+    margin-bottom: 40px;
+    font-family: $body-font;
+    color: $light-red;
+  }
+
+  h2 {
+    font-family: $headers-font;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 15px 0;
+  }
+
+}
+
+.separator2 {
+  margin: 20px auto;
+  width: 50%;
+  border-top: 1px solid $light-red;
+}
