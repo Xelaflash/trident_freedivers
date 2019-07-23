@@ -34,9 +34,9 @@
 
 /* Masonry grid */
 .masonry {
+  padding: 20px 0;
   transition: all .5s ease-in-out;
   column-gap: 30px;
-  column-fill: initial;
 }
 
 /* Masonry item */
@@ -56,26 +56,6 @@
   opacity: .75;
 }
 
-/* Bordered masonry */
-.masonry.bordered {
-  column-rule: 1px solid #eee;
-  column-gap: 50px;
-}
-
-.masonry.bordered .brick {
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #eee;
-}
-
-/* Gutterless masonry */
-.masonry.gutterless {
-  column-gap: 0;
-}
-
-.masonry.gutterless .brick {
-  margin-bottom: 0;
-}
 
 /* Masonry on tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -86,14 +66,6 @@
 
 /* Masonry on big screens */
 @media only screen and (min-width: 1024px) {
-  .desc {
-    font-size: 1.25em;
-  }
-
-  .intro {
-    letter-spacing: 1px;
-  }
-
   .masonry {
     column-count: 3;
   }
