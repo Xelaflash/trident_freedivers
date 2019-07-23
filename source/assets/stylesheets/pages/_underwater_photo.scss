@@ -50,6 +50,7 @@
 .masonry .brick img {
   transition: all .5s ease-in-out;
   backface-visibility: hidden; /* Remove Image flickering on hover */
+  border-radius: 2px;
 }
 
 .masonry .brick:hover img {
