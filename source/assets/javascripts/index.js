@@ -15,7 +15,6 @@ import './plugins/intl_nbr';
 import './plugins/anim_letters';
 import './plugins/lightbox';
 
-
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
 
