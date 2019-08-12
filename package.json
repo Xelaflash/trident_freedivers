@@ -32,6 +32,7 @@
     "flatpickr": "^4.6.1",
     "intl-tel-input": "^15.1.2",
     "jquery": "^3.4.1",
+    "lightbox2": "^2.11.1",
     "popper.js": "^1.15.0"
   }
 }
