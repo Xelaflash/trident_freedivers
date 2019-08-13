@@ -26,7 +26,7 @@ page '/*.txt', layout: false
 page '/404.html', layout: "error_pages"
 page '/500.html', layout: "error_pages"
 
-activate :directory_indexes
+# activate :directory_indexes
 
 configure :development do
   set      :debug_assets, true
