@@ -1,6 +1,77 @@
 #underwater-page {
-  background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561745097/underwater-photo.jpg');
+  background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1563464237/underwater.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.underwater-tour {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1000px) {
+  #photo-card {
+    margin-top: -25px;
+  }
+}
+@media (min-width: 1050px) {
+  #photo-card {
+    margin-right: -40px;
+  }
+}
+
+.gallery-section {
+  background: linear-gradient(to top, #115862, #156570, #1a727e, #1e7f8c, #238d9b, #2d97a4, #37a1ad, #40abb6, #4eb3bc, #5bbbc1, #68c4c7, #74cccd);
   min-height: 100vh;
+}
+
+.gallery-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#sell-text {
+  font-size:18px;
+}
+
+
+/* Masonry grid */
+.masonry {
+  padding: 20px 0;
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+}
+
+/* Masonry item */
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+  border-radius: 2px;
+}
+
+.masonry .brick:hover img {
+  opacity: .75;
+}
+
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
 }

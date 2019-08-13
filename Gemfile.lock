@@ -225,7 +225,7 @@ DEPENDENCIES
   actionview (>= 5.0.7.2)
   bootstrap (~> 4.3.1)
   cloudinary
-  dotenv-rails
+  dotenv-rails (>= 2.7.2)
   jquery-middleman
   middleman (~> 4.3)
   middleman-autoprefixer (~> 2.7)

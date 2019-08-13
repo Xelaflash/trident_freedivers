@@ -1,11 +1,94 @@
 ---
 title: Trident Freedivers - Underwater Photo Package
 ---
-<div id="underwater-page">
+<section id="underwater-page">
   <div class="container page-container">
     <div class="title">
       <h1 class="main-title">Underwater Photography</h1>
       <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559053652/line_yellow.png", alt: "Trident Freedivers - line", class:"img-responsive line-separator" %>
     </div>
+    <div class="underwater-tour">
+      <div class="card" id="photo-card">
+        <div class="card-top">
+          <h3>Photography Tour</h3>
+          <p class="course-price">$ 150 / person</p>
+          <p class="red-highlight exp-disclaimer"><strong>Single, couples or Groups</strong></p>
+          <hr class="separator">
+        </div>
+        <p>Come to dive and return with beautiful, professional quality pictures of your underwater adventures.</p>
+        <ul>
+          <li><i class="fas fa-check"></i>All gears included</li>
+          <li><i class="fas fa-check"></i>Instruction and safety demonstration</li>
+          <li><i class="fas fa-check"></i>Photos taken with professional camera</li>
+        </ul>
+        <%= link_to "Book Now", "#modalBookingForm", "data-toggle" => "modal", class: "btn-round btn-card" %>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<section>
+  <div class="gallery-section">
+    <div class="container gallery-container">
+      <div class="title">
+        <h1 class="main-title">Gallery</h1>
+        <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559053652/line_yellow.png", alt: "Trident Freedivers - line", class:"img-responsive line-separator" %>
+      </div>
+      <p id="sell-text">Underwater images available for purchase - Print & License to use. <br>
+      <%= link_to "Contact us", "contact.html", class:"contact-link" %> for more information.
+      </p>
+
+
+      <!-- TODO: pic and title to change + optimiz all pictures before cloudinary -->
+      <div class="masonry">
+        <div class="brick">
+          <a href="../assets/img/2.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale"">
+            <img src="../assets/img/2.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/4.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/4.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/9.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/9.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/1.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/1.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/5.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/5.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/7.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/7.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/3.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/3.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/6.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/6.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+        <div class="brick">
+          <a href="../assets/img/8.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for sale">
+            <img src="../assets/img/8.jpg" alt="Underwater picture by Trident Freedivers. Available for sale" title="">
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>

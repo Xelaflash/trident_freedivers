@@ -8,7 +8,7 @@ gem 'sass'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-pry'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', '>= 2.7.2', groups: [:development, :test]
 gem 'cloudinary'
 
 # Fix critical github warning
