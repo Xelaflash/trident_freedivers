@@ -75,3 +75,31 @@
     column-count: 3;
   }
 }
+
+// lightbox centering for mobile + overlay color + remove caption on landscape
+.lightboxOverlay {
+  background-color: #050F36;
+  opacity: 0.9;
+}
+#lightboxOverlay {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#lightbox {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+
+@media only screen
+  and (max-device-width: 812px)
+  and (orientation: landscape) {
+  .lb-data .lb-details {
+    display: none;
+  }
+}
