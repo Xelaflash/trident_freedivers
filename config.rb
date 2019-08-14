@@ -38,11 +38,12 @@ configure :build do
   activate :minify_css
   # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
   # activate :minify_javascript
+  activate :minify_html, remove_input_attributes: false
   activate :asset_hash
   activate :relative_assets
   set :relative_links, true
-  activate :favicon_maker, :icons => {
-    "_favicon_template.png" =>   [
+  activate :favicon_maker, :icons =>  {
+    "_favicon_template.png" =>  [
       { icon: "apple-touch-icon-180x180-precomposed.png" },
       { icon: "apple-touch-icon-152x152-precomposed.png" },
       { icon: "apple-touch-icon-144x144-precomposed.png" },
@@ -69,6 +70,7 @@ configure :build do
     ]
   }
 end
+
 
 activate :deploy do |deploy|
   deploy.build_before = true
