@@ -36,26 +36,26 @@
 }
 
 // flag for phone number field
-.iti-flag {
+.iti__flag {
   background-image: url("../images/flags.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .iti-flag {
+  .iti__flag {
     background-image: url("../images/flags@2x.png");
   }
 }
 
-.intl-tel-input {
+.iti {
   display: flex;
 }
 
-.intl-tel-input .flag-container {
+.iti .flag-container {
   padding: 0;
 }
 
-.intl-tel-input .country-list {
+.iti .country-list {
   z-index: 10;
 }
 
@@ -64,7 +64,7 @@
   color:$dark-blue;
 }
 
-.intl-tel-input.separate-dial-code .selected-flag {
+.iti__selected-flag {
   border-radius: 24px;
 }
 

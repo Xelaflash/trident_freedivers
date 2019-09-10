@@ -18,7 +18,7 @@ const phoneNumber = intlTelInput(input, {
   formatOnDisplay: true
 });
 
-const telDiv = document.querySelector(".intl-tel-input");
+const telDiv = document.querySelector("#phone");
 telDiv.setAttribute("data-validate", "Phone is required");
 
 
