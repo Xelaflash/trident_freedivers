@@ -5,14 +5,12 @@ const input = document.querySelector("#phone");
 const errorMsg = document.querySelector("#error-msg");
 const validMsg = document.querySelector("#valid-msg");
 
-
 // here, the index maps to the error code returned from getValidationError -
 const errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
 
 // initialise plugin
 const phoneNumber = intlTelInput(input, {
   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/15.1.2/js/utils.js",
-  // utilsScript: "/node_modules/intl-tel-input/build/js/utils.js"
   separateDialCode: true,
   hiddenInput: "full_phone",
   formatOnDisplay: true
@@ -20,7 +18,6 @@ const phoneNumber = intlTelInput(input, {
 
 const telDiv = document.querySelector(".iti");
 telDiv.setAttribute("data-validate", "Phone is required");
-
 
 function reset() {
   input.classList.remove("error");
