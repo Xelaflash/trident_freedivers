@@ -6,7 +6,7 @@
           <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742326/logo_trident_white.png", alt: "Trident Freedivers - Logo", class:"logo-pic img-responsive d-none d-lg-block" %>
         <% end %>
       <!-- logo for small screens -->
-      <% link_to "/index.html" do %>
+      <% link_to "/index.html", 'aria-label': "Back to Home" do %>
         <%= image_tag "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742623/logo_cross.png", alt: "Trident Freedivers - Logo", class:"img-responsive d-block d-sm-block d-md-block d-lg-none", id: "logo2" %>
       <% end %>
     </div>
@@ -24,7 +24,7 @@
     </div>
     <!-- Burger menu for small screens -->
     <div class="mobile_nav d-md-none">
-      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" aria-controls="navigation" id="sidenav-trigger">
+      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" id="sidenav-trigger">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -44,8 +44,8 @@
         </ul>
         <div class="social-wrapper">
           <div class="social-links-sidenav">
-            <a href="https://www.facebook.com/tridentfreedivers/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/tridentfreedivers/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/tridentfreedivers/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tridentfreedivers/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
