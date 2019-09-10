@@ -38,7 +38,7 @@ body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus,
 body:not(.user-is-tabbing) a:focus,
-body:not(.user-is-tabbing) .selected-flag:focus {
+body:not(.user-is-tabbing) .iti__selected-flag:focus {
   outline: none !important;
 }
 
