@@ -1,6 +1,8 @@
 /* eslint-disable func-names */
+import 'jquery';
 import 'popper.js';
 import 'bootstrap';
+import '@fortawesome/fontawesome-free/js/all';
 import flatpickr from "flatpickr";
 
 // components JS files

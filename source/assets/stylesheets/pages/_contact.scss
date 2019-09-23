@@ -153,7 +153,7 @@ textarea.contact-form-input+.contact-focus-input::after {
 }
 
 .fa-paper-plane {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .validate-input {
@@ -182,9 +182,8 @@ textarea.contact-form-input+.contact-focus-input::after {
     font-size: 28px;
     margin-bottom: 15px;
   }
-  i {
-    padding-right: 20px;
-    font-size: 28px;
+  .svg-inline--fa {
+    margin-right: 20px;
   }
 }
 
