@@ -2,7 +2,6 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
-import '@fortawesome/fontawesome-free/js/all';
 import flatpickr from "flatpickr";
 
 // components JS files
@@ -16,6 +15,7 @@ import { handleFirstTab } from './components/keyboard_focus';
 import './plugins/intl_nbr';
 import './plugins/anim_letters';
 import './plugins/lightbox';
+
 
 // outline for keyboard user on focus
 window.addEventListener('keydown', handleFirstTab);
