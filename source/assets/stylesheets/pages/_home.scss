@@ -308,3 +308,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
   }
 }
+
+.video-section {
+  background-color: $light-blue;
+}
+
+.vid-wrapper {
+  margin: auto;
+  padding: 60px;
+  width: 80%;
+  height:80%;
+}
+
+.video {
+  border-radius: 3px;
+  box-shadow: 7px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
