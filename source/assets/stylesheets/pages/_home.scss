@@ -57,7 +57,7 @@
 
 // section TOURS
 .tours {
-  background: linear-gradient(to top, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
+  background: linear-gradient(to bottom, #b0d8e1, #76abc2, #437ea5, #185286, #012762);
   padding: 50px 0;
   h1 {
     text-align: center;
@@ -307,4 +307,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
       border-left: none;
     }
   }
+}
+
+.video-section {
+  background-color: $light-blue;
+}
+
+.vid-wrapper {
+  margin: auto;
+  padding: 60px 0;
+  width: 80%;
+  height:80%;
+}
+
+.video {
+  border-radius: 3px;
+  box-shadow: 7px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
