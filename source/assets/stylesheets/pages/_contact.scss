@@ -1,15 +1,25 @@
 #contact-page {
-  background-image: url('../images/fishBg.png'),
+  background-image:
   linear-gradient(to top, #011b46, #001e51, #00205c, #002266, #002471, #003280, #00408f, #004f9e, #006db1, #298abf, #54a6cb, #7fc2d7);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #container-contact {
   margin-top: 100px;
   position: relative;
   z-index: 1;
+}
+
+#spearo-lionfish {
+  background-image: url('../images/spearo.png');
+  top: 25%;
+  width: 375px;
+  height: 150px;
+  margin-left: -375px;
 }
 
 input, textarea {
@@ -225,5 +235,16 @@ textarea.contact-form-input+.contact-focus-input::after {
     flex-grow: 1;
     padding-left: 25px;
     margin-top: 0;
+  }
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 1000px) {
+  #spearo-lionfish {
+    top: 15%;
+  }
+  #container-contact {
+    margin-top: 100px;
   }
 }
