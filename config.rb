@@ -36,8 +36,7 @@ end
 
 configure :build do
   activate :minify_css
-  # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
-  # activate :minify_javascript
+  activate :minify_javascript
   activate :minify_html, remove_input_attributes: false
   activate :asset_hash
   activate :relative_assets
@@ -74,7 +73,6 @@ configure :build do
     }
   end
 end
-
 
 activate :deploy do |deploy|
   deploy.build_before = true
