@@ -201,7 +201,7 @@ textarea.contact-form-input+.contact-focus-input::after {
 .msg-infos-required {
   font-size: 14px;
   font-style: italic;
-  color: $red;
+  color: $yellow;
   margin-bottom: 40px;
   padding-left: 15px;
 }
@@ -216,7 +216,7 @@ textarea.contact-form-input+.contact-focus-input::after {
     margin-top: 60px;
   }
   .container-form {
-    border-right: 2px solid $red;
+    border-right: 2px solid $yellow;
     overflow: hidden;
     padding: 25px 100px 25px 0;
     flex-grow: 1;
