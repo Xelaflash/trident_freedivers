@@ -26,7 +26,6 @@ title: Trident Freedivers - Underwater Photo Package
     </div>
   </div>
 </section>
-
 <section>
   <div class="gallery-section">
     <div class="container gallery-container">
@@ -37,58 +36,56 @@ title: Trident Freedivers - Underwater Photo Package
       <p id="sell-text">Underwater images available for purchase - Print & License to use. <br>
       <%= link_to "Contact us", "contact.html", class:"contact-link" %> for more information.
       </p>
-
-
       <!-- TODO: pic and title to change + optimiz all pictures before cloudinary -->
       <div class="masonry">
-        <div class="brick">
-          <a href="../assets/img/2.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
-            <img src="../assets/img/2.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
-          </a>
-        </div>
-        <div class="brick">
-          <a href="../assets/img/4.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+        <% data.gallery.each do |owner, pic| %>
+          <div class="brick">
+            <a href="<%= pic.url %>" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase.">
+              <%= image_tag pic.url, class: "img-responsive", alt: "Underwater picture by Trident Freedivers. Available for purchase.", loading:"lazy" %>
+            </a>
+          </div>
+        <% end %>
+        <!-- <div class="brick">
+          <a href="../assets/img/4.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/4.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/9.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/9.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/9.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/1.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/1.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/1.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/5.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/5.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/5.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/7.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/7.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/7.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/3.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/3.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/3.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/6.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/6.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/6.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
         </div>
         <div class="brick">
-          <a href="../assets/img/8.jpg" data-lightbox="example-set" data-title="Underwater picture by Trident Freedivers. Available for purchase">
+          <a href="../assets/img/8.jpg" data-lightbox="picture-gallery" data-title="Underwater picture by Trident Freedivers. Available for purchase">
             <img src="../assets/img/8.jpg" loading="lazy" alt="Underwater picture by Trident Freedivers. Available for purchase" title="">
           </a>
-        </div>
+        </div> -->
       </div>
-
-
     </div>
   </div>
 </section>
