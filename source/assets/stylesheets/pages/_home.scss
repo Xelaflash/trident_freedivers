@@ -267,6 +267,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
+.video-section {
+  background-color: $light-blue;
+}
+
+.vid-wrapper {
+  margin: auto;
+  padding: 60px 0;
+  width: 60%;
+}
+
+.video {
+  border-radius: 3px;
+  box-shadow: 7px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
 // responsive styling SMALL Screens
 @media only screen
   and (min-width: 320px)
@@ -284,9 +299,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
 @media (min-width: 100px)
   and (max-width: 991px) {
   .cards-tours {
-      grid-template-columns: 1fr;
-      max-width: 560px;
-      margin: auto;
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin: auto;
+  }
+  .vid-wrapper {
+    width: 80%;
   }
   #reinsurance-grid {
     grid-template-columns: 1fr;
@@ -307,20 +325,4 @@ and (-webkit-min-device-pixel-ratio: 2) {
       border-left: none;
     }
   }
-}
-
-.video-section {
-  background-color: $light-blue;
-}
-
-.vid-wrapper {
-  margin: auto;
-  padding: 60px 0;
-  width: 80%;
-  height:80%;
-}
-
-.video {
-  border-radius: 3px;
-  box-shadow: 7px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
