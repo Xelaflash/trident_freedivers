@@ -22,9 +22,33 @@
 }
 @media (min-width: 1050px) {
   #photo-card {
-    margin-left: -40px
+    margin-left: -45px
   }
 }
+
+// card special css for ipad
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #photo-card {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+  }
+}
+// card special css for ipadpro
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #photo-card {
+    min-width: 550px;
+  }
+}
+
 
 .gallery-section {
   background: linear-gradient(to top, #115862, #156570, #1a727e, #1e7f8c, #238d9b, #2d97a4, #37a1ad, #40abb6, #4eb3bc, #5bbbc1, #68c4c7, #74cccd);
