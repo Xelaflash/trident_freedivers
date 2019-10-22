@@ -300,20 +300,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (max-width: 991px) {
   .cards-tours {
     grid-template-columns: 1fr;
-    max-width: 560px;
+    max-width: 450px;
     margin: auto;
   }
   .vid-wrapper {
     width: 80%;
-  }
-  #reinsurance-grid {
-    grid-template-columns: 1fr;
-  }
-  .reinsurance-item {
-    border-top: 1px solid $yellow;
-    &:nth-child(-n+1) {
-      border-top: none;
-    }
   }
 }
 
