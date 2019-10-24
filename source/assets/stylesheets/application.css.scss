@@ -81,14 +81,15 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
 }
 
 .infos-text {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
 }
 
 .description-text {
-  text-align: justify;
-  max-width: 800px;
+  max-width: 85%;
   margin: 0 auto 1.5rem;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 @media only screen
