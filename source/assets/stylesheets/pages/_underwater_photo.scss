@@ -15,6 +15,15 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
 }
 
+.underwater-infos {
+  background-image: linear-gradient(to top, #2864b0, #2174c0, #1885cf, #0c95de, #00a6ec, #00aeef, #00b7f2, #00bff4, #00c1ed, #15d4ff);
+  padding: 50px 0;
+}
+
+#underwater-details {
+  padding-top: 25px;
+}
+
 @media (min-width: 1000px) {
   #photo-card {
     margin-top: -25px;
@@ -27,10 +36,10 @@
 }
 
 // card special css for ipad
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
   #photo-card {
     position: absolute;
@@ -39,10 +48,10 @@
   }
 }
 // card special css for ipadpro
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
   #photo-card {
     min-width: 550px;
