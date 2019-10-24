@@ -1,5 +1,5 @@
 #spearfishing-page {
-  background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561744175/spear.jpg');
+  background-image: url('https://res.cloudinary.com/dsr9bgg8i/image/upload/v1571941520/spear_bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,8 +43,7 @@
     margin: 0 40px 0 100px;
   }
   #card-bottom {
-    width: 30%;
-    margin-left:15%;
+    margin-left:100px;
   }
   .spearfishing-infos {
     padding: 50px;
@@ -52,7 +51,7 @@
 }
 
 @media (min-width: 1200px) {
-  #card-left {
+  #card-left, #card-bottom {
     margin-left:150px;
   }
 }
