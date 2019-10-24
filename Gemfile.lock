@@ -221,6 +221,3 @@ DEPENDENCIES
   middleman-pry
   pry-byebug
   sass
-
-BUNDLED WITH
-   2.0.2
