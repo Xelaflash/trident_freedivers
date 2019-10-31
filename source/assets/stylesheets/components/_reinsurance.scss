@@ -19,9 +19,7 @@
 
 #reinsurance-grid {
   padding: 0;
-  // For bloody IE11
   display: -ms-grid;
-  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
@@ -31,6 +29,25 @@
   text-align: center;
   padding-top: 20px;
 }
+  // For bloody IE11 grid supports
+#item-1 {
+  -ms-grid-column: 1;
+}
+#item-2 {
+  -ms-grid-column: 2;
+}
+#item-3 {
+  -ms-grid-column: 3;
+}
+
+@supports (display:-ms-grid) {
+  .reinsurance-item {
+    margin: 15px;
+    margin-left: 0;
+  }
+  .reinsurance-item:first-child { margin-left: 15px; }
+}
+// END
 
 .icon-reinsurance {
   height: 80px;

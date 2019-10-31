@@ -66,18 +66,34 @@
 
 .cards-tours {
   padding-bottom: 25px;
-  // For bloody IE11
   display: -ms-grid;
-  -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
 }
-
 // flipping card
 .flip-card {
   height: 450px;
 }
+  // For bloody IE11 grid supports
+#card-1 {
+  -ms-grid-column: 1;
+}
+#card-2 {
+  -ms-grid-column: 2;
+}
+#card-3 {
+  -ms-grid-column: 3;
+}
+
+@supports (display:-ms-grid) {
+  .flip-card {
+    margin: 16px;
+    margin-left: 0;
+  }
+  .flip-card:first-child { margin-left: 16px; }
+}
+// END
 
 .card-inner {
   transform-style: preserve-3d;
@@ -301,9 +317,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 // grids responsive
 @media (min-width: 100px)
   and (max-width: 991px) {
-    .cards-tours {
-      // IE11
-      -ms-grid-columns: 1fr;
+  .cards-tours {
+    // IE11
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     max-width: 450px;
     margin: auto;
