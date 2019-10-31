@@ -66,12 +66,12 @@
 
 .cards-tours {
   padding-bottom: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
   // For bloody IE11
   display: -ms-grid;
   -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
 }
 
 // flipping card
@@ -301,10 +301,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 // grids responsive
 @media (min-width: 100px)
   and (max-width: 991px) {
-  .cards-tours {
+    .cards-tours {
+      // IE11
+      -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    // IE11
-    -ms-grid-columns: 1fr;
     max-width: 450px;
     margin: auto;
   }
