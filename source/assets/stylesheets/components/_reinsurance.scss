@@ -18,10 +18,13 @@
 }
 
 #reinsurance-grid {
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  padding: 0;
+  // For bloody IE11
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
 }
 
 .reinsurance-item {
@@ -40,6 +43,7 @@
   and (max-width: 991px) {
   #reinsurance-grid {
     grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
   }
   .reinsurance-item {
     border-top: 1px solid $yellow;
