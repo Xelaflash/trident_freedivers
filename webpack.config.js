@@ -32,14 +32,17 @@ module.exports = {
         use: [
           'style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          { loader: 'postcss-loader', options: {
-            ident: 'postcss',
-            plugins: () => [
-              postcssPresetEnv({
-                autoprefixer: { grid: true }
-              })
-            ]
-          } }
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: () => [
+                postcssPresetEnv({
+                  autoprefixer: { grid: true }
+                })
+              ]
+            }
+          }
         ]
       },
       {
