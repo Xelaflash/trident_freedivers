@@ -84,7 +84,7 @@
 /* Masonry item */
 .masonry .brick {
   margin-bottom: 30px;
-  display: inline-block; /* Fix the misalignment of items */
+  // display: inline-block; /* Fix the misalignment of items */ disable cause makes pic display (zoom) bug in IE11
   vertical-align: top; /* Keep the item on the very top */
 }
 
