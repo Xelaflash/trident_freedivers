@@ -29,7 +29,18 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'postcss-loader', options: {
+            ident: 'postcss',
+            plugins: () => [
+              postcssPresetEnv({
+                autoprefixer: { grid: true }
+              })
+            ]
+          } }
+        ]
       },
       {
         test: /\.(jpg|jpeg|png|gif|svg|eot|ttf|woff|woff2)$/i,
