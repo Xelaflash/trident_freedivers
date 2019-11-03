@@ -1,4 +1,5 @@
 /* eslint-disable func-names */
+import "@babel/polyfill";
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';

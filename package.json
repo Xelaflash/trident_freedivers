@@ -7,6 +7,7 @@
   "author": "agros",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.4.4",
     "babel-eslint": "^10.0.1",
@@ -24,9 +25,12 @@
   },
   "scripts": {
     "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p",
+    "dev": "webpack --watch --mode=development",
+    "prod": "webpack --mode=production"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "animejs": "^3.0.1",
     "bootstrap": "^4.3.1",
     "flatpickr": "^4.6.1",
