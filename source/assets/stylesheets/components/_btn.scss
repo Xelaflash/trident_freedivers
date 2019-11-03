@@ -50,6 +50,18 @@
   box-shadow: 0px 2px 8px 0px rgba(255, 255, 255, 0.8);
 }
 
+@supports (display:-ms-grid) {
+  .btn-card {
+    width: 50%;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .btn-card {
+    width: 50%;
+  }
+}
+
 .btn-card::before {
   content: '';
   z-index: -1;

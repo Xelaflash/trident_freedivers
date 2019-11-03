@@ -93,6 +93,14 @@
   }
   .flip-card:first-child { margin-left: 16px; }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .flip-card {
+    margin: 16px;
+    margin-left: 0;
+  }
+  .flip-card:first-child { margin-left: 16px; }
+}
 // END
 
 .card-inner {
