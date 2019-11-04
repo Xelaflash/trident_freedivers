@@ -70,9 +70,9 @@ function getIEVersion() {
   const idx = sAgent.indexOf("MSIE");
   // If IE, return version number.
   if (idx > 0) {
-    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", idx)));
     // If IE 11 then look for Updated user agent string.
-  } else if (!navigator.userAgent.match(/Trident\/7\./)) {
+  } else if (!!navigator.userAgent.match(/Trident\/7\./)) {
     return 11;
   } else {
     // It is not IE
