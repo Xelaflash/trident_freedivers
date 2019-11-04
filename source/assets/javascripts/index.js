@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 /* eslint-disable func-names */
 import "@babel/polyfill";
 import 'jquery';
@@ -62,3 +63,23 @@ $('.flip-card').on('touchend', (event) => {
 }).on('touchstart', () => {
   touchmoved = false;
 });
+
+// script to detect if using IE and display an alert
+function getIEVersion() {
+  const sAgent = window.navigator.userAgent;
+  const idx = sAgent.indexOf("MSIE");
+  // If IE, return version number.
+  if (idx > 0) {
+    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+    // If IE 11 then look for Updated user agent string.
+  } else if (!navigator.userAgent.match(/Trident\/7\./)) {
+    return 11;
+  } else {
+    // It is not IE
+    return 0;
+  }
+}
+
+if (getIEVersion() > 0) {
+  alert(`You are using Internet Explorer ${getIEVersion()}.\nThis website probably won’t work great in Internet Explorer.\n We generally only support recent versions of major browser like, Chrome, Firefox, Safari and Edge.\nFor a better browsing experience we recommend updating your browser.`);
+}
