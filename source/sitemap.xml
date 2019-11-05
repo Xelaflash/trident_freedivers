@@ -5,43 +5,39 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
 <url>
   <loc>https://www.tridentfreedivers.com/</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.tridentfreedivers.com/about_us.html</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tridentfreedivers.com/freediving.html</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tridentfreedivers.com/spearfishing.html</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tridentfreedivers.com/underwater_photo.html</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tridentfreedivers.com/contact.html</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.tridentfreedivers.com/privacy_policy.html</loc>
-  <lastmod>2019-10-26T12:45:37+00:00</lastmod>
+  <lastmod>2019-11-05T13:17:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
 </urlset>
