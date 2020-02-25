@@ -360,7 +360,7 @@
     font-weight: 900;
     letter-spacing: .25em;
     text-transform: uppercase;
-    color: $gray;
+    color: $dark-blue;
   }
 
   svg {
@@ -371,7 +371,7 @@
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: $gray;
+    stroke: $dark-blue;
     stroke-width: 2;
     transform: translateX(-10px);
     transition: all .3s ease;
