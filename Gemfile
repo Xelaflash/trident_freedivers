@@ -15,6 +15,5 @@ gem 'pry-byebug', require: true
 gem 'sass'
 
 # Fix critical github warning
-gem 'actionview', '>= 5.0.7.2'
 
 # Assets
