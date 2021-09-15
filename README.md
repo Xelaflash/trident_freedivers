@@ -8,19 +8,14 @@
 
 > Static Website made using static site generator Middleman (Ruby) for a free diving school in Barbados 🇧🇧
 
-### 🏠 [Homepage](https://www.tridentfreedivers.com/)
+### 🏠 [Website](https://www.tridentfreedivers.com/)
 
-## Install
-
-```sh
-yarn install
-```
-
-## Usage
-
-```sh
-yarn run start
-```
+## Stack
+- Middleman (Ruby static site generator)
+- Ruby
+- Webpack (module bundler)
+- Cloudinary (Assets hosting)
+- Netlify (deploy & hosting)
 
 ## Author
 
@@ -28,9 +23,3 @@ yarn run start
 
 * Website: https://www.alexgwebdev.com/
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
