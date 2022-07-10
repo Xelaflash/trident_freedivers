@@ -11,7 +11,7 @@ gem 'middleman-favicon-maker'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-pry'
-gem 'pry-byebug', require: true
+# gem 'pry-byebug', require: true
 gem 'sass'
 
 # Fix critical github warning

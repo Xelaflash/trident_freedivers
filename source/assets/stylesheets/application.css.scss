@@ -1,19 +1,19 @@
 // Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
-@import "config/reset";
+@import 'config/fonts';
+@import 'config/colors';
+@import 'config/bootstrap_variables';
+@import 'config/reset';
 
 // External libraries
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
-@import "flatpickr/dist/themes/material_blue";
-@import "intl-tel-input/src/css/intlTelInput";
-@import "lightbox2/dist/css/lightbox";
+@import 'flatpickr/dist/themes/material_blue';
+@import 'intl-tel-input/src/css/intlTelInput';
+@import 'lightbox2/dist/css/lightbox';
 
 // Your CSS partials
-@import "components/index";
-@import "pages/index";
+@import 'components/index';
+@import 'pages/index';
 
 // Main utlitities
 html {
@@ -29,7 +29,7 @@ body {
 
 body.user-is-tabbing *:focus,
 .selected-flag:focus {
-  outline: 2px solid #7acdfe !important;/* for non-webkit browsers */
+  outline: 2px solid #7acdfe !important; /* for non-webkit browsers */
   outline: 5px auto -webkit-focus-ring-color !important;
 }
 
@@ -85,7 +85,6 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   line-height: 26px;
 }
 
-
 .description-text {
   margin: 0 auto 1.5rem;
   font-size: 17px;
@@ -98,10 +97,7 @@ body:not(.user-is-tabbing) .iti__selected-flag:focus {
   }
 }
 
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   html {
     overflow: scroll;
   }
@@ -114,12 +110,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-@media only screen
-and (max-width: 490px) {
+@media only screen and (max-width: 490px) {
   .main-title {
     font-size: 52px;
   }
   .btn-book {
-    padding: 16px 39px;
+    padding: 12px 25px;
+    font-size: 16px;
   }
 }
