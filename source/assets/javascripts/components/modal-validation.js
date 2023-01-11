@@ -21,7 +21,6 @@ const tour = $('.validate-modal-input select[name="tour"]');
 const date = $('.validate-modal-input input[name="date"]');
 const finsSize = $('.validate-modal-input input[name="fins size"]');
 
-
 function showValidate(input) {
   const parentDiv = $(input).parent();
   $(parentDiv).addClass('alert-validate-modal alert-form-validation');
@@ -60,7 +59,6 @@ function validateForm() {
     check = false;
   }
 
-
   if ($(tour).length > 0 && $(tour).val() === 'Select a tour') {
     showValidate(tour);
     check = false;
@@ -79,7 +77,6 @@ function validateForm() {
   return check;
 }
 
-
 $('.validate-modal-form').on('click', '.modal-form-submit', function (e) {
   const validated = validateForm();
   if (validated === false) {
@@ -88,7 +85,6 @@ $('.validate-modal-form').on('click', '.modal-form-submit', function (e) {
     $('.validate-modal-form').submit();
   }
 });
-
 
 $('.validate-modal-input, .book-form-input').each(function () {
   $(this).focus(function () {
