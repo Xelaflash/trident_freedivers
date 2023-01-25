@@ -10,20 +10,45 @@
   padding-top: 10px;
 }
 
+.subtext {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+  font-style: italic;
+}
+
+.shortMargin {
+  margin-bottom: 8px;
+}
+
 .exp-disclaimer {
   text-transform: uppercase;
   text-align: center;
 }
 
 .spearfishing-infos {
-  background-image: linear-gradient(to bottom, #80c4d7, #67b4d0, #4fa4c9, #3794c2, #1f83bb, #0f78b5, #026caf, #0061a8, #0059a3, #00519d, #004897, #014091);
+  background-image: linear-gradient(
+    to bottom,
+    #80c4d7,
+    #67b4d0,
+    #4fa4c9,
+    #3794c2,
+    #1f83bb,
+    #0f78b5,
+    #026caf,
+    #0061a8,
+    #0059a3,
+    #00519d,
+    #004897,
+    #014091
+  );
   padding: 50px 0;
 }
 
 #spearfishing-details {
   padding-top: 25px;
 }
-
 
 #spear-text:first-letter {
   font-size: calc(60px + 0.75vw);
@@ -43,7 +68,7 @@
     margin: 0 40px 0 100px;
   }
   #card-bottom {
-    margin-left:100px;
+    margin-left: 100px;
   }
   .spearfishing-infos {
     padding: 50px;
@@ -51,7 +76,8 @@
 }
 
 @media (min-width: 1200px) {
-  #card-left, #card-bottom {
-    margin-left:150px;
+  #card-left,
+  #card-bottom {
+    margin-left: 150px;
   }
 }
