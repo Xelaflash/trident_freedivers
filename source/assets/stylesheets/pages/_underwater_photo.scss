@@ -14,9 +14,32 @@
 #photo-card {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
 }
+.buy-prints-text {
+  text-align: center;
+  margin: 20px auto 0;
+  text-shadow: 1px 1px 1px #050f36;
+
+  .buy-link {
+    text-decoration: underline;
+    color: $white;
+    font-family: $headers-font;
+  }
+}
 
 .underwater-infos {
-  background-image: linear-gradient(to top, #2864b0, #2174c0, #1885cf, #0c95de, #00a6ec, #00aeef, #00b7f2, #00bff4, #00c1ed, #15d4ff);
+  background-image: linear-gradient(
+    to top,
+    #2864b0,
+    #2174c0,
+    #1885cf,
+    #0c95de,
+    #00a6ec,
+    #00aeef,
+    #00b7f2,
+    #00bff4,
+    #00c1ed,
+    #15d4ff
+  );
   padding: 50px 0;
 }
 
@@ -26,21 +49,17 @@
 
 @media (min-width: 1000px) {
   #photo-card {
-    margin-top: -25px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1050px) {
   #photo-card {
-    margin-left: -45px
+    margin-left: -45px;
   }
 }
 
 // card special css for ipad
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #photo-card {
     position: absolute;
     bottom: 0;
@@ -48,19 +67,28 @@
   }
 }
 // card special css for ipadpro
-@media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #photo-card {
     min-width: 550px;
   }
 }
 
-
 .gallery-section {
-  background: linear-gradient(to top, #115862, #156570, #1a727e, #1e7f8c, #238d9b, #2d97a4, #37a1ad, #40abb6, #4eb3bc, #5bbbc1, #68c4c7, #74cccd);
+  background: linear-gradient(
+    to top,
+    #115862,
+    #156570,
+    #1a727e,
+    #1e7f8c,
+    #238d9b,
+    #2d97a4,
+    #37a1ad,
+    #40abb6,
+    #4eb3bc,
+    #5bbbc1,
+    #68c4c7,
+    #74cccd
+  );
   min-height: 100vh;
 }
 
@@ -70,14 +98,13 @@
 }
 
 #sell-text {
-  font-size:18px;
+  font-size: 18px;
 }
-
 
 /* Masonry grid */
 .masonry {
   padding: 20px 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   column-gap: 30px;
 }
 
@@ -90,13 +117,13 @@
 
 /* Masonry image effects */
 .masonry .brick img {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   backface-visibility: hidden; /* Remove Image flickering on hover */
   border-radius: 2px;
 }
 
 .masonry .brick:hover img {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /* Masonry on tablets */
@@ -115,7 +142,7 @@
 
 // lightbox centering for mobile + overlay color + remove caption on landscape
 .lightboxOverlay {
-  background-color: #050F36;
+  background-color: #050f36;
   opacity: 0.9;
 }
 #lightboxOverlay {
@@ -132,9 +159,7 @@
   transform: translateY(-50%);
 }
 
-@media only screen
-  and (max-device-width: 812px)
-  and (orientation: landscape) {
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
   .lb-data .lb-details {
     display: none;
   }

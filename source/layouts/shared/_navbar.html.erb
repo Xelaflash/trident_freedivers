@@ -3,42 +3,62 @@
     <div class="logo">
       <!-- logo for big screens -->
       <% link_to "/index.html", 'aria-label': "Back to Home" do %> <%=
-      image_tag("https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742326/logo_trident_white.png",
-      alt: "Logo", class: "logo-pic img-responsive d-none d-lg-block") %> <% end
-      %>
+      image_tag("https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742326/logo_trident_white.png", alt: "Logo",
+      class: "logo-pic img-responsive d-none d-lg-block") %> <% end %>
 
       <!-- logo for small screens -->
       <% link_to "/index.html", 'aria-label': "Back to Home" do %> <%=
-      image_tag("https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742623/logo_cross.png",
-      alt: "Trident Freedivers - Logo", class:"img-responsive d-block d-sm-block
-      d-md-none d-lg-none", id: "logo2") %> <% end %>
+      image_tag("https://res.cloudinary.com/dsr9bgg8i/image/upload/v1561742623/logo_cross.png", alt: "Trident Freedivers
+      - Logo", class:"img-responsive d-block d-sm-block d-md-none d-lg-none", id: "logo2") %> <% end %>
     </div>
     <!-- Right Navigation -->
     <div class="navbar-middle d-none d-md-block d-xl-block">
       <ul class="nav-list">
-        <li class="navbar-item">
-          <%= link_to "About Us", "about_us.html", class:"navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <%= link_to "Freediving", "freediving.html", class:"navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <a
-            href="https://tridentfreediversapparel.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="navbar-link"
+        <li class="navbar-item"><%= link_to "About Us", "about_us.html", class:"navbar-link" %></li>
+        <li class="navbar-item"><%= link_to "Freediving", "freediving.html", class:"navbar-link" %></li>
+        <!-- <li class="navbar-item">
+          <a href="https://tridentfreediversapparel.com/" target="_blank" rel="noopener noreferrer" class="navbar-link"
             >Shop Apparel</a
           >
         </li>
+        <li class="navbar-item">
+          <a href="https://tridentfreedivers.picfair.com/" target="_blank" rel="noopener noreferrer" class="navbar-link"
+            >Shop Prints</a
+          >
+        </li> -->
 
         <li class="navbar-item">
-          <%= link_to "Underwater Photography", "underwater_photo.html",
-          class:"navbar-link" %>
+          <%= link_to "Underwater Photography", "underwater_photo.html", class:"navbar-link" %>
         </li>
-        <li class="navbar-item">
-          <%= link_to "Spearfishing", "spearfishing.html", class:"navbar-link"
-          %>
+        <li class="navbar-item"><%= link_to "Spearfishing", "spearfishing.html", class:"navbar-link" %></li>
+        <li class="navbar-item dropdown">
+          <a
+            class="navbar-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Shop
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a
+              class="dropdown-item"
+              href="https://tridentfreediversapparel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Shop Apparel</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://tridentfreedivers.picfair.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Shop Prints</a
+            >
+          </div>
         </li>
       </ul>
     </div>
@@ -47,42 +67,25 @@
     </div>
     <!-- Burger menu for small screens -->
     <div class="mobile_nav d-md-none">
-      <button
-        class="hamburger hamburger-collapse front-position"
-        type="button"
-        aria-label="Menu"
-        id="sidenav-trigger"
-      >
+      <button class="hamburger hamburger-collapse front-position" type="button" aria-label="Menu" id="sidenav-trigger">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
       <div class="sidenav">
         <% link_to "/index.html" do %> <%= image_tag(
-        "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559050885/logo_spear_white.png",
-        alt: "Trident Freedivers - Logo", class:"img-responsive", id:
-        "logo-sideNav") %> <% end %>
+        "https://res.cloudinary.com/dsr9bgg8i/image/upload/v1559050885/logo_spear_white.png", alt: "Trident Freedivers -
+        Logo", class:"img-responsive", id: "logo-sideNav") %> <% end %>
         <ul>
+          <li class="navbar-item"><%= link_to "About Us", "about_us.html" %></li>
+          <li class="navbar-item"><%= link_to "Freediving", "freediving.html" %></li>
+          <li class="navbar-item"><%= link_to "Spearfishing", "spearfishing.html" %></li>
+          <li class="navbar-item"><%= link_to "Underwater Photography", "underwater_photo.html" %></li>
           <li class="navbar-item">
-            <%= link_to "About Us", "about_us.html" %>
+            <a href="https://tridentfreediversapparel.com/" target="_blank" rel="noopener noreferrer">Shop Apparel</a>
           </li>
           <li class="navbar-item">
-            <%= link_to "Freediving", "freediving.html" %>
-          </li>
-          <li class="navbar-item">
-            <%= link_to "Spearfishing", "spearfishing.html" %>
-          </li>
-
-          <li class="navbar-item">
-            <a
-              href="https://tridentfreediversapparel.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Shop Apparel</a
-            >
-          </li>
-          <li class="navbar-item">
-            <%= link_to "Underwater Photography", "underwater_photo.html" %>
+            <a href="https://tridentfreedivers.picfair.com/" target="_blank" rel="noopener noreferrer">Shop Prints</a>
           </li>
 
           <li class="navbar-item"><%= link_to "Contact", "contact.html" %></li>
