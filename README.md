@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Trodent Freedivers 👋</h1>
+<h1 align="center">Welcome to Trident Freedivers 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Static Website made using static site generator Middleman (Ruby) for a free diving school in Barbados 🇧🇧
+> Static Website made using static site generator Middleman (Ruby) for a freediving school in Barbados 🇧🇧
 
 ### 🏠 [Website](https://www.tridentfreedivers.com/)
 
