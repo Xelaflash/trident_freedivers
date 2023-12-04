@@ -15,7 +15,6 @@ const email = $('.validate-input input[name="email"]');
 const subject = $('.validate-input input[name="subject"]');
 const message = $('.validate-input textarea[name="message"]');
 
-
 function showValidate(input) {
   const parentDiv = $(input).parent();
   $(parentDiv).addClass('alert-validate alert-form-validation');
@@ -52,7 +51,6 @@ function validateForm() {
   return check;
 }
 
-
 $('.validate-form').on('click', '.contact-form-submit', function (e) {
   const validated = validateForm();
   if (validated === false) {
@@ -61,7 +59,6 @@ $('.validate-form').on('click', '.contact-form-submit', function (e) {
     $('.validate-form').submit();
   }
 });
-
 
 $('.validate-form, .form-input').each(function () {
   $(this).focus(function () {

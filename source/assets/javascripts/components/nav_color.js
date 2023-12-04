@@ -1,8 +1,11 @@
 const nav = document.getElementById("navbar");
+console.log(nav);
 const currentPage = document.location.pathname;
+console.log(currentPage);
 
-if (currentPage === "/spearfishing.html") {
+if (currentPage === "/spearfishing") {
   nav.style.backgroundColor = "rgba(28, 136, 179, 0.7)";
-} else if (currentPage === "/contact.html") {
+  console.log('here');
+} else if (currentPage === "/contact") {
   nav.style.backgroundColor = "transparent";
 }
