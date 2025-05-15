@@ -26,6 +26,10 @@ title: Trident Freedivers - Freediving courses
           <li><i class="fas fa-plus"></i> <small>Add Gopro footage $20</small></li>
         </ul>
         <%= link_to "Book Now", "#modalBookingForm", "data-toggle" => "modal", class: "btn-round btn-card" %>
+        <script
+          type="text/javascript"
+          src="https://api.fygaro.com/api/v1/payments/payment-button/0deb17b7-e1e0-4746-bc1d-f90e36db2f46/render/"
+        ></script>
       </div>
       <div class="card" id="card2">
         <div class="card-top">
@@ -46,14 +50,13 @@ title: Trident Freedivers - Freediving courses
     </div>
     <div class="fun-dives">
       <p class="infos-text" id="fun-dive-left">
-        We offer also a full range of fun dives from <strong class="red-highlight">$ 100 - 150 USD</strong>.<br />
+        We offer also a full range of fun dives from <strong class="red-highlight">$120 USD</strong>.<br />
         Freediving on <strong class="red-highlight">sunked ship wrecks, with turtles or even at night</strong>.
         <br />
         (Available on Request if minimum numbers of participants are met).
       </p>
       <p class="infos-text" id="fun-dive-right">
-        Course for <strong class="red-highlight">Padi Freediving Level 2 and Level 3</strong> are available upon
-        request.
+        <strong class="red-highlight">PADI Advanced Freediver courses</strong> available on request.
       </p>
     </div>
     <p id="contact-link-text"><%= link_to "Contact us", "contact.html", class:"contact-link" %> for more details.</p>
