@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'bigdecimal'
 gem 'cloudinary'
 gem 'dotenv-rails', '>= 2.7.2', groups: %i[development test]
 gem 'middleman', '~> 4.3'
