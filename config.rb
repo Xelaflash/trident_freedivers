@@ -31,7 +31,8 @@ page '/500.html', layout: "error_pages"
 configure :development do
   set      :debug_assets, true
   activate :livereload
-  activate :pry
+  # middleman-pry 1.x does not support Ruby 3.x, and 0.x does not register this extension.
+  # activate :pry
 end
 
 configure :build do
