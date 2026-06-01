@@ -6,6 +6,9 @@
   "repository": "https://github.com/Xelaflash/trident_freedivers",
   "author": "agros",
   "license": "MIT",
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.0",
